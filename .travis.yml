@@ -1,11 +1,11 @@
 language: bash
 
 install:
-  - sudo apt-get install -y m4 pv
+  - sudo apt-get install -y m4
 
 services:
   - docker
 
 script:
-  - make login push 2>&1 | pv > make.log
+  - make login push > make.log
   - tail --lines=4K make.log
