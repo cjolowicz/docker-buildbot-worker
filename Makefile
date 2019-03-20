@@ -6,6 +6,13 @@ ARCHS = x86_64 i386
 
 all: build
 
+prepare:
+	set -ex; for dir in $(DIRS) ; do \
+	    for arch in $(ARCHS) ; do \
+	        $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir ARCH=$$arch Dockerfile.$$arch ; \
+	    done ; \
+	done
+
 build:
 	set -ex; for dir in $(DIRS) ; do \
 	    for arch in $(ARCHS) ; do \
@@ -23,4 +30,4 @@ push:
 login:
 	echo "$(DOCKER_PASSWORD)" | docker login -u $(DOCKER_USERNAME) --password-stdin
 
-.PHONY: all build push login
+.PHONY: all prepare build push login

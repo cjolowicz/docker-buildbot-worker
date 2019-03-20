@@ -22,6 +22,7 @@ Generating the Dockerfiles requires the
 
 | Target | Description |
 | --- | --- |
+| `make prepare` | Generate the Dockerfiles. |
 | `make build` | Build the images. |
 | `make push` | Upload the images to Docker Hub. |
 | `make login` | Log into Docker Hub. |
