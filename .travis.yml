@@ -1,9 +1,10 @@
 language: bash
 
 install:
-  - sudo apt-get install -y m4
+  - sudo apt-get install -y m4 pv
 
 services:
   - docker
 
-script: make login push
+script:
+  - make login push | pv -q -L 3k
