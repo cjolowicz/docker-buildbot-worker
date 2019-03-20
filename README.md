@@ -32,5 +32,5 @@ default is `DOCKER_USERNAME`.
 Pass `DIRS` to select individual images, e.g. `make DIRS=alpine/3.9.2`
 to only build the image for Alpine 3.9.2.
 
-The `login` target is provided for non-interactive use (CI) and looks
-for `DOCKER_USERNAME` and `DOCKER_PASSWORD` in the environment.
+The `login` target is provided for non-interactive use and looks
+for `DOCKER_USERNAME` and `DOCKER_PASSWORD`.
