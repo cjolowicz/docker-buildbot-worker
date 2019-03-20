@@ -10,7 +10,11 @@ endif
 all: build
 
 build: Dockerfile.m4
-	m4 -I $(TOPDIR)/m4 -P -D ARCH=$(ARCH) -D REPO=$(REPO) Dockerfile.m4 | \
+	m4 -I $(TOPDIR)/m4 -P \
+            -D ARCH=$(ARCH) \
+	    -D PLATFORM=$(PLATFORM) \
+	    -D REPO=$(REPO) \
+	    Dockerfile.m4 | \
 	    docker build -f - -t $(IMAGE) $(TOPDIR)
 
 push: build
