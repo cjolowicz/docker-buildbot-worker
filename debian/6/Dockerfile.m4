@@ -11,4 +11,4 @@ RUN echo 'APT::Get::AllowUnauthenticated "true";' >> /etc/apt/apt.conf.d/10-allo
 m4_include(openssl.m4)
 m4_include(curl.m4)
 m4_include(python.m4)
-m4_include(buildbot.m4)
+m4_include(buildbot.m4)m4_dnl

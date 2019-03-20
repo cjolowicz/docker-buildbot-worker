@@ -1,5 +1,4 @@
-m4_include(defines.m4)
-
+m4_include(defines.m4)m4_dnl
 FROM m4_ifelse(
     ARCH, `x86_64',
     `astj/centos5-vault',
@@ -15,4 +14,4 @@ m4_include(perl.m4)
 m4_include(openssl.m4)
 m4_include(curl.m4)
 m4_include(python.m4)
-m4_include(buildbot.m4)
+m4_include(buildbot.m4)m4_dnl

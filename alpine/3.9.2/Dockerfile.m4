@@ -6,4 +6,4 @@ RUN apk add --update --no-cache \
     openssl-dev \
     python3-dev
 
-m4_include(buildbot.m4)
+m4_include(buildbot.m4)m4_dnl
