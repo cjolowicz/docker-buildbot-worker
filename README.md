@@ -6,6 +6,7 @@ This repository contains [buildbot-worker](https://buildbot.net/)
 Docker images for the `x86_64` and `i386` architectures, for the
 following platforms:
 
+- [Centos 5](centos/5/Dockerfile.m4)
 - [Debian 6](debian/6/Dockerfile.m4)
 - [Ubuntu 16.04](ubuntu/16.04/Dockerfile.m4)
 
