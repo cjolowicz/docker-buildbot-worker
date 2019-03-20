@@ -2,9 +2,7 @@
 
 # docker-buildbot-worker
 
-This repository contains [buildbot-worker](https://buildbot.net/)
-Docker images for the `x86_64` and `i386` architectures, for the
-following platforms:
+This repository contains Docker images for [buildbot worker](https://buildbot.net/), for the following platforms and architectures:
 
 | Platform | Dockerfile (by arch) |
 | --- | :---: |
@@ -22,7 +20,7 @@ Building the Docker images requires the
 
 | Target | Description |
 | --- | --- |
-| `make`<br>`make build` | Build the images. |
+| `make build` | Build the images. |
 | `make push` | Upload the images to Docker Hub. |
 | `make login` | Log into Docker Hub. |
 
@@ -34,4 +32,3 @@ to only build the image for Alpine 3.9.2.
 
 The `login` target is provided for non-interactive use (CI) and looks
 for `DOCKER_USERNAME` and `DOCKER_PASSWORD` in the environment.
-
