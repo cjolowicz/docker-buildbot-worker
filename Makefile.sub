@@ -11,14 +11,14 @@ endif
 all: build
 
 Dockerfile.$(ARCH): *.m4 $(INCLUDEDIR)/*.m4
-	m4 -I $(INCLUDEDIR) -P \
+	m4 -I $(INCLUDEDIR) --prefix-builtins \
             -D ARCH=$(ARCH) \
 	    -D PLATFORM=$(PLATFORM) \
 	    -D REPO=$(REPO) \
 	    Dockerfile.m4 > Dockerfile.$(ARCH)
 
 build: Dockerfile.$(ARCH)
-	docker build -t $(IMAGE) -f $(CURDIR)/Dockerfile.$(ARCH) $(TOPDIR)
+	docker build --tag=$(IMAGE) -f $(CURDIR)/Dockerfile.$(ARCH) $(TOPDIR)
 
 push: build
 	docker push $(IMAGE)

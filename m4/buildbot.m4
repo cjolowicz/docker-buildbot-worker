@@ -12,4 +12,4 @@ USER buildbot
 
 COPY buildbot.tac .
 
-CMD ["twistd", "--pidfile=", "-ny", "buildbot.tac"]
+CMD ["twistd", "--pidfile=", "--nodaemon", "--python=buildbot.tac"]
