@@ -1,5 +1,6 @@
-PLATFORM = $(notdir $(abspath $(CURDIR)/..))
-RELEASE = $(notdir $(CURDIR))
+PLATFORM = $(notdir $(abspath $(CURDIR)/../..))
+RELEASE = $(notdir $(abspath $(CURDIR)/..))
+ARCH = $(notdir $(CURDIR))
 
 ifeq ($(strip $(REPO)),)
     IMAGE = buildbot-worker:1.8.0-$(PLATFORM)-$(RELEASE)-$(ARCH)
@@ -9,15 +10,15 @@ endif
 
 all: build
 
-Dockerfile.$(ARCH): *.m4 $(TOPDIR)/*.m4
+Dockerfile: *.m4 $(TOPDIR)/*.m4
 	m4 -I $(TOPDIR) --prefix-builtins \
             -D ARCH=$(ARCH) \
 	    -D PLATFORM=$(PLATFORM) \
 	    -D REPO=$(REPO) \
-	    Dockerfile.m4 > Dockerfile.$(ARCH)
+	    Dockerfile.m4 > Dockerfile
 
-build: Dockerfile.$(ARCH)
-	docker build --tag=$(IMAGE) -f $(CURDIR)/Dockerfile.$(ARCH) $(TOPDIR)
+build: Dockerfile
+	docker build -f $(CURDIR)/Dockerfile --tag=$(IMAGE) $(TOPDIR)
 
 push: build
 	docker push $(IMAGE)

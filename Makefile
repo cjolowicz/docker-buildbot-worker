@@ -1,30 +1,30 @@
 export TOPDIR = $(shell pwd)
 export REPO = $(DOCKER_USERNAME)
 
-DIRS = alpine/3.9.2 centos/5 debian/6 ubuntu/16.04
-ARCHS = x86_64 i386
+DIRS = alpine/3.9.2/x86_64 \
+       alpine/3.9.2/i386 \
+       centos/5/x86_64 \
+       centos/5/i386 \
+       debian/6/x86_64 \
+       debian/6/i386 \
+       ubuntu/16.04/x86_64 \
+       ubuntu/16.04/i386
 
 all: build
 
 prepare:
 	set -ex; for dir in $(DIRS) ; do \
-	    for arch in $(ARCHS) ; do \
-	        $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir ARCH=$$arch Dockerfile.$$arch ; \
-	    done ; \
+	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir Dockerfile ; \
 	done
 
 build:
 	set -ex; for dir in $(DIRS) ; do \
-	    for arch in $(ARCHS) ; do \
-	        $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir ARCH=$$arch build ; \
-	    done ; \
+	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir build ; \
 	done
 
 push:
 	set -ex; for dir in $(DIRS) ; do \
-	    for arch in $(ARCHS) ; do \
-	        $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir ARCH=$$arch push ; \
-	    done ; \
+	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir push ; \
 	done
 
 login:
