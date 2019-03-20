@@ -7,4 +7,5 @@ services:
   - docker
 
 script:
-  - make login push | pv -q -L 3k
+  - make login push | pv > make.log 2>&1
+  - tail --lines=4K make.log
