@@ -17,12 +17,18 @@ Building the Docker images requires the
 
 ## Usage
 
-Invoke `make` to build the images locally, optionally passing `REPO`
-with a Docker Hub repository name. If `DOCKER_USERNAME` is set, `REPO`
-defaults to its value.
+| Target | Description |
+| --- | --- |
+| `make`<br>`make build` | Build the images. |
+| `make push` | Upload the images to Docker Hub. |
+| `make login` | Log into Docker Hub. |
 
-Invoke `make push` to upload the images.
+Pass `REPO` to prefix the images with a Docker Hub repository name. If
+`DOCKER_USERNAME` is set, `REPO` defaults to its value.
 
-Invoke `make login` to log into Docker Hub. This requires the
-environment variables `DOCKER_USERNAME` and `DOCKER_PASSWORD` to be
-set.
+Pass `DIRS` to select individual images, e.g. `make DIRS=alpine/3.9.2`
+to only build the image for Alpine 3.9.2.
+
+The `login` target is provided for non-interactive use (CI) and looks
+for `DOCKER_USERNAME` and `DOCKER_PASSWORD` in the environment.
+
