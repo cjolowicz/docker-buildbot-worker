@@ -24,8 +24,8 @@ Generating the Dockerfiles requires the
 | `make push` | Upload the images to Docker Hub. |
 | `make login` | Log into Docker Hub. |
 
-Pass `REPO` to prefix the images with a Docker Hub repository name. If
-`DOCKER_USERNAME` is set, `REPO` defaults to its value.
+Pass `REPO` to prefix the images with a Docker Hub repository name. The
+default is `DOCKER_USERNAME`.
 
 Pass `DIRS` to select individual images, e.g. `make DIRS=alpine/3.9.2`
 to only build the image for Alpine 3.9.2.
