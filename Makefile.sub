@@ -1,3 +1,4 @@
+INCLUDEDIR = $(TOPDIR)/m4
 PLATFORM = $(notdir $(abspath $(CURDIR)/..))
 RELEASE = $(notdir $(CURDIR))
 
@@ -10,7 +11,7 @@ endif
 all: build
 
 build: Dockerfile.m4
-	m4 -I $(TOPDIR)/m4 -P \
+	m4 -I $(INCLUDEDIR) -P \
             -D ARCH=$(ARCH) \
 	    -D PLATFORM=$(PLATFORM) \
 	    -D REPO=$(REPO) \
