@@ -1,14 +1,4 @@
 m4_dnl
-m4_dnl https://stackoverflow.com/questions/55229056
-m4_dnl
-m4_define(
-    YUM,
-    m4_ifelse(
-        ARCH, `x86_64',
-        `yum',
-        ARCH, `i386',
-        `linux32 yum'))m4_dnl
-m4_dnl
 m4_dnl Download sources, using tuxad.de's curl for TLS 1.2 support.
 m4_dnl Invoke curl with `--insecure` because of this:
 m4_dnl

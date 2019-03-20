@@ -1,3 +1,4 @@
+m4_include(yum.m4)m4_dnl
 m4_include(defines.m4)m4_dnl
 FROM m4_ifelse(
     ARCH, `x86_64',
