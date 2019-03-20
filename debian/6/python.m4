@@ -16,7 +16,7 @@ RUN set -ex; \
 
 ENV PYTHON_VERSION 3.6.8
 
-# https://stackoverflow.com/questions/5937337/building-python-with-ssl-support-in-non-standard-location
+# https://stackoverflow.com/questions/5937337
 COPY python-use-local-openssl.patch /usr/local/src
 
 RUN set -ex; \
@@ -48,7 +48,6 @@ RUN set -ex; \
     rm -rf Python-$PYTHON_VERSION; \
     python3 --version
 
-# make some useful symlinks that are expected to exist
 RUN set -ex; \
     cd /usr/local/bin; \
     ln -s idle3 idle; \

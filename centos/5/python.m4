@@ -1,4 +1,3 @@
-# Install pre-requisites.
 RUN set -ex; \
     YUM update -y; \
     YUM install -y \
@@ -45,7 +44,6 @@ RUN set -ex; \
     rm -rf Python-$PYTHON_VERSION; \
     python3 --version
 
-# make some useful symlinks that are expected to exist
 RUN set -ex; \
     cd /usr/local/bin; \
     ln -s idle3 idle; \
