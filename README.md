@@ -13,7 +13,7 @@ This repository contains Docker images for [buildbot worker](https://buildbot.ne
 
 ## Requirements
 
-Building the Docker images requires the
+Generating the Dockerfiles requires the
 [m4](https://www.gnu.org/software/m4/) preprocessor.
 
 ## Usage
