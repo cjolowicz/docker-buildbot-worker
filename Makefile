@@ -1,7 +1,7 @@
 export TOPDIR = $(shell pwd)
 export REPO = $(DOCKER_USERNAME)
 
-DIRS = centos/5 debian/6 ubuntu/16.04
+DIRS = alpine/3.9.2 centos/5 debian/6 ubuntu/16.04
 ARCHS = x86_64 i386
 
 all: build
