@@ -6,7 +6,6 @@ RUN echo "multilib_policy=best" >> /etc/yum.conf
 
 # OpenSSL requires Perl >= 5.10.0, repositories have 5.8.8.
 RUN set -ex; \
-    linux32 yum update -y; \
     linux32 yum install -y \
         gcc \
         make \
@@ -20,7 +19,6 @@ ENV PERL_VERSION 5.28.1
 RUN set -ex; \
     cd /usr/local/src; \
     rpm -i http://www.tuxad.com/rpms/tuxad-release-5-1.noarch.rpm; \
-    linux32 yum update -y; \
     linux32 yum install -y curl; \
     curl --insecure http://www.cpan.org/src/5.0/perl-$PERL_VERSION.tar.gz -LO; \
     linux32 yum remove -y curl openssl1; \
@@ -41,7 +39,6 @@ ENV OPENSSL_DIR /usr/local/ssl
 RUN set -ex; \
     cd /usr/local/src; \
     rpm -i http://www.tuxad.com/rpms/tuxad-release-5-1.noarch.rpm; \
-    linux32 yum update -y; \
     linux32 yum install -y curl; \
     curl --insecure https://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz -LO; \
     linux32 yum remove -y curl openssl1; \
@@ -69,7 +66,6 @@ ENV PKG_CONFIG_PATH $OPENSSL_DIR/lib/pkgconfig
 ENV CURL_VERSION 7.64.0
 
 RUN set -ex; \
-    linux32 yum update -y; \
     linux32 yum install -y \
         file \
     ; \
@@ -78,7 +74,6 @@ RUN set -ex; \
 RUN set -ex; \
     cd /usr/local/src; \
     rpm -i http://www.tuxad.com/rpms/tuxad-release-5-1.noarch.rpm; \
-    linux32 yum update -y; \
     linux32 yum install -y curl; \
     curl --insecure https://curl.haxx.se/download/curl-$CURL_VERSION.tar.gz -LO; \
     linux32 yum remove -y curl openssl1; \
@@ -101,7 +96,6 @@ ENV PATH /usr/local/bin:$PATH
 ENV PKG_CONFIG_PATH /usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 
 RUN set -ex; \
-    linux32 yum update -y; \
     linux32 yum install -y \
         bzip2 \
         bzip2-devel \
