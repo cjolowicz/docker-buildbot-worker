@@ -11,6 +11,8 @@ This repository contains Docker images for [buildbot worker](https://buildbot.ne
 | Debian 6 | [`x86_64`](debian/6/Dockerfile.x86_64) [`i386`](debian/6/Dockerfile.i386) |
 | Ubuntu 16.04 | [`x86_64`](ubuntu/16.04/Dockerfile.x86_64) [`i386`](ubuntu/16.04/Dockerfile.i386) |
 
+This project has a [changelog](CHANGELOG.md).
+
 ## Requirements
 
 Generating the Dockerfiles requires the
