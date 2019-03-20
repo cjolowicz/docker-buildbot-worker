@@ -1,12 +1,20 @@
-# https://stackoverflow.com/questions/55229056
-m4_define(YUM, m4_ifelse(ARCH, `x86_64', `yum', ARCH, `i386', `linux32 yum'))m4_dnl
-
-# Download sources, using tuxad.de's curl for TLS 1.2 support.
-# Invoke curl with `--insecure` because of this:
-#
-#   curl: (60) SSL certificate problem, verify that the CA cert is OK. Details:
-#   error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
-#
+m4_dnl
+m4_dnl https://stackoverflow.com/questions/55229056
+m4_dnl
+m4_define(
+    YUM,
+    m4_ifelse(
+        ARCH, `x86_64',
+        `yum',
+        ARCH, `i386',
+        `linux32 yum'))m4_dnl
+m4_dnl
+m4_dnl Download sources, using tuxad.de's curl for TLS 1.2 support.
+m4_dnl Invoke curl with `--insecure` because of this:
+m4_dnl
+m4_dnl   curl: (60) SSL certificate problem, verify that the CA cert is OK. Details:
+m4_dnl   error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+m4_dnl
 m4_define(
     CURL,
     rpm -i m4_ifelse(
@@ -25,4 +33,4 @@ m4_define(
         ARCH, `i386',
         `tuxad-release',
     ); \
-    YUM clean all)
+    YUM clean all)m4_dnl
