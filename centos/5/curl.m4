@@ -1,7 +1,6 @@
 ENV CURL_VERSION 7.64.0
 
 RUN set -ex; \
-    YUM update -y; \
     YUM install -y \
         file \
     ; \

@@ -1,5 +1,4 @@
 RUN set -ex; \
-    YUM update -y; \
     YUM install -y \
         gcc \
         make \

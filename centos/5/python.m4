@@ -1,5 +1,4 @@
 RUN set -ex; \
-    YUM update -y; \
     YUM install -y \
         bzip2 \
         bzip2-devel \
