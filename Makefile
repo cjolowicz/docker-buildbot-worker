@@ -5,6 +5,7 @@ DIRS = alpine/3.9.2/x86_64 \
        alpine/3.9.2/i386 \
        centos/5/x86_64 \
        centos/5/i386 \
+       centos/7/x86_64 \
        debian/6/x86_64 \
        debian/6/i386 \
        ubuntu/16.04/x86_64 \

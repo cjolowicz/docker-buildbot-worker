@@ -8,6 +8,7 @@ This repository contains Docker images for [buildbot worker](https://buildbot.ne
 | --- | :---: |
 | Alpine 3.9.2 | [`x86_64`](alpine/3.9.2/Dockerfile.x86_64) [`i386`](alpine/3.9.2/Dockerfile.i386) |
 | Centos 5 | [`x86_64`](centos/5/Dockerfile.x86_64) [`i386`](centos/5/Dockerfile.i386) |
+| Centos 7 | [`x86_64`](centos/7/Dockerfile.x86_64) |
 | Debian 6 | [`x86_64`](debian/6/Dockerfile.x86_64) [`i386`](debian/6/Dockerfile.i386) |
 | Ubuntu 16.04 | [`x86_64`](ubuntu/16.04/Dockerfile.x86_64) [`i386`](ubuntu/16.04/Dockerfile.i386) |
 
