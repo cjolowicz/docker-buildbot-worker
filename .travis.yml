@@ -8,5 +8,4 @@ services:
 
 script:
   - make pull > make.log || true
-  - make login push >> make.log
-  - tail --lines=4K make.log
+  - make login push >> make.log || tail --lines=4K make.log
