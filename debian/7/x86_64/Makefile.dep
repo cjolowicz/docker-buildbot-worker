@@ -1,6 +1,6 @@
 Dockerfile: Dockerfile.m4
-Dockerfile: ../../../debian/7/dependencies.m4
-Dockerfile: ../../../debian/6/openssl.m4
-Dockerfile: ../../../debian/7/python.m4
+Dockerfile: ../dependencies.m4
+Dockerfile: ../../6/openssl.m4
+Dockerfile: ../python.m4
 Dockerfile: ../../../pip.m4
 Dockerfile: ../../../buildbot.m4

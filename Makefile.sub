@@ -42,7 +42,10 @@ pull:
 dep: Makefile.dep
 
 Makefile.dep: $(TOPDIR)/makedep.sh Dockerfile.m4
-	$(TOPDIR)/makedep.sh ../../.. Dockerfile Dockerfile.m4 > Makefile.dep
+	cd $(TOPDIR) && ./makedep.sh \
+	    $(CURDIR)/Dockerfile \
+	    $(CURDIR)/Dockerfile.m4 \
+	    > $(CURDIR)/Makefile.dep
 
 .PHONY: all build push pull dep
 

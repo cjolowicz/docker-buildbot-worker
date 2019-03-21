@@ -1,15 +1,16 @@
 #!/bin/bash
 
-includedir=$1
+arg=$1
 shift
 
-target=$1
-shift
+target=$(basename $arg)
+targetdir=$(dirname $arg)
 
 for file
 do
-    echo "$target: $file"
+    dependency=$(realpath --relative-to=$targetdir "$file")
+    echo "$target: $dependency"
     grep -o 'm4_include([^)]*)' "$file" |
-        sed -e "s:^m4_include(:$includedir/:" -e 's:)$::' |
-        xargs $0 "$includedir" "$target"
+        sed -e "s/^m4_include(//" -e 's/)$//' |
+        xargs $0 "$arg"
 done
