@@ -20,12 +20,18 @@ and architectures:
 
 This project has a [changelog](CHANGELOG.md).
 
-## Requirements
+## Usage
+
+Use `docker run --init` to install
+[tini](https://github.com/krallin/tini) as an entrypoint. This will
+ensure that any zombie processes created by builds are reaped before
+the container exits.
+
+## Building
 
 Generating the Dockerfiles requires the
-[m4](https://www.gnu.org/software/m4/) preprocessor.
-
-## Usage
+[GNU m4](https://www.gnu.org/software/m4/) preprocessor and
+[GNU make](https://www.gnu.org/software/make/).
 
 | Target | Description |
 | --- | --- |
