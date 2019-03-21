@@ -1,3 +1,7 @@
 FROM i386/debian:wheezy
 
-m4_include(debian/7/main.m4)m4_dnl
+m4_include(debian/7/dependencies.m4)
+m4_include(debian/6/openssl.m4)
+m4_include(debian/7/python.m4)
+m4_include(pip.m4)
+m4_include(buildbot.m4)m4_dnl

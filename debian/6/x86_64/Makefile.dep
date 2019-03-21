@@ -1,5 +1,5 @@
 Dockerfile: Dockerfile.m4
-Dockerfile: ../../../debian/6/main.m4
+Dockerfile: ../../../debian/6/apt.m4
 Dockerfile: ../../../debian/6/openssl.m4
 Dockerfile: ../../../debian/6/curl.m4
 Dockerfile: ../../../debian/6/python.m4
