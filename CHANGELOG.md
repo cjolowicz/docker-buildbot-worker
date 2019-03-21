@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - x86_64
   - i386
 - Supported platforms:
-  - Alpine 3.9.2
+  - Alpine 3.9
   - CentOS 5
   - CentOS 7 (x86_64 only)
   - Debian 6

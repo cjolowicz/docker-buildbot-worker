@@ -1,8 +1,8 @@
 export TOPDIR = $(shell pwd)
 export REPO = $(DOCKER_USERNAME)
 
-DIRS = alpine/3.9.2/x86_64 \
-       alpine/3.9.2/i386 \
+DIRS = alpine/3.9/x86_64 \
+       alpine/3.9/i386 \
        centos/5/x86_64 \
        centos/5/i386 \
        centos/7/x86_64 \

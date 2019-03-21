@@ -1,4 +1,4 @@
-FROM i386/alpine:3.9.2
+FROM alpine:3.9
 
 RUN apk add --update --no-cache \
     build-base \

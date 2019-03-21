@@ -8,7 +8,7 @@ and architectures:
 
 | Platform | Dockerfile (by arch) |
 | --- | :---: |
-| Alpine 3.9.2 | [`x86_64`](alpine/3.9.2/x86_64/Dockerfile) [`i386`](alpine/3.9.2/i386/Dockerfile) |
+| Alpine 3.9 | [`x86_64`](alpine/3.9/x86_64/Dockerfile) [`i386`](alpine/3.9/i386/Dockerfile) |
 | Centos 5 | [`x86_64`](centos/5/x86_64/Dockerfile) [`i386`](centos/5/i386/Dockerfile) |
 | Centos 7 | [`x86_64`](centos/7/x86_64/Dockerfile) |
 | Debian 6 (squeeze) | [`x86_64`](debian/6/x86_64/Dockerfile) [`i386`](debian/6/i386/Dockerfile) |
@@ -38,8 +38,8 @@ Generating the Dockerfiles requires the
 Pass `REPO` to prefix the images with a Docker Hub repository name. The
 default is `DOCKER_USERNAME`.
 
-Pass `DIRS` to select individual images, e.g. `make DIRS=alpine/3.9.2`
-to only build the image for Alpine 3.9.2.
+Pass `DIRS` to select individual images, e.g. `make DIRS=alpine/3.9`
+to only build the image for Alpine 3.9.
 
 The `login` target is provided for non-interactive use and looks
 for `DOCKER_USERNAME` and `DOCKER_PASSWORD`.
