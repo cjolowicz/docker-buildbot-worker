@@ -7,6 +7,6 @@ services:
   - docker
 
 script:
-  - make pull || true
-  - make login push > make.log
+  - make pull > make.log || true
+  - make login push >> make.log
   - tail --lines=4K make.log
