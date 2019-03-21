@@ -1,5 +1,6 @@
 Dockerfile: Dockerfile.m4
 Dockerfile: ../dependencies.m4
+Dockerfile: ../../openssl-deps.m4
 Dockerfile: ../../openssl.m4
 Dockerfile: ../python.m4
 Dockerfile: ../../../pip.m4
