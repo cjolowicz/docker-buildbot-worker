@@ -15,7 +15,9 @@ DIRS = alpine/3.9.2/x86_64 \
        debian/9/x86_64 \
        debian/9/i386 \
        ubuntu/16.04/x86_64 \
-       ubuntu/16.04/i386
+       ubuntu/16.04/i386 \
+       ubuntu/18.04/x86_64 \
+       ubuntu/18.04/i386
 
 all: build
 
