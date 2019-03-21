@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-- Initial version for buildbot 1.8.0.
+- Initial version: buildbot 1.8.0
 - Supported architectures:
   - x86_64
   - i386
@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - CentOS 5
   - CentOS 7 (x86_64 only)
   - Debian 6
+  - Debian 9
   - Ubuntu 16.04
 
 [Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/commits/master
