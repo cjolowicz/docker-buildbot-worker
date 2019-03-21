@@ -1,4 +1,3 @@
-INCLUDEDIR = $(TOPDIR)/m4
 PLATFORM = $(notdir $(abspath $(CURDIR)/..))
 RELEASE = $(notdir $(CURDIR))
 
@@ -10,8 +9,8 @@ endif
 
 all: build
 
-Dockerfile.$(ARCH): *.m4 $(INCLUDEDIR)/*.m4
-	m4 -I $(INCLUDEDIR) --prefix-builtins \
+Dockerfile.$(ARCH): *.m4 $(TOPDIR)/*.m4
+	m4 -I $(TOPDIR) --prefix-builtins \
             -D ARCH=$(ARCH) \
 	    -D PLATFORM=$(PLATFORM) \
 	    -D REPO=$(REPO) \
