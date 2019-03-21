@@ -12,9 +12,10 @@ all: build
 
 Dockerfile: *.m4 $(TOPDIR)/*.m4
 	m4 -I $(TOPDIR) --prefix-builtins \
-            -D ARCH=$(ARCH) \
-	    -D PLATFORM=$(PLATFORM) \
 	    -D REPO=$(REPO) \
+	    -D PLATFORM=$(PLATFORM) \
+	    -D RELEASE=$(RELEASE) \
+	    -D ARCH=$(ARCH) \
 	    Dockerfile.m4 > Dockerfile
 
 build: Dockerfile
