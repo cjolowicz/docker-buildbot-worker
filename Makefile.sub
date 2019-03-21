@@ -19,7 +19,8 @@ Dockerfile:
 	    Dockerfile.m4 > Dockerfile
 
 build: Dockerfile
-	if docker image ls --format '{{.Repository}}:{{.Tag}}' | grep -q '^$(IMAGE)$$' ; then \
+	if docker image ls --format='{{.Repository}}:{{.Tag}}' | \
+	        grep -q '^$(IMAGE)$$' ; then \
 	    docker build \
 	        --file=$(CURDIR)/Dockerfile \
 	        --tag=$(IMAGE) \
