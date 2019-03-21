@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - CentOS 5
   - CentOS 7 (x86_64 only)
   - Debian 6
+  - Debian 7
   - Debian 8
   - Debian 9
   - Ubuntu 16.04

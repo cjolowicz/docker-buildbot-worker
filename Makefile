@@ -8,6 +8,8 @@ DIRS = alpine/3.9.2/x86_64 \
        centos/7/x86_64 \
        debian/6/x86_64 \
        debian/6/i386 \
+       debian/7/x86_64 \
+       debian/7/i386 \
        debian/8/x86_64 \
        debian/8/i386 \
        debian/9/x86_64 \
