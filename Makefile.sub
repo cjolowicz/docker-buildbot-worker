@@ -2,6 +2,8 @@ PLATFORM = $(notdir $(abspath $(CURDIR)/../..))
 RELEASE = $(notdir $(abspath $(CURDIR)/..))
 ARCH = $(notdir $(CURDIR))
 
+M4_CURDIR = $(TOPDIR)/m4/$(PLATFORM)/$(RELEASE)/$(ARCH)
+
 ifeq ($(strip $(REPO)),)
     IMAGE = buildbot-worker:1.8.0-$(PLATFORM)-$(RELEASE)-$(ARCH)
 else
@@ -11,12 +13,13 @@ endif
 all: build
 
 Dockerfile:
-	m4 -I $(TOPDIR) --prefix-builtins \
+	m4 -I $(TOPDIR)/m4 --prefix-builtins \
 	    -D REPO=$(REPO) \
 	    -D PLATFORM=$(PLATFORM) \
 	    -D RELEASE=$(RELEASE) \
 	    -D ARCH=$(ARCH) \
-	    Dockerfile.m4 > Dockerfile
+	    $(M4_CURDIR)/Dockerfile.m4 \
+	    > Dockerfile
 
 build: Dockerfile
 	if docker image ls --format='{{.Repository}}:{{.Tag}}' | \
@@ -41,10 +44,10 @@ pull:
 
 dep: Makefile.dep
 
-Makefile.dep: $(TOPDIR)/makedep.sh Dockerfile.m4
-	cd $(TOPDIR) && ./makedep.sh \
+Makefile.dep: $(TOPDIR)/makedep.sh $(M4_CURDIR)/Dockerfile.m4
+	cd $(TOPDIR)/m4 && ../makedep.sh \
 	    $(CURDIR)/Dockerfile \
-	    $(CURDIR)/Dockerfile.m4 \
+	    $(M4_CURDIR)/Dockerfile.m4 \
 	    > $(CURDIR)/Makefile.dep
 
 .PHONY: all build push pull dep

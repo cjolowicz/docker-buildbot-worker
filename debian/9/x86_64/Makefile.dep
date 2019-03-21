@@ -1,3 +1,3 @@
-Dockerfile: Dockerfile.m4
-Dockerfile: ../../dependencies.m4
-Dockerfile: ../../../buildbot.m4
+Dockerfile: ../../../m4/debian/9/x86_64/Dockerfile.m4
+Dockerfile: ../../../m4/debian/dependencies.m4
+Dockerfile: ../../../m4/buildbot.m4

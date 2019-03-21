@@ -1,8 +1,8 @@
-Dockerfile: Dockerfile.m4
-Dockerfile: ../apt.m4
-Dockerfile: ../../openssl-deps.m4
-Dockerfile: ../../../openssl.m4
-Dockerfile: ../curl.m4
-Dockerfile: ../python.m4
-Dockerfile: ../../../pip.m4
-Dockerfile: ../../../buildbot.m4
+Dockerfile: ../../../m4/debian/6/x86_64/Dockerfile.m4
+Dockerfile: ../../../m4/debian/6/apt.m4
+Dockerfile: ../../../m4/debian/openssl-deps.m4
+Dockerfile: ../../../m4/openssl.m4
+Dockerfile: ../../../m4/debian/6/curl.m4
+Dockerfile: ../../../m4/debian/6/python.m4
+Dockerfile: ../../../m4/pip.m4
+Dockerfile: ../../../m4/buildbot.m4
