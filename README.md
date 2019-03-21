@@ -28,10 +28,11 @@ Generating the Dockerfiles requires the
 
 | Target | Description |
 | --- | --- |
-| `make prepare` | Generate the Dockerfiles. |
 | `make build` | Build the images. |
 | `make push` | Upload the images to Docker Hub. |
 | `make login` | Log into Docker Hub. |
+| `make dep` | Generate the dependency rules. |
+| `make prepare` | Generate the Dockerfiles. |
 
 Pass `REPO` to prefix the images with a Docker Hub repository name. The
 default is `DOCKER_USERNAME`.

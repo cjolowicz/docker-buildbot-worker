@@ -10,7 +10,7 @@ endif
 
 all: build
 
-Dockerfile: *.m4 $(TOPDIR)/*.m4
+Dockerfile:
 	m4 -I $(TOPDIR) --prefix-builtins \
 	    -D REPO=$(REPO) \
 	    -D PLATFORM=$(PLATFORM) \
@@ -24,4 +24,11 @@ build: Dockerfile
 push: build
 	docker push $(IMAGE)
 
-.PHONY: all build push
+dep: Makefile.dep
+
+Makefile.dep: $(TOPDIR)/makedep.sh Dockerfile.m4
+	$(TOPDIR)/makedep.sh ../../.. Dockerfile Dockerfile.m4 > Makefile.dep
+
+.PHONY: all build push dep
+
+include Makefile.dep

@@ -37,4 +37,9 @@ push:
 login:
 	echo "$(DOCKER_PASSWORD)" | docker login -u $(DOCKER_USERNAME) --password-stdin
 
-.PHONY: all prepare build push login
+dep:
+	set -ex; for dir in $(DIRS) ; do \
+	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir dep ; \
+	done
+
+.PHONY: all prepare build push login dep
