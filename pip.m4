@@ -2,7 +2,7 @@ ENV PYTHON_PIP_VERSION 19.0.3
 
 RUN set -ex; \
     cd /usr/local/src; \
-    curl m4_ifelse(PLATFORM RELEASE, debian 7, `--insecure ')-LO 'https://bootstrap.pypa.io/get-pip.py'; \
+    curl -LO 'https://bootstrap.pypa.io/get-pip.py'; \
     python3 get-pip.py \
         --disable-pip-version-check \
         --no-cache-dir \
