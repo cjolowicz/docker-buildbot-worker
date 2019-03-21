@@ -31,7 +31,8 @@ RUN set -ex; \
         --openssldir=$OPENSSL_DIR \
         shared \
         zlib \
-        enable-egd ; \
+        enable-egd  \
+    ; \
     make -j "$(nproc)"; \
     make install_sw; \
     cd ..; \

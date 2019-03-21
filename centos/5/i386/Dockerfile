@@ -50,9 +50,13 @@ RUN set -ex; \
     ./Configure -m32 linux-generic32 \
         --prefix=$OPENSSL_DIR \
         --openssldir=$OPENSSL_DIR \
-        shared zlib no-async enable-egd \
-        -Wl,-rpath,$OPENSSL_DIR/lib; \
-    make -j $(grep -c processor /proc/cpuinfo); \
+        shared \
+        zlib \
+        enable-egd \
+        no-async \
+        -Wl,-rpath,$OPENSSL_DIR/lib \
+    ; \
+    make -j "$(grep -c processor /proc/cpuinfo)"; \
     make install_sw; \
     cd ..; \
     rm -rf openssl-$OPENSSL_VERSION; \

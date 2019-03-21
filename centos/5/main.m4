@@ -6,7 +6,7 @@ RUN echo "multilib_policy=best" >> /etc/yum.conf
 
 # OpenSSL requires Perl >= 5.10.0, repositories have 5.8.8.
 m4_include(centos/5/perl.m4)
-m4_include(centos/5/openssl.m4)
+m4_include(openssl.m4)
 m4_include(centos/5/curl.m4)
 m4_include(centos/5/python.m4)
 m4_include(pip.m4)

@@ -1,9 +1,16 @@
-ENV OPENSSL_VERSION 1.1.1b
+m4_define(NPROC,
+    m4_ifelse(
+        PLATFORM, centos,
+        grep -c processor /proc/cpuinfo,
+        nproc))m4_dnl
+ENV OPENSSL_VERSION m4_ifelse(PLATFORM, centos, 1.1.0j, 1.1.1b)
 ENV OPENSSL_DIR /usr/local/ssl
 
 RUN set -ex; \
     cd /usr/local/src; \
-    curl https://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz -LO; \
+    m4_ifdef(`CURL',
+        CURL(https://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz -LO),
+        curl https://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz -LO); \
     tar -xf openssl-$OPENSSL_VERSION.tar.gz; \
     rm -f openssl-$OPENSSL_VERSION.tar.gz; \
     cd openssl-$OPENSSL_VERSION; \
@@ -16,8 +23,11 @@ RUN set -ex; \
         --openssldir=$OPENSSL_DIR \
         shared \
         zlib \
-        enable-egd ; \
-    make -j "$(nproc)"; \
+        enable-egd m4_ifelse(PLATFORM, centos, `\
+        no-async \
+        -Wl,-rpath,$OPENSSL_DIR/lib') \
+    ; \
+    make -j "$(NPROC)"; \
     make install_sw; \
     cd ..; \
     rm -rf openssl-$OPENSSL_VERSION; \
