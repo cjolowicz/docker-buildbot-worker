@@ -44,11 +44,6 @@ RUN set -ex; \
 ENV PATH $OPENSSL_DIR/bin:$PATH
 ENV PKG_CONFIG_PATH $OPENSSL_DIR/lib/pkgconfig
 
-ENV PATH /usr/local/bin:$PATH
-
-# http://bugs.python.org/issue19846
-ENV LANG C.UTF-8
-
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
         libbz2-dev \
@@ -66,6 +61,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         uuid-dev \
         xz-utils \
     && rm -rf /var/lib/apt/lists/*
+
+ENV PATH /usr/local/bin:$PATH
+
+# http://bugs.python.org/issue19846
+ENV LANG C.UTF-8
 
 ENV PYTHON_VERSION 3.7.2
 
