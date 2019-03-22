@@ -3,7 +3,7 @@ ENV CURL_VERSION 7.64.0
 RUN set -ex; \
     cd /usr/local/src; \
     m4_ifelse(PLATFORM, centos,
-    CURL(https://curl.haxx.se/download/curl-$CURL_VERSION.tar.gz -LO),
+    M4_TUXAD_CURL(https://curl.haxx.se/download/curl-$CURL_VERSION.tar.gz -LO),
     curl -LO https://dl.uxnr.de/mirror/curl/curl-$CURL_VERSION.tar.gz); \
     tar -xf curl-$CURL_VERSION.tar.gz; \
     rm -f curl-$CURL_VERSION.tar.gz; \
