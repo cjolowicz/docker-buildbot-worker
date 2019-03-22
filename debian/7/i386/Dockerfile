@@ -73,7 +73,7 @@ ENV PYTHON_VERSION 3.7.2
 COPY python-use-local-openssl.patch /usr/local/src
 
 RUN set -ex; \
-    curl --insecure -LO "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz"; \
+    curl -LO "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz"; \
     tar -xJC /usr/local/src -f Python-$PYTHON_VERSION.tar.xz; \
     rm Python-$PYTHON_VERSION.tar.xz; \
     cd /usr/local/src/Python-$PYTHON_VERSION; \
