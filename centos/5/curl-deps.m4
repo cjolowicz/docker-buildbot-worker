@@ -1,5 +1,5 @@
 RUN set -ex; \
-    YUM install -y \
+    M4_YUM install -y \
         file \
     ; \
-    YUM clean all
+    M4_YUM clean all

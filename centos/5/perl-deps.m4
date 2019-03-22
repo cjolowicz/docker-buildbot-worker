@@ -1,8 +1,8 @@
 RUN set -ex; \
-    YUM install -y \
+    M4_YUM install -y \
         gcc \
         make \
         openldap-devel \
         zlib-devel \
     ; \
-    YUM clean all
+    M4_YUM clean all

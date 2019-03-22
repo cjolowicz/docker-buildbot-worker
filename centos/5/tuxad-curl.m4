@@ -13,13 +13,13 @@ m4_define(
         ARCH, `i386',
         `http://www.tuxad.com/rpms/tuxad-release-5-1.noarch.rpm',
     ); \
-    YUM install -y curl; \
+    M4_YUM install -y curl; \
     curl --insecure $1; \
-    YUM remove -y curl openssl1; \
+    M4_YUM remove -y curl openssl1; \
     rpm --erase m4_ifelse(
         ARCH, `x86_64',
         `tuxad-release-5-7',
         ARCH, `i386',
         `tuxad-release',
     ); \
-    YUM clean all)m4_dnl
+    M4_YUM clean all)m4_dnl

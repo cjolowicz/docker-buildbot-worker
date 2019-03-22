@@ -1,5 +1,5 @@
 RUN set -ex; \
-    YUM install -y \
+    M4_YUM install -y \
         bzip2 \
         bzip2-devel \
         findutils \
@@ -11,4 +11,4 @@ RUN set -ex; \
         xz-devel \
         zlib-devel \
     ; \
-    YUM clean all
+    M4_YUM clean all
