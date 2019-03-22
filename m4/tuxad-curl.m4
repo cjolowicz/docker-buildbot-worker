@@ -6,7 +6,7 @@ m4_dnl   curl: (60) SSL certificate problem, verify that the CA cert is OK. Deta
 m4_dnl   error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
 m4_dnl
 m4_define(
-    M4_TUXAD_CURL,
+    `M4_TUXAD_CURL',
     rpm -i m4_ifelse(
         ARCH, `x86_64',
         `http://www.tuxad.de/repo/5/tuxad.rpm',
