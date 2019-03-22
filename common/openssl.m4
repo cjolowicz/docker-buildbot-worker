@@ -23,7 +23,7 @@ RUN set -ex; \
         no-async \
         -Wl,-rpath,$OPENSSL_DIR/lib') \
     ; \
-    make -j "$(NPROC)"; \
+    make -j "$(M4_NPROC)"; \
     make install_sw; \
     cd ..; \
     rm -rf openssl-$OPENSSL_VERSION; \

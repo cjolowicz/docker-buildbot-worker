@@ -1,4 +1,4 @@
-m4_define(NPROC,
+m4_define(`M4_NPROC',
     m4_ifelse(
         PLATFORM, centos,
         grep -c processor /proc/cpuinfo,

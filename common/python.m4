@@ -26,7 +26,7 @@ RUN set -ex; \
         CPPFLAGS="$(pkg-config --cflags openssl) -Wl,-R$OPENSSL_DIR/lib" \
         LDFLAGS="$(pkg-config --libs openssl) -Wl,-R$OPENSSL_DIR/lib" \
     ; \
-    make -j "$(NPROC)"; \
+    make -j "$(M4_NPROC)"; \
     make install; m4_ifelse(PLATFORM, debian, \
     ldconfig; )\
     find /usr/local -depth \
