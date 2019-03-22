@@ -116,7 +116,7 @@ RUN set -ex; \
 
 ENV PYTHON_VERSION 3.6.8
 
-# https://stackoverflow.com/questions/5937337/building-python-with-ssl-support-in-non-standard-location
+# https://stackoverflow.com/questions/5937337
 COPY python-use-local-openssl.patch /usr/local/src
 
 RUN set -ex; \
@@ -131,7 +131,7 @@ RUN set -ex; \
         --without-ensurepip \
         CPPFLAGS="$(pkg-config --cflags openssl) -Wl,-R$OPENSSL_DIR/lib" \
         LDFLAGS="$(pkg-config --libs openssl) -Wl,-R$OPENSSL_DIR/lib"; \
-    make -j $(grep -c processor /proc/cpuinfo); \
+    make -j "$(grep -c processor /proc/cpuinfo)"; \
     make install; \
     find /usr/local -depth \
         \( \

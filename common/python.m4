@@ -1,6 +1,6 @@
 ENV PYTHON_VERSION 3.6.8
 
-# https://stackoverflow.com/questions/5937337/building-python-with-ssl-support-in-non-standard-location
+# https://stackoverflow.com/questions/5937337
 COPY python-use-local-openssl.patch /usr/local/src
 
 RUN set -ex; \
@@ -11,12 +11,16 @@ RUN set -ex; \
     cd Python-$PYTHON_VERSION; \
     patch -p1 < ../python-use-local-openssl.patch; \
     ./configure \
-        --enable-loadable-sqlite-extensions \
+        --enable-loadable-sqlite-extensions m4_ifelse(PLATFORM, debian, \
+        --enable-shared \
+        --with-system-expat \
+        --with-system-ffi )\
         --without-ensurepip \
         CPPFLAGS="$(pkg-config --cflags openssl) -Wl,-R$OPENSSL_DIR/lib" \
         LDFLAGS="$(pkg-config --libs openssl) -Wl,-R$OPENSSL_DIR/lib"; \
-    make -j $(grep -c processor /proc/cpuinfo); \
-    make install; \
+    make -j "$(NPROC)"; \
+    make install; m4_ifelse(PLATFORM, debian, \
+    ldconfig; )\
     find /usr/local -depth \
         \( \
             \( -type d -a \( -name test -o -name tests \) \) \

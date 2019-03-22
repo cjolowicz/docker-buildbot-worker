@@ -120,7 +120,7 @@ RUN set -ex; \
             \( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) \
         \) -exec rm -rf '{}' + \
     ; \
-    cd .. ; \
+    cd ..; \
     rm -rf Python-$PYTHON_VERSION; \
     python3 --version
 
