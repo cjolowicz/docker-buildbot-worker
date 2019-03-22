@@ -28,7 +28,7 @@ RUN set -ex; \
     rm -f perl-$PERL_VERSION.tar.gz; \
     cd perl-$PERL_VERSION; \
     ./Configure -des; \
-    make -j $(grep -c processor /proc/cpuinfo); \
+    make -j "$(grep -c processor /proc/cpuinfo)"; \
     make install; \
     cd ..; \
     rm -rf perl-$PERL_VERSION
