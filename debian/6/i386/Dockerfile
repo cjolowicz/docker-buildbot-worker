@@ -109,7 +109,8 @@ RUN set -ex; \
         --with-system-ffi \
         --without-ensurepip \
         CPPFLAGS="$(pkg-config --cflags openssl) -Wl,-R$OPENSSL_DIR/lib" \
-        LDFLAGS="$(pkg-config --libs openssl) -Wl,-R$OPENSSL_DIR/lib"; \
+        LDFLAGS="$(pkg-config --libs openssl) -Wl,-R$OPENSSL_DIR/lib" \
+    ; \
     make -j "$(nproc)"; \
     make install; \
     ldconfig; \

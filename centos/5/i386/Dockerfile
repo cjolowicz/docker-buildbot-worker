@@ -130,7 +130,8 @@ RUN set -ex; \
         --enable-loadable-sqlite-extensions \
         --without-ensurepip \
         CPPFLAGS="$(pkg-config --cflags openssl) -Wl,-R$OPENSSL_DIR/lib" \
-        LDFLAGS="$(pkg-config --libs openssl) -Wl,-R$OPENSSL_DIR/lib"; \
+        LDFLAGS="$(pkg-config --libs openssl) -Wl,-R$OPENSSL_DIR/lib" \
+    ; \
     make -j "$(grep -c processor /proc/cpuinfo)"; \
     make install; \
     find /usr/local -depth \

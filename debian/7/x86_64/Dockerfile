@@ -78,10 +78,11 @@ ENV PYTHON_VERSION 3.7.2
 COPY python-use-local-openssl.patch /usr/local/src
 
 RUN set -ex; \
-    curl -LO "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz"; \
-    tar -xJC /usr/local/src -f Python-$PYTHON_VERSION.tar.xz; \
-    rm Python-$PYTHON_VERSION.tar.xz; \
-    cd /usr/local/src/Python-$PYTHON_VERSION; \
+    cd /usr/local/src; \
+    curl https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tgz -LO; \
+    tar -xf Python-$PYTHON_VERSION.tgz; \
+    rm -f Python-$PYTHON_VERSION.tgz; \
+    cd Python-$PYTHON_VERSION; \
     patch -p1 < ../python-use-local-openssl.patch; \
     ./configure \
         --enable-loadable-sqlite-extensions \
@@ -102,7 +103,8 @@ RUN set -ex; \
             \( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) \
         \) -exec rm -rf '{}' + \
     ; \
-    rm -rf /usr/local/src/Python-$PYTHON_VERSION; \
+    cd ..; \
+    rm -rf Python-$PYTHON_VERSION; \
     python3 --version
 
 RUN set -ex; \
