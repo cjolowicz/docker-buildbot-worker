@@ -1,5 +1,6 @@
 FROM debian:wheezy
 
+m4_include(debian/7/apt.m4)
 RUN apt-get update && apt-get install -y --no-install-recommends \
         ca-certificates \
     && rm -rf /var/lib/apt/lists/*

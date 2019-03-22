@@ -1,5 +1,10 @@
 FROM i386/debian:wheezy
 
+RUN sed -i \
+        -e s/deb.debian.org/archive.debian.org/ \
+        -e /wheezy-updates/d \
+        /etc/apt/sources.list
+
 RUN apt-get update && apt-get install -y --no-install-recommends \
         ca-certificates \
     && rm -rf /var/lib/apt/lists/*
