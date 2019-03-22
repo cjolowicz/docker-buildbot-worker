@@ -1,12 +1,3 @@
-RUN set -ex; \
-    YUM install -y \
-        gcc \
-        make \
-        openldap-devel \
-        zlib-devel \
-    ; \
-    YUM clean all
-
 ENV PERL_VERSION 5.28.1
 
 RUN set -ex; \
