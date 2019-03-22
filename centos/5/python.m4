@@ -1,18 +1,3 @@
-RUN set -ex; \
-    YUM install -y \
-        bzip2 \
-        bzip2-devel \
-        findutils \
-        patch \
-        readline-devel \
-        sqlite \
-        sqlite-devel \
-        xz \
-        xz-devel \
-        zlib-devel \
-    ; \
-    YUM clean all
-
 ENV PYTHON_VERSION 3.6.8
 
 # https://stackoverflow.com/questions/5937337/building-python-with-ssl-support-in-non-standard-location

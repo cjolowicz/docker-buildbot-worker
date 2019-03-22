@@ -9,6 +9,7 @@ m4_include(centos/5/perl.m4)
 m4_include(common/openssl.m4)
 m4_include(centos/5/curl-deps.m4)
 m4_include(common/curl.m4)
+m4_include(centos/5/python-deps.m4)
 m4_include(centos/5/python.m4)
 m4_include(common/pip.m4)
 m4_include(common/buildbot.m4)m4_dnl
