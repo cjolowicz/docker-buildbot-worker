@@ -79,7 +79,7 @@ RUN set -ex; \
     cd /usr/local/src; \
     rpm -i http://www.tuxad.com/rpms/tuxad-release-5-1.noarch.rpm; \
     linux32 yum install -y curl; \
-    curl --insecure https://curl.haxx.se/download/curl-$CURL_VERSION.tar.gz -LO; \
+    curl --insecure -LO https://curl.haxx.se/download/curl-$CURL_VERSION.tar.gz; \
     linux32 yum remove -y curl openssl1; \
     rpm --erase tuxad-release; \
     linux32 yum clean all; \

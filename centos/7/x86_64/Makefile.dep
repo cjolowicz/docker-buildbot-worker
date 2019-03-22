@@ -1,6 +1,8 @@
 Dockerfile: Dockerfile.m4
 Dockerfile: ../../../common/buildbot.m4
 Dockerfile: ../../../m4/index.m4
+Dockerfile: ../../../m4/curl.m4
+Dockerfile: ../../../m4/tuxad-curl.m4
 Dockerfile: ../../../m4/nproc.m4
 Dockerfile: ../../../m4/tuxad-curl.m4
 Dockerfile: ../../../m4/yum.m4

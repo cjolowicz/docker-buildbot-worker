@@ -3,9 +3,7 @@ ENV OPENSSL_DIR /usr/local/ssl
 
 RUN set -ex; \
     cd /usr/local/src; \
-    m4_ifelse(PLATFORM, centos,
-    M4_TUXAD_CURL(https://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz -LO),
-    curl https://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz -LO); \
+    M4_CURL(https://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz -LO); \
     tar -xf openssl-$OPENSSL_VERSION.tar.gz; \
     rm -f openssl-$OPENSSL_VERSION.tar.gz; \
     cd openssl-$OPENSSL_VERSION; \
