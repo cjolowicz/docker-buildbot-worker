@@ -1,12 +1,6 @@
 ENV CURL_VERSION 7.64.0
 
 RUN set -ex; \
-    YUM install -y \
-        file \
-    ; \
-    YUM clean all
-
-RUN set -ex; \
     cd /usr/local/src; \
     CURL(https://curl.haxx.se/download/curl-$CURL_VERSION.tar.gz -LO); \
     tar -xf curl-$CURL_VERSION.tar.gz; \

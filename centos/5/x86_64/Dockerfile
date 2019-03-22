@@ -67,13 +67,13 @@ RUN set -ex; \
 ENV PATH $OPENSSL_DIR/bin:$PATH
 ENV PKG_CONFIG_PATH $OPENSSL_DIR/lib/pkgconfig
 
-ENV CURL_VERSION 7.64.0
-
 RUN set -ex; \
     yum install -y \
         file \
     ; \
     yum clean all
+
+ENV CURL_VERSION 7.64.0
 
 RUN set -ex; \
     cd /usr/local/src; \
