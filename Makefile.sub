@@ -41,7 +41,7 @@ pull:
 
 dep: Makefile.dep
 
-Makefile.dep: $(TOPDIR)/makedep.sh Dockerfile.m4
+Makefile.dep: $(TOPDIR)/makedep.sh $(shell find $(TOPDIR) -name '*.m4')
 	cd $(TOPDIR) && ./makedep.sh \
 	    $(CURDIR)/Dockerfile \
 	    $(CURDIR)/Dockerfile.m4 \
