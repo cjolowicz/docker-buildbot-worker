@@ -2,7 +2,7 @@ Dockerfile: Dockerfile.m4
 Dockerfile: ../apt.m4
 Dockerfile: ../../openssl-deps.m4
 Dockerfile: ../../../common/openssl.m4
-Dockerfile: ../curl-deps.m4
+Dockerfile: ../../curl-deps.m4
 Dockerfile: ../../../common/curl.m4
 Dockerfile: ../python-deps.m4
 Dockerfile: ../../../common/python.m4

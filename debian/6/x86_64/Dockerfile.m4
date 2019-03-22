@@ -3,7 +3,7 @@ FROM debian/eol:squeeze
 m4_include(debian/6/apt.m4)
 m4_include(debian/openssl-deps.m4)
 m4_include(common/openssl.m4)
-m4_include(debian/6/curl-deps.m4)
+m4_include(debian/curl-deps.m4)
 m4_include(common/curl.m4)
 RUN apt-get purge -y curl libcurl3
 
