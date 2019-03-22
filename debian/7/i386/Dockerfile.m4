@@ -1,6 +1,9 @@
 FROM i386/debian:wheezy
 
-m4_include(debian/7/dependencies.m4)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
 m4_include(debian/openssl-deps.m4)
 m4_include(common/openssl.m4)
 m4_include(debian/7/python-deps.m4)
