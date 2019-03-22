@@ -86,11 +86,11 @@ RUN set -ex; \
     tar -xf curl-$CURL_VERSION.tar.gz; \
     rm -f curl-$CURL_VERSION.tar.gz; \
     cd curl-$CURL_VERSION; \
-    LDFLAGS=-Wl,-R$OPENSSL_DIR/lib \
+    LDFLAGS="-Wl,-R/usr/local/lib:$OPENSSL_DIR/lib" \
     ./configure \
         --with-ssl=$OPENSSL_DIR \
         --host=i686-pc-linux-gnu CFLAGS=-m32; \
-    make -j $(grep -c processor /proc/cpuinfo); \
+    make -j "$(grep -c processor /proc/cpuinfo)"; \
     make install; \
     cd ..; \
     rm -rf curl-$CURL_VERSION; \

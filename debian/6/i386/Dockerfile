@@ -56,7 +56,6 @@ ENV CURL_VERSION 7.64.0
 RUN set -ex; \
     cd /usr/local/src; \
     curl -LO https://dl.uxnr.de/mirror/curl/curl-$CURL_VERSION.tar.gz; \
-    apt-get purge -y curl libcurl3; \
     tar -xf curl-$CURL_VERSION.tar.gz; \
     rm -f curl-$CURL_VERSION.tar.gz; \
     cd curl-$CURL_VERSION; \
@@ -72,6 +71,8 @@ RUN set -ex; \
 
 ENV PATH /usr/local/bin:$PATH
 ENV PKG_CONFIG_PATH /usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
+
+RUN apt-get purge -y curl libcurl3
 
 RUN set -ex; \
     apt-get update; \
