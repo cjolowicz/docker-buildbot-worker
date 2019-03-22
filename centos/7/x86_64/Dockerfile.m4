@@ -16,4 +16,4 @@ RUN set -ex; \
 
 RUN ln -s /usr/bin/pip3.6 /usr/bin/pip3
 
-m4_include(buildbot.m4)m4_dnl
+m4_include(common/buildbot.m4)m4_dnl
