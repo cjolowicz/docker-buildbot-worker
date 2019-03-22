@@ -1,4 +1,3 @@
-m4_include(m4/yum.m4)m4_dnl
 FROM centos:7
 
 RUN set -ex; \
