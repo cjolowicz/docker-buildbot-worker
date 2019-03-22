@@ -37,7 +37,7 @@ push:
 	done
 
 pull:
-	for dir in $(DIRS) ; do \
+	set -x; for dir in $(DIRS) ; do \
 	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir pull ; \
 	done
 
