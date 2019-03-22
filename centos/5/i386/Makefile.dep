@@ -1,6 +1,6 @@
 Dockerfile: Dockerfile.m4
 Dockerfile: ../main.m4
-Dockerfile: ../../yum.m4
+Dockerfile: ../../../m4/yum.m4
 Dockerfile: ../tuxad-curl.m4
 Dockerfile: ../perl-deps.m4
 Dockerfile: ../../../common/perl.m4
