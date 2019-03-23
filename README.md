@@ -15,6 +15,7 @@ and architectures:
 | Debian 7 (wheezy) | [`x86_64`](debian/7/x86_64/Dockerfile) [`i386`](debian/7/i386/Dockerfile) |
 | Debian 8 (jessie) | [`x86_64`](debian/8/x86_64/Dockerfile) [`i386`](debian/8/i386/Dockerfile) |
 | Debian 9 (stretch) | [`x86_64`](debian/9/x86_64/Dockerfile) [`i386`](debian/9/i386/Dockerfile) |
+| Ubuntu 14.04 (trusty) | [`x86_64`](ubuntu/14.04/x86_64/Dockerfile) [`i386`](ubuntu/14.04/i386/Dockerfile) |
 | Ubuntu 16.04 (xenial) | [`x86_64`](ubuntu/16.04/x86_64/Dockerfile) [`i386`](ubuntu/16.04/i386/Dockerfile) |
 | Ubuntu 18.04 (bionic) | [`x86_64`](ubuntu/18.04/x86_64/Dockerfile) [`i386`](ubuntu/18.04/i386/Dockerfile) |
 

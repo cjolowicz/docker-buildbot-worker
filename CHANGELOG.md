@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Debian 7
   - Debian 8
   - Debian 9
+  - Ubuntu 14.04
   - Ubuntu 16.04
   - Ubuntu 18.04
 
