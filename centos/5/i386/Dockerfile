@@ -7,10 +7,10 @@ RUN echo "multilib_policy=best" >> /etc/yum.conf
 # OpenSSL requires Perl >= 5.10.0, repositories have 5.8.8.
 RUN set -ex; \
     linux32 yum install -y \
-        gcc \
-        make \
-        openldap-devel \
-        zlib-devel \
+    gcc \
+    make \
+    openldap-devel \
+    zlib-devel \
     ; \
     linux32 yum clean all
 
@@ -69,8 +69,7 @@ ENV PKG_CONFIG_PATH $OPENSSL_DIR/lib/pkgconfig
 
 RUN set -ex; \
     linux32 yum install -y \
-        file \
-    ; \
+    file; \
     linux32 yum clean all
 
 ENV CURL_VERSION 7.64.0
@@ -101,16 +100,16 @@ ENV PKG_CONFIG_PATH /usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 
 RUN set -ex; \
     linux32 yum install -y \
-        bzip2 \
-        bzip2-devel \
-        findutils \
-        patch \
-        readline-devel \
-        sqlite \
-        sqlite-devel \
-        xz \
-        xz-devel \
-        zlib-devel \
+    bzip2 \
+    bzip2-devel \
+    findutils \
+    patch \
+    readline-devel \
+    sqlite \
+    sqlite-devel \
+    xz \
+    xz-devel \
+    zlib-devel \
     ; \
     linux32 yum clean all
 

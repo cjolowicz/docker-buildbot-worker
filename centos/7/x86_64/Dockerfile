@@ -1,11 +1,12 @@
 FROM centos:7
 
 RUN set -ex; \
-    yum -y install \
-        https://centos7.iuscommunity.org/ius-release.rpm \
-    ; \
-    yum -y install \
-        gcc \
+    yum install -y \
+    https://centos7.iuscommunity.org/ius-release.rpm; \
+    yum clean all; \
+    set -ex; \
+    yum install -y \
+    gcc \
         make \
         python36u \
         python36u-pip \

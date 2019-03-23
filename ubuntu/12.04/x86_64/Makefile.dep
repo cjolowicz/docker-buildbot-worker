@@ -4,12 +4,14 @@ Dockerfile: ../../../m4/apt-install.m4
 Dockerfile: ../../../common/openssl.m4
 Dockerfile: ../../../m4/curl.m4
 Dockerfile: ../../../m4/tuxad-curl.m4
+Dockerfile: ../../../m4/yum.m4
 Dockerfile: ../../../m4/nproc.m4
 Dockerfile: ../../../debian/curl-deps.m4
 Dockerfile: ../../../m4/apt-install.m4
 Dockerfile: ../../../common/curl.m4
 Dockerfile: ../../../m4/curl.m4
 Dockerfile: ../../../m4/tuxad-curl.m4
+Dockerfile: ../../../m4/yum.m4
 Dockerfile: ../../../m4/nproc.m4
 Dockerfile: ../../../debian/python-deps.m4
 Dockerfile: ../../../m4/apt-install.m4
