@@ -1,3 +1,4 @@
+m4_include(m4/nproc.m4)m4_dnl
 m4_ifelse(PLATFORM RELEASE, debian 7,
 ENV PATH /usr/local/bin:$PATH
 

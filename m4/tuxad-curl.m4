@@ -1,3 +1,4 @@
+m4_include(m4/yum.m4)m4_dnl
 m4_dnl
 m4_dnl Download sources, using tuxad.de's curl for TLS 1.2 support.
 m4_dnl Invoke curl with `--insecure` because of this:

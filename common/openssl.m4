@@ -1,3 +1,5 @@
+m4_include(m4/curl.m4)m4_dnl
+m4_include(m4/nproc.m4)m4_dnl
 ENV OPENSSL_VERSION m4_ifelse(PLATFORM, centos, 1.1.0j, 1.1.1b)
 ENV OPENSSL_DIR /usr/local/ssl
 

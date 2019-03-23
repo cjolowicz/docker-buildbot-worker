@@ -1,3 +1,5 @@
+m4_include(m4/curl.m4)m4_dnl
+m4_include(m4/nproc.m4)m4_dnl
 ENV CURL_VERSION 7.64.0
 
 RUN set -ex; \
