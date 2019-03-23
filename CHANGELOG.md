@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Debian 7 (wheezy)
   - Debian 8 (jessie)
   - Debian 9 (stretch)
+  - OpenSUSE 42 [x86_64 only]
   - Ubuntu 12.04 (precise)
   - Ubuntu 14.04 (trusty)
   - Ubuntu 16.04 (xenial)

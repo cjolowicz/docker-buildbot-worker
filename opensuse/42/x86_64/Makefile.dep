@@ -1,0 +1,4 @@
+Dockerfile: Dockerfile.m4
+Dockerfile: ../../../m4/zypper-install.m4
+Dockerfile: ../../buildbot-deps.m4
+Dockerfile: ../../../common/buildbot.m4
