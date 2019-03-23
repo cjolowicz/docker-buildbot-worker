@@ -5,7 +5,7 @@ ENV PATH /usr/local/bin:$PATH
 ENV LANG C.UTF-8
 
 )m4_dnl
-ENV PYTHON_VERSION m4_ifelse(PLATFORM RELEASE, debian 7, 3.7.2, 3.6.8)
+ENV PYTHON_VERSION m4_ifelse(PLATFORM RELEASE, debian 7, 3.7.2, m4_ifelse(PLATFORM, ubuntu, 3.7.2, 3.6.8))
 
 # https://stackoverflow.com/questions/5937337
 COPY python-use-local-openssl.patch /usr/local/src
