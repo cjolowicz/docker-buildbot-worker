@@ -19,13 +19,15 @@ and architectures:
 | Ubuntu 16.04 (xenial) | [`x86_64`](ubuntu/16.04/x86_64/Dockerfile) [`i386`](ubuntu/16.04/i386/Dockerfile) |
 | Ubuntu 18.04 (bionic) | [`x86_64`](ubuntu/18.04/x86_64/Dockerfile) [`i386`](ubuntu/18.04/i386/Dockerfile) |
 
+The Docker images are loosely based on the
+[official image](https://github.com/buildbot/buildbot/tree/master/worker).
+
 This project has a [changelog](CHANGELOG.md).
 
 ## Usage
 
-The Docker images are loosely based on the
-[official image](https://github.com/buildbot/buildbot/tree/master/worker). There
-are two primary ways to run these images in a buildbot installation:
+There are two primary ways to run these images in a buildbot
+installation:
 
 - as long-running containers
 - on demand, using [`DockerLatentWorker`](http://docs.buildbot.net/current/manual/configuration/workers-docker.html)
@@ -45,13 +47,14 @@ As the environment variables are accessible from the build, and
 displayed in the log, it is better to remove secret variables like
 `WORKERPASS`.
 
-Unlike the official image, these images don't use
+It is important to ensure that any zombie processes created by builds
+will be reaped during the lifetime of the container. Unlike the
+official image, these images don't use
 [dumb-init](https://github.com/Yelp/dumb-init) as PID 1. Modern
 versions of Docker ship with [tini](https://github.com/krallin/tini),
-which provides the same functionality. However, you need to specify
-the `--init` option when invoking `docker run` to install tini as an
-entrypoint. This will ensure that any zombie processes created by
-builds will be reaped during the lifetime of the container.
+which provides the same functionality. However, this means that you
+need to specify the `--init` option when invoking `docker run`. This
+will install `tini` as the entrypoint for the container.
 
 ## Building
 
