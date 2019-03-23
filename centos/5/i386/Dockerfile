@@ -134,6 +134,7 @@ RUN set -ex; \
     ; \
     make -j "$(grep -c processor /proc/cpuinfo)"; \
     make install; \
+    ldconfig; \
     find /usr/local -depth \
         \( \
             \( -type d -a \( -name test -o -name tests \) \) \

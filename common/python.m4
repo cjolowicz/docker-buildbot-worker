@@ -27,8 +27,8 @@ RUN set -ex; \
         LDFLAGS="$(pkg-config --libs openssl) -Wl,-R$OPENSSL_DIR/lib" \
     ; \
     make -j "$(M4_NPROC)"; \
-    make install; m4_ifelse(PLATFORM, debian, \
-    ldconfig; )\
+    make install; \
+    ldconfig; \
     find /usr/local -depth \
         \( \
             \( -type d -a \( -name test -o -name tests \) \) \
