@@ -23,16 +23,41 @@ This project has a [changelog](CHANGELOG.md).
 
 ## Usage
 
-Use `docker run --init` to install
-[tini](https://github.com/krallin/tini) as an entrypoint. This will
-ensure that any zombie processes created by builds are reaped before
-the container exits.
+The Docker images are loosely based on the
+[official image](https://github.com/buildbot/buildbot/tree/master/worker). There
+are two primary ways to run these images in a buildbot installation:
+
+- as long-running containers
+- on demand, using [`DockerLatentWorker`](http://docs.buildbot.net/current/manual/configuration/workers-docker.html)
+
+Containers can be configured using the following environment
+variables:
+
+| `BUILDMASTER` | the domain name or IP address of the master to connect to |
+| `BUILDMASTER_PORT` | the port of the worker protocol |
+| `WORKERNAME` | the name of the worker as declared in the master configuration |
+| `WORKERPASS` | the password of the worker as declared in the master configuration |
+| `WORKER_ENVIRONMENT_BLACKLIST` | the worker environment variables to remove before starting the worker |
+
+As the environment variables are accessible from the build, and
+displayed in the log, it is better to remove secret variables like
+`WORKERPASS`.
+
+Unlike the official image, these images don't use
+[dumb-init](https://github.com/Yelp/dumb-init) as PID 1. Modern
+versions of Docker ship with [tini](https://github.com/krallin/tini),
+which provides the same functionality. However, you need to specify
+the `--init` option when invoking `docker run` to install tini as an
+entrypoint. This will ensure that any zombie processes created by
+builds will be reaped during the lifetime of the container.
 
 ## Building
 
-Generating the Dockerfiles requires the
-[GNU m4](https://www.gnu.org/software/m4/) preprocessor and
-[GNU make](https://www.gnu.org/software/make/).
+Generating the Dockerfiles requires
+[GNU make](https://www.gnu.org/software/make/) and the
+[GNU m4](https://www.gnu.org/software/m4/) preprocessor.
+
+Here is a list of available targets:
 
 | Target | Description |
 | --- | --- |
@@ -45,8 +70,8 @@ Generating the Dockerfiles requires the
 Pass `REPO` to prefix the images with a Docker Hub repository name. The
 default is `DOCKER_USERNAME`.
 
-Pass `DIRS` to select individual images, e.g. `make DIRS=alpine/3.9`
-to only build the image for Alpine 3.9.
+Pass `DIRS` to select individual images, e.g. `make
+DIRS=alpine/3.9/x86_64` to only build the 64-bit image for Alpine 3.9.
 
 The `login` target is provided for non-interactive use and looks
 for `DOCKER_USERNAME` and `DOCKER_PASSWORD`.
