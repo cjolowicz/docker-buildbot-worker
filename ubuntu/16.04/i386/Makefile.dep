@@ -1,4 +1,4 @@
 Dockerfile: Dockerfile.m4
-Dockerfile: ../../../debian/buildbot-deps.m4
 Dockerfile: ../../../m4/apt-install.m4
+Dockerfile: ../../../debian/buildbot-deps.m4
 Dockerfile: ../../../common/buildbot.m4

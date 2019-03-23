@@ -3,5 +3,7 @@ m4_define(
     set -ex; \
     apt-get update; \
     apt-get install -y --no-install-recommends \
-    $1; \
+    `m4_patsubst($1, `[
+	 ]+', ` \\
+    ')'; \
     rm -rf /var/lib/apt/lists/*)m4_dnl

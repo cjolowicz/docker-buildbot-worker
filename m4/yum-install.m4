@@ -3,5 +3,7 @@ m4_define(
     `M4_YUM_INSTALL',
     set -ex; \
     M4_YUM install -y \
-    $1; \
+    `m4_patsubst($1, `[
+	 ]+', ` \\
+    ')'; \
     M4_YUM clean all)m4_dnl

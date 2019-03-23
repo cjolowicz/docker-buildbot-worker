@@ -3,12 +3,11 @@ FROM centos:7
 
 RUN M4_YUM_INSTALL(https://centos7.iuscommunity.org/ius-release.rpm); \
     M4_YUM_INSTALL(
-        gcc \
-        make \
-        python36u \
-        python36u-pip \
-        python36u-devel \
-    )
+        gcc
+        make
+        python36u
+        python36u-pip
+        python36u-devel)
 
 RUN ln -s /usr/bin/pip3.6 /usr/bin/pip3
 

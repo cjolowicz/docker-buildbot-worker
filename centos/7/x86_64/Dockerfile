@@ -7,11 +7,10 @@ RUN set -ex; \
     set -ex; \
     yum install -y \
     gcc \
-        make \
-        python36u \
-        python36u-pip \
-        python36u-devel \
-    ; \
+    make \
+    python36u \
+    python36u-pip \
+    python36u-devel; \
     yum clean all
 
 RUN ln -s /usr/bin/pip3.6 /usr/bin/pip3

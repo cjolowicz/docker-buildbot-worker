@@ -11,6 +11,17 @@ RUN set -ex; \
     make \
     openldap-devel \
     zlib-devel \
+    file \
+    bzip2 \
+    bzip2-devel \
+    findutils \
+    patch \
+    readline-devel \
+    sqlite \
+    sqlite-devel \
+    xz \
+    xz-devel \
+    zlib-devel \
     ; \
     linux32 yum clean all
 
@@ -67,11 +78,6 @@ RUN set -ex; \
 ENV PATH $OPENSSL_DIR/bin:$PATH
 ENV PKG_CONFIG_PATH $OPENSSL_DIR/lib/pkgconfig
 
-RUN set -ex; \
-    linux32 yum install -y \
-    file; \
-    linux32 yum clean all
-
 ENV CURL_VERSION 7.64.0
 
 RUN set -ex; \
@@ -97,21 +103,6 @@ RUN set -ex; \
 
 ENV PATH /usr/local/bin:$PATH
 ENV PKG_CONFIG_PATH /usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
-
-RUN set -ex; \
-    linux32 yum install -y \
-    bzip2 \
-    bzip2-devel \
-    findutils \
-    patch \
-    readline-devel \
-    sqlite \
-    sqlite-devel \
-    xz \
-    xz-devel \
-    zlib-devel \
-    ; \
-    linux32 yum clean all
 
 ENV PYTHON_VERSION 3.6.8
 
