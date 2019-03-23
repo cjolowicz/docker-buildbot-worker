@@ -33,6 +33,8 @@ are two primary ways to run these images in a buildbot installation:
 Containers can be configured using the following environment
 variables:
 
+| Variable | Description |
+| --- | --- |
 | `BUILDMASTER` | the domain name or IP address of the master to connect to |
 | `BUILDMASTER_PORT` | the port of the worker protocol |
 | `WORKERNAME` | the name of the worker as declared in the master configuration |
