@@ -49,23 +49,26 @@ RUN set -ex; \
 ENV PATH $OPENSSL_DIR/bin:$PATH
 ENV PKG_CONFIG_PATH $OPENSSL_DIR/lib/pkgconfig
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-        build-essential \
+RUN set -ex; \
+    apt-get update; \
+    apt-get install -y --no-install-recommends \
         libbz2-dev \
-        libc6-dev \
         libdb-dev \
-        libexpat-dev \
-        libffi-dev \
         libgdbm-dev \
         liblzma-dev \
         libncursesw5-dev \
         libreadline-dev \
         libsqlite3-dev \
-        libz-dev \
         tk-dev \
+        build-essential \
+        libc6-dev \
+        libexpat-dev \
+        libffi-dev \
+        libz-dev \
         uuid-dev \
         xz-utils \
-    && rm -rf /var/lib/apt/lists/*
+    ; \
+    rm -rf /var/lib/apt/lists/*
 
 ENV PATH /usr/local/bin:$PATH
 

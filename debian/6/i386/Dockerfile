@@ -79,14 +79,14 @@ RUN set -ex; \
     apt-get install -y --no-install-recommends \
         libbz2-dev \
         libdb-dev \
-        libexpat1-dev \
         libgdbm-dev \
         liblzma-dev \
-        libncurses5-dev \
         libncursesw5-dev \
         libreadline-dev \
         libsqlite3-dev \
         tk-dev \
+        libexpat1-dev \
+        libncurses5-dev \
     ; \
     rm -rf /var/lib/apt/lists/*
 
