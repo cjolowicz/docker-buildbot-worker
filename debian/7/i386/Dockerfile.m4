@@ -1,9 +1,8 @@
+m4_include(m4/apt-install.m4)m4_dnl
 FROM i386/debian:wheezy
 
 m4_include(debian/7/apt.m4)
-RUN apt-get update && apt-get install -y --no-install-recommends \
-        ca-certificates \
-    && rm -rf /var/lib/apt/lists/*
+RUN M4_APT_INSTALL(ca-certificates)
 
 m4_include(debian/openssl-deps.m4)
 m4_include(common/openssl.m4)

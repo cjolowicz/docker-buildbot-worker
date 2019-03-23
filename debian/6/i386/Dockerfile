@@ -7,13 +7,13 @@ RUN echo 'APT::Get::AllowUnauthenticated "true";' >> /etc/apt/apt.conf.d/10-allo
 RUN set -ex; \
     apt-get update; \
     apt-get install -y --no-install-recommends \
-        curl \
-        gcc \
-        make \
-        libc6-dev \
-        patch \
-        perl \
-        zlib1g-dev \
+    curl \
+    gcc \
+    make \
+    libc6-dev \
+    patch \
+    perl \
+    zlib1g-dev \
     ; \
     rm -rf /var/lib/apt/lists/*
 
@@ -47,8 +47,7 @@ ENV PKG_CONFIG_PATH $OPENSSL_DIR/lib/pkgconfig
 RUN set -ex; \
     apt-get update; \
     apt-get install -y --no-install-recommends \
-        file \
-    ; \
+    file; \
     rm -rf /var/lib/apt/lists/*
 
 ENV CURL_VERSION 7.64.0
@@ -77,16 +76,16 @@ RUN apt-get purge -y curl libcurl3
 RUN set -ex; \
     apt-get update; \
     apt-get install -y --no-install-recommends \
-        libbz2-dev \
-        libdb-dev \
-        libgdbm-dev \
-        liblzma-dev \
-        libncursesw5-dev \
-        libreadline-dev \
-        libsqlite3-dev \
-        tk-dev \
-        libexpat1-dev \
-        libncurses5-dev \
+    libbz2-dev \
+    libdb-dev \
+    libgdbm-dev \
+    liblzma-dev \
+    libncursesw5-dev \
+    libreadline-dev \
+    libsqlite3-dev \
+    tk-dev \
+    libexpat1-dev \
+    libncurses5-dev \
     ; \
     rm -rf /var/lib/apt/lists/*
 

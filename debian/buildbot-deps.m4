@@ -1,4 +1,5 @@
-RUN apt-get update && apt-get install -y \
+m4_include(m4/apt-install.m4)m4_dnl
+RUN M4_APT_INSTALL(
     build-essential \
     python3-pip \
-    && rm -rf /var/lib/apt/lists/*
+    )

@@ -1,9 +1,12 @@
 FROM i386/debian:stretch
 
-RUN apt-get update && apt-get install -y \
+RUN set -ex; \
+    apt-get update; \
+    apt-get install -y --no-install-recommends \
     build-essential \
     python3-pip \
-    && rm -rf /var/lib/apt/lists/*
+    ; \
+    rm -rf /var/lib/apt/lists/*
 
 ENV BUILDBOT_VERSION 1.8.0
 RUN pip3 install --upgrade pip && \
