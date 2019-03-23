@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/cjolowicz/docker-buildbot-worker.svg?branch=master)](https://travis-ci.com/cjolowicz/docker-buildbot-worker)
+[![Docker Hub](https://img.shields.io/docker/cloud/build/cjolowicz/buildbot-worker.svg)](https://hub.docker.com/r/cjolowicz/buildbot-worker)
 
 # docker-buildbot-worker
 
