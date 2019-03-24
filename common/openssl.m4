@@ -1,6 +1,18 @@
 m4_include(m4/curl.m4)m4_dnl
 m4_include(m4/nproc.m4)m4_dnl
-ENV OPENSSL_VERSION m4_ifelse(PLATFORM, centos, 1.1.0j, 1.1.1b)
+m4_dnl
+m4_dnl OpenSSL 1.1.1b compilation fails on some older platforms:
+m4_dnl
+m4_dnl   crypto/modes/ghash-x86_64.s: Assembler messages:
+m4_dnl   crypto/modes/ghash-x86_64.s:1311: Error: previous CFI entry not closed (missing .cfi_endproc)
+m4_dnl   crypto/modes/ghash-x86_64.s:1374: Error: open CFI at the end of file; missing .cfi_endproc directive
+m4_dnl
+ENV OPENSSL_VERSION m4_ifelse(
+    PLATFORM, centos,
+    1.1.0j,
+    PLATFORM RELEASE, debian 5,
+    1.1.0j,
+    1.1.1b)
 ENV OPENSSL_DIR /usr/local/ssl
 
 RUN set -ex; \

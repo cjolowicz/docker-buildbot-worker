@@ -31,7 +31,7 @@ RUN set -ex; \
     ; \
     rm -rf /var/lib/apt/lists/*
 
-ENV OPENSSL_VERSION 1.1.1b
+ENV OPENSSL_VERSION 1.1.0j
 ENV OPENSSL_DIR /usr/local/ssl
 
 RUN set -ex; \
