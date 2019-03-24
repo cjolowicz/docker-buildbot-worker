@@ -9,5 +9,5 @@ services:
 script:
   - make pull > make.log || true
   - make login push >> make.log ; echo $? > make.status
-  - [ "$(< make.status)" -eq 0 ] || tail --lines=4K make.log
-  - [ "$(< make.status)" -eq 0 ]
+  - test "$(cat make.status)" -eq 0 || tail --lines=4K make.log
+  - test "$(cat make.status)" -eq 0
