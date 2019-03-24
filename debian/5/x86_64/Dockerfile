@@ -36,7 +36,7 @@ ENV OPENSSL_DIR /usr/local/ssl
 
 RUN set -ex; \
     cd /usr/local/src; \
-    curl https://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz -LO; \
+    curl --insecure https://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz -LO; \
     tar -xf openssl-$OPENSSL_VERSION.tar.gz; \
     rm -f openssl-$OPENSSL_VERSION.tar.gz; \
     cd openssl-$OPENSSL_VERSION; \
@@ -62,7 +62,7 @@ ENV CURL_VERSION 7.64.0
 
 RUN set -ex; \
     cd /usr/local/src; \
-    curl -LO https://dl.uxnr.de/mirror/curl/curl-$CURL_VERSION.tar.gz; \
+    curl --insecure -LO https://dl.uxnr.de/mirror/curl/curl-$CURL_VERSION.tar.gz; \
     tar -xf curl-$CURL_VERSION.tar.gz; \
     rm -f curl-$CURL_VERSION.tar.gz; \
     cd curl-$CURL_VERSION; \
