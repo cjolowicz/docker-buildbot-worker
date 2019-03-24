@@ -9,7 +9,10 @@ RUN M4_APT_INSTALL(
 
 m4_include(common/openssl.m4)
 m4_include(common/curl.m4)
-RUN apt-get purge -y curl libcurl3
+# Workaround: List directory /var/lib/apt/lists/partial is missing.
+RUN set -ex; \
+    mkdir -p /var/lib/apt/lists/partial; \
+    apt-get purge -y curl libcurl3
 
 m4_include(common/python.m4)
 m4_include(common/pip.m4)
