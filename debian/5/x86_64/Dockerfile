@@ -47,7 +47,7 @@ RUN set -ex; \
         zlib \
         enable-egd  \
     ; \
-    make -j "$(nproc)"; \
+    make -j "$(grep -c processor /proc/cpuinfo)"; \
     make install_sw; \
     cd ..; \
     rm -rf openssl-$OPENSSL_VERSION; \
@@ -70,7 +70,7 @@ RUN set -ex; \
     ./configure \
         --with-ssl=$OPENSSL_DIR \
         ; \
-    make -j "$(nproc)"; \
+    make -j "$(grep -c processor /proc/cpuinfo)"; \
     make install; \
     cd ..; \
     rm -rf curl-$CURL_VERSION; \
@@ -102,7 +102,7 @@ RUN set -ex; \
         CPPFLAGS="$(pkg-config --cflags openssl) -Wl,-R$OPENSSL_DIR/lib" \
         LDFLAGS="$(pkg-config --libs openssl) -Wl,-R$OPENSSL_DIR/lib" \
     ; \
-    make -j "$(nproc)"; \
+    make -j "$(grep -c processor /proc/cpuinfo)"; \
     make install; \
     ldconfig; \
     find /usr/local -depth \
