@@ -147,6 +147,10 @@ RUN set -ex; \
     ; \
     rm -f get-pip.py
 
+RUN rm -rf /usr/share/ca-certificates/mozilla
+COPY ca-certificates/mozilla /usr/share/ca-certificates/mozilla
+RUN update-ca-certificates --fresh --verbose
+
 ENV BUILDBOT_VERSION 1.8.0
 RUN pip3 install --upgrade pip && \
     pip --no-cache-dir install twisted[tls] && \

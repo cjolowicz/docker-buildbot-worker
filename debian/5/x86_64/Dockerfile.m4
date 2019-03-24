@@ -17,4 +17,11 @@ RUN set -ex; \
 
 m4_include(common/python.m4)
 m4_include(common/pip.m4)
+m4_dnl
+m4_dnl TODO: Find out what is missing in https://curl.haxx.se/ca/cacert.pem
+m4_dnl
+RUN rm -rf /usr/share/ca-certificates/mozilla
+COPY ca-certificates/mozilla /usr/share/ca-certificates/mozilla
+RUN update-ca-certificates --fresh --verbose
+
 m4_include(common/buildbot.m4)m4_dnl
