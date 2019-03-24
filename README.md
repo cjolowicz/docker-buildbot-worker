@@ -13,7 +13,7 @@ and architectures:
 | Alpine 3.9 | [`x86_64`](alpine/3.9/x86_64/Dockerfile) [`i386`](alpine/3.9/i386/Dockerfile) |
 | Centos 5 | [`x86_64`](centos/5/x86_64/Dockerfile) [`i386`](centos/5/i386/Dockerfile) |
 | Centos 7 | [`x86_64`](centos/7/x86_64/Dockerfile) |
-| Debian 5 (lenny) | [`x86_64`](debian/5/x86_64/Dockerfile) [`i386`](debian/5/i386/Dockerfile) |
+| Debian 5 (lenny) | [`x86_64`](debian/5/x86_64/Dockerfile) |
 | Debian 6 (squeeze) | [`x86_64`](debian/6/x86_64/Dockerfile) [`i386`](debian/6/i386/Dockerfile) |
 | Debian 7 (wheezy) | [`x86_64`](debian/7/x86_64/Dockerfile) [`i386`](debian/7/i386/Dockerfile) |
 | Debian 8 (jessie) | [`x86_64`](debian/8/x86_64/Dockerfile) [`i386`](debian/8/i386/Dockerfile) |
