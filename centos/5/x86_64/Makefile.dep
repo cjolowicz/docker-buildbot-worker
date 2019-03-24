@@ -1,7 +1,7 @@
 Dockerfile: Dockerfile.m4
-Dockerfile: ../main.m4
 Dockerfile: ../../../m4/yum-install.m4
 Dockerfile: ../../../m4/yum.m4
+Dockerfile: ../../yum-multilib.m4
 Dockerfile: ../perl-deps.m4
 Dockerfile: ../curl-deps.m4
 Dockerfile: ../python-deps.m4
