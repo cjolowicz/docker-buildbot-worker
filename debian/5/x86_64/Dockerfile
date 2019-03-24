@@ -79,7 +79,10 @@ RUN set -ex; \
 ENV PATH /usr/local/bin:$PATH
 ENV PKG_CONFIG_PATH /usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 
-RUN apt-get purge -y curl libcurl3
+# Workaround: List directory /var/lib/apt/lists/partial is missing.
+RUN set -ex; \
+    mkdir -p /var/lib/apt/lists/partial; \
+    apt-get purge -y curl libcurl3
 
 ENV PYTHON_VERSION 3.6.8
 
