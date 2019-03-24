@@ -7,6 +7,7 @@ RUN echo 'APT::Get::AllowUnauthenticated "true";' >> /etc/apt/apt.conf.d/10-allo
 RUN set -ex; \
     apt-get update; \
     apt-get install -y --no-install-recommends \
+    ca-certificates \
     curl \
     gcc \
     make \

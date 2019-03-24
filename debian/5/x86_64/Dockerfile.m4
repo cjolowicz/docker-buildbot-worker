@@ -3,6 +3,7 @@ FROM debian/eol:lenny
 
 m4_include(debian/6/apt.m4)
 RUN M4_APT_INSTALL(
+    ca-certificates
     m4_include(debian/openssl-deps.m4)
     m4_include(debian/curl-deps.m4)
     m4_include(debian/python-deps.m4))
