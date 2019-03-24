@@ -7,7 +7,7 @@ libreadline-dev
 libsqlite3-dev
 tk-dev
 m4_ifelse(RELEASE, 6,
-libexpat1
+libexpat1-dev
 libncurses5-dev,
 build-essential
 libc6-dev

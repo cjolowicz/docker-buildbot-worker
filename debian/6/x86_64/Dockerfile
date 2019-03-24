@@ -23,7 +23,7 @@ RUN set -ex; \
     libreadline-dev \
     libsqlite3-dev \
     tk-dev \
-    libexpat1 \
+    libexpat1-dev \
     libncurses5-dev \
     ; \
     rm -rf /var/lib/apt/lists/*
