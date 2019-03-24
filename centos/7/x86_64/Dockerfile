@@ -9,8 +9,9 @@ RUN set -ex; \
     gcc \
     make \
     python36u \
+    python36u-devel \
     python36u-pip \
-    python36u-devel; \
+    ; \
     yum clean all
 
 RUN ln -s /usr/bin/pip3.6 /usr/bin/pip3
