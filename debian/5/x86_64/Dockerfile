@@ -28,7 +28,6 @@ RUN set -ex; \
     libffi-dev \
     libz-dev \
     uuid-dev \
-    xz-utils \
     ; \
     rm -rf /var/lib/apt/lists/*
 

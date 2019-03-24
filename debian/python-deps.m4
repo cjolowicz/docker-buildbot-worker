@@ -14,5 +14,4 @@ libc6-dev
 libexpat-dev
 libffi-dev
 libz-dev
-uuid-dev
-xz-utils)
+uuid-dev)
