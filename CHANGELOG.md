@@ -13,15 +13,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Supported platforms:
   - Alpine 3.9
   - CentOS 5
-  - CentOS 7 [x86_64 only]
+  - CentOS 7\*
   - Debian 6 (squeeze)
   - Debian 7 (wheezy)
   - Debian 8 (jessie)
   - Debian 9 (stretch)
-  - OpenSUSE 42 [x86_64 only]
+  - OpenSUSE 42\*
+  - Scientific 7\*
   - Ubuntu 12.04 (precise)
   - Ubuntu 14.04 (trusty)
   - Ubuntu 16.04 (xenial)
   - Ubuntu 18.04 (bionic)
+- \*) x86_64 only
 
 [Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/commits/master
