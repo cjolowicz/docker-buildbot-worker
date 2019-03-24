@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Supported platforms:
   - Alpine 3.9
   - CentOS 5
-  - CentOS 6\*
+  - CentOS 6
   - CentOS 7\*
   - Debian 5 (lenny)\*
   - Debian 6 (squeeze)
