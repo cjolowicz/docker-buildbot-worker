@@ -8,21 +8,21 @@ This repository contains Docker images for
 [buildbot worker](https://buildbot.net/), for the following platforms
 and architectures:
 
-| Platform | Dockerfile (by arch) |
-| --- | :---: |
-| Alpine 3.9 | [`x86_64`](alpine/3.9/x86_64/Dockerfile) [`i386`](alpine/3.9/i386/Dockerfile) |
-| Centos 5 | [`x86_64`](centos/5/x86_64/Dockerfile) [`i386`](centos/5/i386/Dockerfile) |
-| Centos 7 | [`x86_64`](centos/7/x86_64/Dockerfile) |
-| Debian 6 (squeeze) | [`x86_64`](debian/6/x86_64/Dockerfile) [`i386`](debian/6/i386/Dockerfile) |
-| Debian 7 (wheezy) | [`x86_64`](debian/7/x86_64/Dockerfile) [`i386`](debian/7/i386/Dockerfile) |
-| Debian 8 (jessie) | [`x86_64`](debian/8/x86_64/Dockerfile) [`i386`](debian/8/i386/Dockerfile) |
-| Debian 9 (stretch) | [`x86_64`](debian/9/x86_64/Dockerfile) [`i386`](debian/9/i386/Dockerfile) |
-| OpenSUSE 42 | [`x86_64`](opensuse/42/x86_64/Dockerfile) |
-| Scientific 7 | [`x86_64`](scientific/7/x86_64/Dockerfile) |
-| Ubuntu 12.04 (precise) | [`x86_64`](ubuntu/12.04/x86_64/Dockerfile) [`i386`](ubuntu/12.04/i386/Dockerfile) |
-| Ubuntu 14.04 (trusty) | [`x86_64`](ubuntu/14.04/x86_64/Dockerfile) [`i386`](ubuntu/14.04/i386/Dockerfile) |
-| Ubuntu 16.04 (xenial) | [`x86_64`](ubuntu/16.04/x86_64/Dockerfile) [`i386`](ubuntu/16.04/i386/Dockerfile) |
-| Ubuntu 18.04 (bionic) | [`x86_64`](ubuntu/18.04/x86_64/Dockerfile) [`i386`](ubuntu/18.04/i386/Dockerfile) |
+| Platform | Dockerfile | (by arch) |
+| --- | --- | --- |
+| Alpine 3.9 | [`x86_64`](alpine/3.9/x86_64/Dockerfile) | [`i386`](alpine/3.9/i386/Dockerfile) |
+| Centos 5 | [`x86_64`](centos/5/x86_64/Dockerfile) | [`i386`](centos/5/i386/Dockerfile) |
+| Centos 7 | [`x86_64`](centos/7/x86_64/Dockerfile) | |
+| Debian 6 (squeeze) | [`x86_64`](debian/6/x86_64/Dockerfile) | [`i386`](debian/6/i386/Dockerfile) |
+| Debian 7 (wheezy) | [`x86_64`](debian/7/x86_64/Dockerfile) | [`i386`](debian/7/i386/Dockerfile) |
+| Debian 8 (jessie) | [`x86_64`](debian/8/x86_64/Dockerfile) | [`i386`](debian/8/i386/Dockerfile) |
+| Debian 9 (stretch) | [`x86_64`](debian/9/x86_64/Dockerfile) | [`i386`](debian/9/i386/Dockerfile) |
+| OpenSUSE 42 | [`x86_64`](opensuse/42/x86_64/Dockerfile) | |
+| Scientific 7 | [`x86_64`](scientific/7/x86_64/Dockerfile) | |
+| Ubuntu 12.04 (precise) | [`x86_64`](ubuntu/12.04/x86_64/Dockerfile) | [`i386`](ubuntu/12.04/i386/Dockerfile) |
+| Ubuntu 14.04 (trusty) | [`x86_64`](ubuntu/14.04/x86_64/Dockerfile) | [`i386`](ubuntu/14.04/i386/Dockerfile) |
+| Ubuntu 16.04 (xenial) | [`x86_64`](ubuntu/16.04/x86_64/Dockerfile) | [`i386`](ubuntu/16.04/i386/Dockerfile) |
+| Ubuntu 18.04 (bionic) | [`x86_64`](ubuntu/18.04/x86_64/Dockerfile) | [`i386`](ubuntu/18.04/i386/Dockerfile) |
 
 The Docker images are loosely based on the
 [official image](https://github.com/buildbot/buildbot/tree/master/worker).
