@@ -19,6 +19,7 @@ and architectures:
 | Debian 7 (wheezy) | [`x86_64`](debian/7/x86_64/Dockerfile) [`i386`](debian/7/i386/Dockerfile) |
 | Debian 8 (jessie) | [`x86_64`](debian/8/x86_64/Dockerfile) [`i386`](debian/8/i386/Dockerfile) |
 | Debian 9 (stretch) | [`x86_64`](debian/9/x86_64/Dockerfile) [`i386`](debian/9/i386/Dockerfile) |
+| OpenSUSE 13 | [`x86_64`](opensuse/13/x86_64/Dockerfile) |
 | OpenSUSE 42 | [`x86_64`](opensuse/42/x86_64/Dockerfile) |
 | Scientific 6 | [`x86_64`](scientific/6/x86_64/Dockerfile) |
 | Scientific 7 | [`x86_64`](scientific/7/x86_64/Dockerfile) |

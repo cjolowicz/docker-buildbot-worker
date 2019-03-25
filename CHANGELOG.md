@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Debian 7 (wheezy)
   - Debian 8 (jessie)
   - Debian 9 (stretch)
+  - OpenSUSE 13\*
   - OpenSUSE 42\*
   - Scientific 6\*
   - Scientific 7\*
