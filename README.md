@@ -89,3 +89,8 @@ DIRS=alpine/3.9/x86_64` to only build the 64-bit image for Alpine 3.9.
 
 The `login` target is provided for non-interactive use and looks
 for `DOCKER_USERNAME` and `DOCKER_PASSWORD`.
+
+## Related projects
+
+- https://github.com/cjolowicz/docker-buildbot
+- https://github.com/cjolowicz/buildbot-docker-swarm-worker
