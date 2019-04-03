@@ -39,7 +39,7 @@ There are two primary ways to run these images in a buildbot
 installation:
 
 - as long-running containers
-- on demand, using [`DockerLatentWorker`](http://docs.buildbot.net/current/manual/configuration/workers-docker.html)
+- on demand, using [`DockerLatentWorker`](http://docs.buildbot.net/current/manual/configuration/workers-docker.html) or [`DockerSwarmLatentWorker`](https://github.com/cjolowicz/buildbot-docker-swarm-worker)
 
 Containers can be configured using the following environment
 variables:
