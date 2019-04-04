@@ -15,31 +15,34 @@ Dockerfile:
 	    Dockerfile.m4 > Dockerfile
 
 build: Dockerfile
-	@set -x; \
-	if docker image ls --format='{{.Repository}}:{{.Tag}}' | \
+	@if docker image ls --format='{{.Repository}}:{{.Tag}}' | \
 	        grep -q '^$(IMAGE)$$' ; then \
-	    docker build \
-	        --file=$(CURDIR)/Dockerfile \
-	        $(patsubst %, --tag=%, $(IMAGES)) \
-	        --cache-from=$(IMAGE) \
-	        $(TOPDIR) ; \
+	    ( \
+	        set -x ; \
+	        docker build \
+	            --file=$(CURDIR)/Dockerfile \
+	            $(patsubst %, --tag=%, $(IMAGES)) \
+	            --cache-from=$(IMAGE) \
+	            $(TOPDIR) ; \
+	    ) ; \
 	else \
-	    docker build \
-	        --file=$(CURDIR)/Dockerfile \
-	        $(patsubst %, --tag=%, $(IMAGES)) \
-	        $(TOPDIR) ; \
+	    ( \
+	        set -x ; \
+	        docker build \
+	            --file=$(CURDIR)/Dockerfile \
+	            $(patsubst %, --tag=%, $(IMAGES)) \
+	            $(TOPDIR) ; \
+	    ) ; \
 	fi
 
 push: build
-	@set -x; \
-	for image in $(IMAGES) ; do \
-	    docker push $$image ; \
+	@for image in $(IMAGES) ; do \
+	    ( set -x ; docker push $$image ) ; \
 	done
 
 pull:
-	@set -x; \
-	for image in $(IMAGES) ; do \
-	    docker pull $$image ; \
+	@for image in $(IMAGES) ; do \
+	    ( set -x ; docker pull $$image ) ; \
 	done
 
 dep: Makefile.dep
