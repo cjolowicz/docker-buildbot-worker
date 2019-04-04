@@ -18,20 +18,9 @@ Dockerfile:
 build: Dockerfile
 	@if docker image ls --format='{{.Repository}}:{{.Tag}}' | \
 	        grep -q '^$(IMAGE)$$' ; then \
-	    ( \
-	        set -x ; \
-	        docker build \
-	            $(BUILDFLAGS) \
-	            --cache-from=$(IMAGE) \
-	            $(TOPDIR) ; \
-	    ) ; \
+	    ( set -x ; docker build $(BUILDFLAGS) --cache-from=$(IMAGE) $(TOPDIR) ) ; \
 	else \
-	    ( \
-	        set -x ; \
-	        docker build \
-	            $(BUILDFLAGS) \
-	            $(TOPDIR) ; \
-	    ) ; \
+	    ( set -x ; docker build $(BUILDFLAGS) $(TOPDIR) ) ; \
 	fi
 
 push: build
