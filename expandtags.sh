@@ -12,6 +12,13 @@ shift
 ARCH="$1"
 shift
 
+if ! grep -q ^[0-9] <<< "$VERSION"
+then
+    # Internal tag, e.g. "master-alpine-3.9-x86_64".
+    echo "$VERSION-$PLATFORM-$RELEASE-$ARCH"
+    exit
+fi
+
 latest_releases=(
     alpine-3.9
     centos-7

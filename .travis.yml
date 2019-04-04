@@ -12,10 +12,14 @@ stages:
 
 jobs:
   include:
-    - script:
-        - make pull > make.log || true
-        - make >> make.log ; echo $? > make.status
+    - stage: pull
+      script: make pull > make.log || true
+    - stage: push
+      if: tag IS present
+      script: make push >> make.log ; echo $? > make.status
+    - if: tag IS NOT present
+      script: make push VERSION=master >> make.log ; echo $? > make.status
+    - stage: report
+      script:
         - test "$(cat make.status)" -eq 0 || tail --lines=4K make.log
         - test "$(cat make.status)" -eq 0
-    - stage: deploy
-      script: make push
