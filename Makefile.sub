@@ -10,7 +10,7 @@ endif
 PLATFORM = $(notdir $(abspath $(CURDIR)/../..))
 RELEASE = $(notdir $(abspath $(CURDIR)/..))
 ARCH = $(notdir $(CURDIR))
-TAGS = $(VERSION)-$(PLATFORM)-$(RELEASE)-$(ARCH)
+TAGS = $(shell $(TOPDIR)/expandtags.sh $(VERSION) $(PLATFORM) $(RELEASE) $(ARCH))
 IMAGES = $(patsubst %, $(REPO):%, $(TAGS))
 IMAGE = $(firstword $(IMAGES))
 

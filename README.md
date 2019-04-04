@@ -65,6 +65,30 @@ which provides the same functionality. However, this means that you
 need to specify the `--init` option when invoking `docker run`. This
 will install `tini` as the entrypoint for the container.
 
+## Tags
+
+The full tag is `VERSION-PLATFORM-RELEASE-ARCH`.
+
+`VERSION` consists of the upstream version and a single-component
+1-based downstream version, e.g. _1.8.0-1_.
+
+Abbreviated tags are provided with `VERSION` replaced by each of its
+prefixes, e.g.:
+
+- 1.8.0
+- 1.8
+- 1
+
+These tags include the following:
+
+- `VERSION-PLATFORM-RELEASE-ARCH`
+- `VERSION-PLATFORM-RELEASE`, for the default architecture (x86_64)
+- `VERSION-PLATFORM`, for the default architecture (x86_64) and the
+   latest supported release of that platform
+- `VERSION`, for the default architecture (x86_64) and the latest
+   supported release of alpine
+- `latest`, as in the previous case
+
 ## Building
 
 Generating the Dockerfiles requires
