@@ -33,30 +33,30 @@ DIRS = alpine/3.9/x86_64 \
 all: build
 
 prepare:
-	set -ex; for dir in $(DIRS) ; do \
+	@set -ex; for dir in $(DIRS) ; do \
 	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir Dockerfile ; \
 	done
 
 build:
-	set -ex; for dir in $(DIRS) ; do \
+	@set -ex; for dir in $(DIRS) ; do \
 	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir build ; \
 	done
 
 push:
-	set -ex; for dir in $(DIRS) ; do \
+	@set -ex; for dir in $(DIRS) ; do \
 	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir push ; \
 	done
 
 pull:
-	set -x; for dir in $(DIRS) ; do \
+	@set -x; for dir in $(DIRS) ; do \
 	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir pull ; \
 	done
 
 login:
-	echo "$(DOCKER_PASSWORD)" | docker login -u $(DOCKER_USERNAME) --password-stdin
+	@echo "$(DOCKER_PASSWORD)" | docker login -u $(DOCKER_USERNAME) --password-stdin
 
 dep:
-	set -ex; for dir in $(DIRS) ; do \
+	@set -ex; for dir in $(DIRS) ; do \
 	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir dep ; \
 	done
 
