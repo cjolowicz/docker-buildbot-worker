@@ -6,8 +6,16 @@ install:
 services:
   - docker
 
-script:
-  - make pull > make.log || true
-  - make login push >> make.log ; echo $? > make.status
-  - test "$(cat make.status)" -eq 0 || tail --lines=4K make.log
-  - test "$(cat make.status)" -eq 0
+stages:
+  - name: deploy
+    if: tag IS present
+
+jobs:
+  include:
+    - script:
+        - make pull > make.log || true
+        - make >> make.log ; echo $? > make.status
+        - test "$(cat make.status)" -eq 0 || tail --lines=4K make.log
+        - test "$(cat make.status)" -eq 0
+    - stage: deploy
+      script: make login push
