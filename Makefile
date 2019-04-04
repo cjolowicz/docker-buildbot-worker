@@ -1,5 +1,13 @@
 export TOPDIR = $(shell pwd)
 export NAMESPACE = $(DOCKER_USERNAME)
+export NAME = buildbot-worker
+export VERSION = 1.8.0-1
+
+ifeq ($(strip $(NAMESPACE)),)
+    export REPO = $(NAME)
+else
+    export REPO = $(NAMESPACE)/$(NAME)
+endif
 
 DIRS = alpine/3.9/x86_64 \
        alpine/3.9/i386 \

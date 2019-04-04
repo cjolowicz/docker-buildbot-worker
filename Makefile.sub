@@ -1,12 +1,3 @@
-VERSION = 1.8.0-1
-NAME = buildbot-worker
-
-ifeq ($(strip $(NAMESPACE)),)
-    REPO = $(NAME)
-else
-    REPO = $(NAMESPACE)/$(NAME)
-endif
-
 PLATFORM = $(notdir $(abspath $(CURDIR)/../..))
 RELEASE = $(notdir $(abspath $(CURDIR)/..))
 ARCH = $(notdir $(CURDIR))
