@@ -81,8 +81,8 @@ Here is a list of available targets:
 | `make dep` | Generate the dependency rules. |
 | `make prepare` | Generate the Dockerfiles. |
 
-Pass `REPO` to prefix the images with a Docker Hub repository name. The
-default is `DOCKER_USERNAME`.
+Pass `NAMESPACE` to prefix the images with a Docker Hub repository
+name. The default is `DOCKER_USERNAME`.
 
 Pass `DIRS` to select individual images, e.g. `make
 DIRS=alpine/3.9/x86_64` to only build the 64-bit image for Alpine 3.9.

@@ -2,17 +2,17 @@ PLATFORM = $(notdir $(abspath $(CURDIR)/../..))
 RELEASE = $(notdir $(abspath $(CURDIR)/..))
 ARCH = $(notdir $(CURDIR))
 
-ifeq ($(strip $(REPO)),)
+ifeq ($(strip $(NAMESPACE)),)
     IMAGE = buildbot-worker:1.8.0-$(PLATFORM)-$(RELEASE)-$(ARCH)
 else
-    IMAGE = $(REPO)/buildbot-worker:1.8.0-$(PLATFORM)-$(RELEASE)-$(ARCH)
+    IMAGE = $(NAMESPACE)/buildbot-worker:1.8.0-$(PLATFORM)-$(RELEASE)-$(ARCH)
 endif
 
 all: build
 
 Dockerfile:
 	m4 -I $(TOPDIR) --prefix-builtins \
-	    -D REPO=$(REPO) \
+	    -D NAMESPACE=$(NAMESPACE) \
 	    -D PLATFORM=$(PLATFORM) \
 	    -D RELEASE=$(RELEASE) \
 	    -D ARCH=$(ARCH) \

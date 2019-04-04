@@ -1,5 +1,5 @@
 export TOPDIR = $(shell pwd)
-export REPO = $(DOCKER_USERNAME)
+export NAMESPACE = $(DOCKER_USERNAME)
 
 DIRS = alpine/3.9/x86_64 \
        alpine/3.9/i386 \
