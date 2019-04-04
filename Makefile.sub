@@ -10,8 +10,9 @@ endif
 PLATFORM = $(notdir $(abspath $(CURDIR)/../..))
 RELEASE = $(notdir $(abspath $(CURDIR)/..))
 ARCH = $(notdir $(CURDIR))
-TAG = $(VERSION)-$(PLATFORM)-$(RELEASE)-$(ARCH)
-IMAGE = $(REPO):$(TAG)
+TAGS = $(VERSION)-$(PLATFORM)-$(RELEASE)-$(ARCH)
+IMAGES = $(patsubst %, $(REPO):%, $(TAGS))
+IMAGE = $(firstword $(IMAGES))
 
 all: build
 
@@ -24,25 +25,32 @@ Dockerfile:
 	    Dockerfile.m4 > Dockerfile
 
 build: Dockerfile
+	@set -x; \
 	if docker image ls --format='{{.Repository}}:{{.Tag}}' | \
 	        grep -q '^$(IMAGE)$$' ; then \
 	    docker build \
 	        --file=$(CURDIR)/Dockerfile \
-	        --tag=$(IMAGE) \
+	        $(patsubst %, --tag=%, $(IMAGES)) \
 	        --cache-from=$(IMAGE) \
 	        $(TOPDIR) ; \
 	else \
 	    docker build \
 	        --file=$(CURDIR)/Dockerfile \
-	        --tag=$(IMAGE) \
+	        $(patsubst %, --tag=%, $(IMAGES)) \
 	        $(TOPDIR) ; \
 	fi
 
 push: build
-	docker push $(IMAGE)
+	@set -x; \
+	for image in $(IMAGES) ; do \
+	    docker push $$image ; \
+	done
 
 pull:
-	docker pull $(IMAGE)
+	@set -x; \
+	for image in $(IMAGES) ; do \
+	    docker pull $$image ; \
+	done
 
 dep: Makefile.dep
 
