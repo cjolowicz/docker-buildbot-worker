@@ -1,12 +1,14 @@
 VERSION = 1.8.0
+NAME = buildbot-worker
+
 PLATFORM = $(notdir $(abspath $(CURDIR)/../..))
 RELEASE = $(notdir $(abspath $(CURDIR)/..))
 ARCH = $(notdir $(CURDIR))
 
 ifeq ($(strip $(NAMESPACE)),)
-    IMAGE = buildbot-worker:$(VERSION)-$(PLATFORM)-$(RELEASE)-$(ARCH)
+    IMAGE = $(NAME):$(VERSION)-$(PLATFORM)-$(RELEASE)-$(ARCH)
 else
-    IMAGE = $(NAMESPACE)/buildbot-worker:$(VERSION)-$(PLATFORM)-$(RELEASE)-$(ARCH)
+    IMAGE = $(NAMESPACE)/$(NAME):$(VERSION)-$(PLATFORM)-$(RELEASE)-$(ARCH)
 endif
 
 all: build
