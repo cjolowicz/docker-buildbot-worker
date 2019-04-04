@@ -55,17 +55,6 @@ push: login
 	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir push ; \
 	done
 
-pull:
-	@for dir in $(DIRS) ; do \
-	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir pull ; \
-	done
-
-pullpush: login
-	@for dir in $(DIRS) ; do \
-	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir pull ; \
-	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir push ; \
-	done
-
 login:
 	@echo "$(DOCKER_PASSWORD)" | docker login -u $(DOCKER_USERNAME) --password-stdin
 

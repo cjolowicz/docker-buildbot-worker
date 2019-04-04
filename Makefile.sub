@@ -4,6 +4,7 @@ ARCH = $(notdir $(CURDIR))
 TAGS = $(shell $(TOPDIR)/expandtags.sh $(VERSION) $(PLATFORM) $(RELEASE) $(ARCH))
 IMAGES = $(patsubst %, $(REPO):%, $(TAGS))
 IMAGE = $(firstword $(IMAGES))
+CACHE = $(REPO):master-$(PLATFORM)-$(RELEASE)-$(ARCH)
 BUILDFLAGS = --file=$(CURDIR)/Dockerfile $(patsubst %, --tag=%, $(IMAGES))
 
 all: build
@@ -16,21 +17,16 @@ Dockerfile:
 	    Dockerfile.m4 > Dockerfile
 
 build: Dockerfile
-	@if docker image ls --format='{{.Repository}}:{{.Tag}}' | \
-	        grep -q '^$(IMAGE)$$' ; then \
-	    ( set -x ; docker build $(BUILDFLAGS) --cache-from=$(IMAGE) $(TOPDIR) ) ; \
+	@set -x ; \
+	if docker pull $(CACHE) ; then \
+	    docker build $(BUILDFLAGS) --cache-from=$(CACHE) $(TOPDIR) ; \
 	else \
-	    ( set -x ; docker build $(BUILDFLAGS) $(TOPDIR) ) ; \
+	    docker build $(BUILDFLAGS) $(TOPDIR) ; \
 	fi
 
 push: build
 	@for image in $(IMAGES) ; do \
 	    ( set -x ; docker push $$image ) ; \
-	done
-
-pull:
-	@for image in $(IMAGES) ; do \
-	    ( set -x ; docker pull $$image ) ; \
 	done
 
 dep: Makefile.dep
