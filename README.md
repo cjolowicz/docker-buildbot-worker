@@ -67,7 +67,7 @@ will install `tini` as the entrypoint for the container.
 
 ## Tags
 
-The full tag is `VERSION-PLATFORM-RELEASE-ARCH`.
+The full tag has the form `VERSION-PLATFORM-RELEASE-ARCH`.
 
 `VERSION` consists of the upstream version and a single-component
 1-based downstream version, e.g. _1.8.0-1_.
@@ -77,12 +77,12 @@ version and each of its prefixes, e.g. _1.8.0_, _1.8_, _1_. These
 abbreviated tags have the following forms:
 
 - `VERSION-PLATFORM-RELEASE-ARCH`
-- `VERSION-PLATFORM-RELEASE`, for the default architecture (x86_64)
-- `VERSION-PLATFORM`, for the default architecture (x86_64) and the
+- `VERSION-PLATFORM-RELEASE`, for the default architecture (`x86_64`)
+- `VERSION-PLATFORM`, for the default architecture (`x86_64`) and the
    latest supported release of that platform
-- `VERSION`, for the default architecture (x86_64) and the latest
+- `VERSION`, for the default architecture (`x86_64`) and the latest
    supported Alpine release
-- `latest`, for the default architecture (x86_64) and the latest
+- `latest`, for the default architecture (`x86_64`) and the latest
    supported Alpine release
 
 ## Building
