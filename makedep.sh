@@ -1,5 +1,16 @@
 #!/bin/bash
 
+if realpath --relative-to=/ / >/dev/null 2>&1
+then
+    relative_to() {
+        realpath --relative-to="$1" "$2"
+    }
+else
+    relative_to() {
+        $(dirname $0)/relative-to.sh "$@"
+    }
+fi
+
 makedep() {
     arg=$1
     shift
@@ -9,7 +20,7 @@ makedep() {
 
     for file
     do
-        dependency=$(realpath --relative-to=$targetdir "$file")
+        dependency=$(relative_to "$targetdir" "$file")
         echo "$target: $dependency"
         makedep "$arg" $(
             grep -o 'm4_include([^)]*)' "$file" |
