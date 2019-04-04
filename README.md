@@ -72,22 +72,18 @@ The full tag is `VERSION-PLATFORM-RELEASE-ARCH`.
 `VERSION` consists of the upstream version and a single-component
 1-based downstream version, e.g. _1.8.0-1_.
 
-Abbreviated tags are provided with `VERSION` replaced by each of its
-prefixes, e.g.:
-
-- 1.8.0
-- 1.8
-- 1
-
-These tags include the following:
+Abbreviated tags are provided with `VERSION` replaced by the upstream
+version and each of its prefixes, e.g. _1.8.0_, _1.8_, _1_. These
+abbreviated tags have the following forms:
 
 - `VERSION-PLATFORM-RELEASE-ARCH`
 - `VERSION-PLATFORM-RELEASE`, for the default architecture (x86_64)
 - `VERSION-PLATFORM`, for the default architecture (x86_64) and the
    latest supported release of that platform
 - `VERSION`, for the default architecture (x86_64) and the latest
-   supported release of alpine
-- `latest`, as in the previous case
+   supported Alpine release
+- `latest`, for the default architecture (x86_64) and the latest
+   supported Alpine release
 
 ## Building
 
