@@ -9,7 +9,6 @@ all: build
 
 Dockerfile:
 	m4 -I $(TOPDIR) --prefix-builtins \
-	    -D NAMESPACE=$(NAMESPACE) \
 	    -D PLATFORM=$(PLATFORM) \
 	    -D RELEASE=$(RELEASE) \
 	    -D ARCH=$(ARCH) \
