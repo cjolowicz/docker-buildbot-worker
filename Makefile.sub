@@ -1,15 +1,16 @@
 VERSION = 1.8.0
 NAME = buildbot-worker
 
+ifeq ($(strip $(NAMESPACE)),)
+    REPO = $(NAME)
+else
+    REPO = $(NAMESPACE)/$(NAME)
+endif
+
 PLATFORM = $(notdir $(abspath $(CURDIR)/../..))
 RELEASE = $(notdir $(abspath $(CURDIR)/..))
 ARCH = $(notdir $(CURDIR))
-
-ifeq ($(strip $(NAMESPACE)),)
-    IMAGE = $(NAME):$(VERSION)-$(PLATFORM)-$(RELEASE)-$(ARCH)
-else
-    IMAGE = $(NAMESPACE)/$(NAME):$(VERSION)-$(PLATFORM)-$(RELEASE)-$(ARCH)
-endif
+IMAGE = $(REPO):$(VERSION)-$(PLATFORM)-$(RELEASE)-$(ARCH)
 
 all: build
 
