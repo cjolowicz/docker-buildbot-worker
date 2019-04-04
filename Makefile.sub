@@ -10,7 +10,8 @@ endif
 PLATFORM = $(notdir $(abspath $(CURDIR)/../..))
 RELEASE = $(notdir $(abspath $(CURDIR)/..))
 ARCH = $(notdir $(CURDIR))
-IMAGE = $(REPO):$(VERSION)-$(PLATFORM)-$(RELEASE)-$(ARCH)
+TAG = $(VERSION)-$(PLATFORM)-$(RELEASE)-$(ARCH)
+IMAGE = $(REPO):$(TAG)
 
 all: build
 
