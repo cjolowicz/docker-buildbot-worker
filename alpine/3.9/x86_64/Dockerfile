@@ -6,7 +6,7 @@ RUN apk add --update --no-cache \
     openssl-dev \
     python3-dev
 
-ENV BUILDBOT_VERSION 1.8.1
+ENV BUILDBOT_VERSION 2.0.0
 RUN pip3 install --upgrade pip && \
     pip --no-cache-dir install twisted[tls] && \
     pip --no-cache-dir install buildbot_worker==$BUILDBOT_VERSION
