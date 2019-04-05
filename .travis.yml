@@ -9,11 +9,8 @@ services:
 script: |
   : ${VERSION:=${TRAVIS_TAG#v}}
   : ${VERSION:=$TRAVIS_BRANCH}
-  BRANCH=$(
-      git for-each-ref --contains $TRAVIS_BRANCH |
-      awk '($2 == "commit"){print $3}' |
-      sed -n 's_^refs/heads/__p' |
-      head -n1)
+  : ${BRANCH:=${TRAVIS_TAG:+master}}
+  : ${BRANCH:=$TRAVIS_BRANCH}
   make push VERSION=$VERSION BRANCH=$BRANCH > make.log
   status=$?
   if [ $status -ne 0 ]
