@@ -51,6 +51,11 @@ build:
 	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir build ; \
 	done
 
+test:
+	@set -e; for dir in $(DIRS) ; do \
+	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir test ; \
+	done
+
 push: login
 	@set -e; for dir in $(DIRS) ; do \
 	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir push ; \
@@ -64,4 +69,4 @@ dep:
 	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir dep ; \
 	done
 
-.PHONY: all prepare build push login dep
+.PHONY: all prepare build test push login dep
