@@ -1,4 +1,5 @@
 export TOPDIR = $(shell pwd)
+export BRANCH = $(shell git rev-parse --abbrev-ref HEAD)
 export NAMESPACE = $(DOCKER_USERNAME)
 export NAME = buildbot-worker
 export VERSION = 1.8.1-1
