@@ -24,6 +24,9 @@ build: Dockerfile
 	    docker build $(BUILDFLAGS) $(TOPDIR) ; \
 	fi
 
+test: build
+	docker run --rm $(IMAGE) $(NAME) --version
+
 push: build
 	@for image in $(IMAGES) ; do \
 	    ( set -x ; docker push $$image ) ; \
@@ -37,6 +40,6 @@ Makefile.dep: $(TOPDIR)/makedep.sh $(shell find $(TOPDIR) -name '*.m4')
 	    $(CURDIR)/Dockerfile.m4 \
 	    > $(CURDIR)/Makefile.dep
 
-.PHONY: all build push dep
+.PHONY: all build test push dep
 
 include Makefile.dep
