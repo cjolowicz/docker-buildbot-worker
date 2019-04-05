@@ -6,10 +6,6 @@ install:
 services:
   - docker
 
-stages:
-  - name: deploy
-    if: tag IS present
-
 jobs:
   include:
     - if: tag IS present
