@@ -12,4 +12,4 @@ script: |
   make push VERSION=$VERSION > make.log
   status=$?
   test $status -eq 0 || tail --lines=4K make.log
-  test $status -eq 0
+  ( exit $status )
