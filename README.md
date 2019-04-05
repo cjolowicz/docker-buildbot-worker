@@ -21,6 +21,7 @@ and architectures:
 | Debian 9 (stretch) | [`x86_64`](debian/9/x86_64/Dockerfile) [`i386`](debian/9/i386/Dockerfile) |
 | OpenSUSE 13 | [`x86_64`](opensuse/13/x86_64/Dockerfile) |
 | OpenSUSE 42 | [`x86_64`](opensuse/42/x86_64/Dockerfile) |
+| OpenSUSE 15 | [`x86_64`](opensuse/15/x86_64/Dockerfile) |
 | Scientific 6 | [`x86_64`](scientific/6/x86_64/Dockerfile) |
 | Scientific 7 | [`x86_64`](scientific/7/x86_64/Dockerfile) |
 | Ubuntu 12.04 (precise) | [`x86_64`](ubuntu/12.04/x86_64/Dockerfile) [`i386`](ubuntu/12.04/i386/Dockerfile) |
