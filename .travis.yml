@@ -11,7 +11,7 @@ script: |
   : ${VERSION:=$TRAVIS_BRANCH}
   make push VERSION=$VERSION > make.log
   status=$?
-  if [ $status -eq 0 ]
+  if [ $status -ne 0 ]
   then
       echo "========================================================================"
       echo Job exited with status $status. Log follows:
