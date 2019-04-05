@@ -11,5 +11,5 @@ script: |
   : ${VERSION:=$TRAVIS_BRANCH}
   make push VERSION=$VERSION > make.log
   status=$?
-  test $status -eq 0 || tail --lines=4K make.log
+  [ $status -eq 0 ] || tail --lines=4K make.log
   ( exit $status )
