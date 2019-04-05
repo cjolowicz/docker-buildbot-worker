@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.8.0-2] - 2019-04-05
+### Fixed
+- Fix build failure for Scientific 7 due to `python3` and `pip3`
+  symlinks now being provided by the upstream Python 3.6 packages.
+
 ## 1.8.0-1 - 2019-04-03
 ### Added
 - Initial version: buildbot 1.8.0
@@ -30,4 +35,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Ubuntu 18.04 (bionic)
 - \*) x86_64 only
 
-[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.0-1...HEAD
+[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.0-2...HEAD
+[1.8.0-2]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.0-1...v1.8.0-2

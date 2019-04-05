@@ -1,7 +1,7 @@
 export TOPDIR = $(shell pwd)
 export NAMESPACE = $(DOCKER_USERNAME)
 export NAME = buildbot-worker
-export VERSION = 1.8.0-1
+export VERSION = 1.8.0-2
 
 ifeq ($(strip $(NAMESPACE)),)
     export REPO = $(NAME)
