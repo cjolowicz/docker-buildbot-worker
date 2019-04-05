@@ -13,10 +13,6 @@ RUN set -ex; \
     ; \
     yum clean all
 
-RUN set -ex; \
-    ln -s /usr/bin/pip3.6 /usr/bin/pip3; \
-    ln -s /usr/bin/python3.6 /usr/bin/python3
-
 ENV BUILDBOT_VERSION 1.8.0
 RUN pip3 install --upgrade pip && \
     pip --no-cache-dir install twisted[tls] && \
