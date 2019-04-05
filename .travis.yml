@@ -6,17 +6,10 @@ install:
 services:
   - docker
 
-jobs:
-  include:
-    - if: tag IS present
-      script: |
-        make push > make.log
-        echo $? > make.status
-        test "$(cat make.status)" -eq 0 || tail --lines=4K make.log
-        test "$(cat make.status)" -eq 0
-    - if: tag IS NOT present
-      script: |
-        make push VERSION=master > make.log
-        echo $? > make.status
-        test "$(cat make.status)" -eq 0 || tail --lines=4K make.log
-        test "$(cat make.status)" -eq 0
+script: |
+  : ${VERSION:=${TRAVIS_TAG#v}}
+  : ${VERSION:=master}
+  make push VERSION=$VERSION > make.log
+  echo $? > make.status
+  test "$(cat make.status)" -eq 0 || tail --lines=4K make.log
+  test "$(cat make.status)" -eq 0
