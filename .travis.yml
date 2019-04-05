@@ -10,6 +10,6 @@ script: |
   : ${VERSION:=${TRAVIS_TAG#v}}
   : ${VERSION:=$TRAVIS_BRANCH}
   make push VERSION=$VERSION > make.log
-  echo $? > make.status
-  test "$(cat make.status)" -eq 0 || tail --lines=4K make.log
-  test "$(cat make.status)" -eq 0
+  status=$?
+  test $status -eq 0 || tail --lines=4K make.log
+  test $status -eq 0
