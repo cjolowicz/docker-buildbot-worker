@@ -27,7 +27,7 @@ build: Dockerfile
 test: build
 	docker run --rm $(IMAGE) $(NAME) --version
 
-push: build
+push: test
 	@for image in $(IMAGES) ; do \
 	    ( set -x ; docker push $$image ) ; \
 	done
