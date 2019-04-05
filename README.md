@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/cjolowicz/docker-buildbot-worker.svg?branch=master)](https://travis-ci.com/cjolowicz/docker-buildbot-worker)
 [![Docker Hub](https://img.shields.io/docker/cloud/build/cjolowicz/buildbot-worker.svg)](https://hub.docker.com/r/cjolowicz/buildbot-worker)
-[![Buildbot](https://img.shields.io/badge/buildbot-1.8.0-brightgreen.svg)](https://buildbot.net/)
+[![Buildbot](https://img.shields.io/badge/buildbot-1.8.1-brightgreen.svg)](https://buildbot.net/)
 
 # docker-buildbot-worker
 
@@ -70,10 +70,10 @@ will install `tini` as the entrypoint for the container.
 The full tag has the form `VERSION-PLATFORM-RELEASE-ARCH`.
 
 `VERSION` consists of the upstream version and a single-component
-1-based downstream version, e.g. _1.8.0-1_.
+1-based downstream version, e.g. _1.8.1-1_.
 
 Abbreviated tags are provided with `VERSION` replaced by the upstream
-version and each of its prefixes, e.g. _1.8.0_, _1.8_, _1_. These
+version and each of its prefixes, e.g. _1.8.1_, _1.8_, _1_. These
 abbreviated tags have the following forms:
 
 - `VERSION-PLATFORM-RELEASE-ARCH`
