@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [2.1.0-2] - 2019-04-05
 ### Added
 - Add OpenSUSE 15 (x86_64).
 
@@ -59,7 +61,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Ubuntu 18.04 (bionic)
 - \*) x86_64 only
 
-[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.1.0-1...HEAD
+[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.1.0-2...HEAD
+[2.1.0-2]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.1.0-1...2.1.0-2
 [2.1.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.0.1-1...2.1.0-1
 [2.0.1-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.0.0-1...2.0.1-1
 [2.0.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.1-2...2.0.0-1
