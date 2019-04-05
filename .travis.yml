@@ -9,12 +9,14 @@ services:
 jobs:
   include:
     - if: tag IS present
-      script:
-        - make push > make.log ; echo $? > make.status
-        - test "$(cat make.status)" -eq 0 || tail --lines=4K make.log
-        - test "$(cat make.status)" -eq 0
+      script: |
+        make push > make.log
+        echo $? > make.status
+        test "$(cat make.status)" -eq 0 || tail --lines=4K make.log
+        test "$(cat make.status)" -eq 0
     - if: tag IS NOT present
-      script:
-        - make push VERSION=master > make.log ; echo $? > make.status
-        - test "$(cat make.status)" -eq 0 || tail --lines=4K make.log
-        - test "$(cat make.status)" -eq 0
+      script: |
+        make push VERSION=master > make.log
+        echo $? > make.status
+        test "$(cat make.status)" -eq 0 || tail --lines=4K make.log
+        test "$(cat make.status)" -eq 0
