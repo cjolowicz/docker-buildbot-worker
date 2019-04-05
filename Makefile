@@ -64,4 +64,4 @@ dep:
 	    $(MAKE) -f $(TOPDIR)/Makefile.sub -C $$dir dep ; \
 	done
 
-.PHONY: all prepare build push pull login dep
+.PHONY: all prepare build push login dep

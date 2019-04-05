@@ -37,6 +37,6 @@ Makefile.dep: $(TOPDIR)/makedep.sh $(shell find $(TOPDIR) -name '*.m4')
 	    $(CURDIR)/Dockerfile.m4 \
 	    > $(CURDIR)/Makefile.dep
 
-.PHONY: all build push pull dep
+.PHONY: all build push dep
 
 include Makefile.dep
