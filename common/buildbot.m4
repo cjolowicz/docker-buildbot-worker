@@ -12,4 +12,5 @@ USER buildbot
 
 COPY buildbot.tac .
 
+VOLUME /var/lib/buildbot
 CMD ["twistd", "--pidfile=", "--nodaemon", "--python=buildbot.tac"]
