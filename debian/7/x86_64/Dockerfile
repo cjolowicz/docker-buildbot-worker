@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM debian/eol:wheezy
 
 RUN sed -i \
         -e s/deb.debian.org/archive.debian.org/ \

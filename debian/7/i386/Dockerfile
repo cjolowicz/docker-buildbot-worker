@@ -1,4 +1,4 @@
-FROM i386/debian:wheezy
+FROM lpenz/debian-wheezy-i386
 
 RUN sed -i \
         -e s/deb.debian.org/archive.debian.org/ \
