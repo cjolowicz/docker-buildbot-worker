@@ -9,7 +9,7 @@ BUILDFLAGS = --file=$(CURDIR)/Dockerfile $(patsubst %, --tag=%, $(IMAGES))
 
 all: build
 
-Dockerfile:
+Dockerfile: $(TOPDIR)/Makefile
 	m4 -I $(TOPDIR) --prefix-builtins \
 	    -D PLATFORM=$(PLATFORM) \
 	    -D RELEASE=$(RELEASE) \
