@@ -1,7 +1,5 @@
 #!/bin/bash
 
-: ${VERSION:=${TRAVIS_TAG#v}}
-: ${VERSION:=$TRAVIS_BRANCH}
 # Determine branch from TRAVIS_TAG and TRAVIS_BRANCH.
 if [ -z "$TRAVIS_TAG" ]
 then
@@ -13,7 +11,15 @@ else
     BRANCH=master
 fi
 
-make push VERSION=$VERSION BRANCH=$BRANCH > make.log
+if [ -n "$TRAVIS_TAG" ]
+then
+    make push BRANCH=$BRANCH
+elif [ "$BRANCH" = master ]
+then
+    make push BRANCH=$BRANCH VERSION=master
+else
+    make test BRANCH=$BRANCH
+fi > make.log
 
 status=$?
 
