@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.2.0-2] - 2019-04-25
+### Changed
+- Switch Debian 7 images to archive.debian.org.
+
 ## [2.2.0-1] - 2019-04-25
 ### Changed
 - Upgrade to buildbot 2.2.0.
@@ -25,6 +29,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0-1] - 2019-04-05
 ### Changed
 - Upgrade to buildbot 2.0.0.
+
+## [1.8.1-3] - 2019-04-25
+### Changed
+- Switch Debian 7 images to archive.debian.org.
 
 ## [1.8.1-2] - 2019-04-05
 ### Fixed
@@ -65,12 +73,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Ubuntu 18.04 (bionic)
 - \*) x86_64 only
 
-[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.2.0-1...HEAD
+[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.2.0-2...HEAD
+[2.2.0-2]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.2.0-1...2.2.0-2
 [2.2.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.1.0-2...2.2.0-1
 [2.1.0-2]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.1.0-1...2.1.0-2
 [2.1.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.0.1-1...2.1.0-1
 [2.0.1-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.0.0-1...2.0.1-1
-[2.0.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.1-2...2.0.0-1
+[2.0.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.1-3...2.0.0-1
+[1.8.1-3]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.1-2...v1.8.1-3
 [1.8.1-2]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.1-1...v1.8.1-2
 [1.8.1-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.0-2...v1.8.1-1
 [1.8.0-2]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.0-1...v1.8.0-2
