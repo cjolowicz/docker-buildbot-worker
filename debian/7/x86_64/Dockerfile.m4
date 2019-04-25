@@ -1,5 +1,5 @@
 m4_include(m4/apt-install.m4)m4_dnl
-FROM debian:wheezy
+FROM debian/eol:wheezy
 
 m4_include(debian/7/apt.m4)
 RUN M4_APT_INSTALL(
