@@ -2,7 +2,8 @@ export TOPDIR = $(shell pwd)
 export BRANCH = $(shell git rev-parse --abbrev-ref HEAD)
 export NAMESPACE = $(DOCKER_USERNAME)
 export NAME = buildbot-worker
-export VERSION = 2.1.0-1
+export BUILDBOT_VERSION = 2.1.0
+export VERSION = $(BUILDBOT_VERSION)-1
 
 ifeq ($(strip $(NAMESPACE)),)
     export REPO = $(NAME)

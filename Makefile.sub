@@ -14,6 +14,7 @@ Dockerfile:
 	    -D PLATFORM=$(PLATFORM) \
 	    -D RELEASE=$(RELEASE) \
 	    -D ARCH=$(ARCH) \
+	    -D M4_BUILDBOT_VERSION=$(BUILDBOT_VERSION) \
 	    Dockerfile.m4 > Dockerfile
 
 build: Dockerfile
