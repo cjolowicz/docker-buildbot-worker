@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.3.0-1] - 2019-06-06
+### Changed
+- Upgrade to buildbot 2.3.0.
+
 ## [2.2.0-3] - 2019-06-06
 ### Fixed
 - Fix cryptography installation on CentOS 5.
@@ -85,7 +89,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Ubuntu 18.04 (bionic)
 - \*) x86_64 only
 
-[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.2.0-3...HEAD
+[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.3.0-1...HEAD
+[2.3.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.2.0-3...v2.3.0-1
 [2.2.0-3]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.2.0-2...v2.2.0-3
 [2.2.0-2]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.2.0-1...v2.2.0-2
 [2.2.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.1.0-2...v2.2.0-1
