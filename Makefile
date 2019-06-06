@@ -3,7 +3,7 @@ export BRANCH = $(shell git rev-parse --abbrev-ref HEAD)
 export NAMESPACE = $(DOCKER_USERNAME)
 export NAME = buildbot-worker
 export BUILDBOT_VERSION = 1.8.2
-export VERSION = $(BUILDBOT_VERSION)-7
+export VERSION = $(BUILDBOT_VERSION)-8
 
 ifeq ($(strip $(NAMESPACE)),)
     export REPO = $(NAME)
