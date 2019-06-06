@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.8.2-7] - 2019-06-06
+### Fixed
+- Fix cryptography installation on Debian 9 (i386).
+
 ## [1.8.2-6] - 2019-06-06
 ### Fixed
 - Fix cryptography installation on Debian 8 (i386).
@@ -71,7 +75,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Ubuntu 18.04 (bionic)
 - \*) x86_64 only
 
-[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.2-6...HEAD
+[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.2-7...HEAD
+[1.8.2-7]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.2-6...v1.8.2-7
 [1.8.2-6]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.2-5...v1.8.2-6
 [1.8.2-5]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.2-4...v1.8.2-5
 [1.8.2-4]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.2-3...v1.8.2-4
