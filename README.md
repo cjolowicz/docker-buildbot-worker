@@ -86,6 +86,16 @@ abbreviated tags have the following forms:
 - `latest`, for the default architecture (`x86_64`) and the latest
    supported Alpine release
 
+Here are some examples:
+
+| Image                                   | Buildbot     | Platform       | Architecture |
+| ---                                     | ---          | ---            | ---          |
+| cjolowicz/buildbot-worker               | latest       | current Alpine | `x86_64`     |
+| cjolowicz/buildbot-worker:2-debian      | latest 2.x   | current Debian | `x86_64`     |
+| cjolowicz/buildbot-worker:2-debian-7    | latest 2.x   | Debian 7       | `x86_64`     |
+| cjolowicz/buildbot-worker:1.8           | latest 1.8.x | current Alpine | `x86_64`     |
+| cjolowicz/buildbot-worker:1-centos-i386 | latest 1.x   | current CentOS | `i386`       |
+
 ## Building
 
 Generating the Dockerfiles requires
