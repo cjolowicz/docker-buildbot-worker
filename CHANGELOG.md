@@ -81,14 +81,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Ubuntu 18.04 (bionic)
 - \*) x86_64 only
 
-[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.2.0-3...HEAD
-[2.2.0-3]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.2.0-2...2.2.0-3
-[2.2.0-2]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.2.0-1...2.2.0-2
-[2.2.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.1.0-2...2.2.0-1
-[2.1.0-2]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.1.0-1...2.1.0-2
-[2.1.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.0.1-1...2.1.0-1
-[2.0.1-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/2.0.0-1...2.0.1-1
-[2.0.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.1-3...2.0.0-1
+[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.2.0-3...HEAD
+[2.2.0-3]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.2.0-2...v2.2.0-3
+[2.2.0-2]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.2.0-1...v2.2.0-2
+[2.2.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.1.0-2...v2.2.0-1
+[2.1.0-2]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.1.0-1...v2.1.0-2
+[2.1.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.0.1-1...v2.1.0-1
+[2.0.1-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.0.0-1...v2.0.1-1
+[2.0.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.1-3...v2.0.0-1
 [1.8.2-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.1-3...v1.8.2-1
 [1.8.1-3]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.1-2...v1.8.1-3
 [1.8.1-2]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.1-1...v1.8.1-2
