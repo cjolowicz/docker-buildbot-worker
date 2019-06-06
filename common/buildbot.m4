@@ -1,6 +1,12 @@
 ENV BUILDBOT_VERSION M4_BUILDBOT_VERSION
 RUN pip3 install --upgrade pip && \
-    pip --no-cache-dir install --only-binary cryptography twisted[tls] && \
+    pip --no-cache-dir install m4_ifelse(
+        PLATFORM RELEASE, centos 5,
+        --only-binary cryptography ,
+        PLATFORM RELEASE, centos 6,
+        --only-binary cryptography ,
+        PLATFORM ARCH, debian i386,
+        --only-binary cryptography )twisted[tls] && \
     pip --no-cache-dir install buildbot_worker==$BUILDBOT_VERSION
 
 RUN m4_ifelse(
