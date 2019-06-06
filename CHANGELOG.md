@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.8.2-2] - 2019-06-06
 ### Fixed
-- Fix installation of cryptography on CentOS 5
+- Fix cryptography installation on CentOS 5.
 
 ## [1.8.2-1] - 2019-06-05
 ### Changed
@@ -55,7 +55,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Ubuntu 18.04 (bionic)
 - \*) x86_64 only
 
-[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.2-1...HEAD
+[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.2-2...HEAD
+[1.8.2-2]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.2-1...v1.8.2-2
 [1.8.2-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.1-3...v1.8.2-1
 [1.8.1-3]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.1-2...v1.8.1-3
 [1.8.1-2]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.1-1...v1.8.1-2
