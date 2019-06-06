@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.3.1-8] - 2019-06-06
+### Changed
+- Only install binary package of cryptography on selected platforms:
+  - Debian and Ubuntu (i386)
+  - CentOS 5 and 6
+
+### Fixed
+- Fix cryptography installation on Alpine.
+
 ## [2.3.1-7] - 2019-06-06
 ### Changed
 - Install binary package of cryptography.
@@ -68,6 +77,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0-1] - 2019-04-05
 ### Changed
 - Upgrade to buildbot 2.0.0.
+
+## [1.8.2-9] - 2019-06-06
+### Changed
+- Only install binary package of cryptography on selected platforms:
+  - Debian and Ubuntu (i386)
+  - CentOS 5 and 6
+
+### Fixed
+- Fix cryptography installation on Alpine.
 
 ## [1.8.2-8] - 2019-06-06
 ### Changed
@@ -147,7 +165,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Ubuntu 18.04 (bionic)
 - \*) x86_64 only
 
-[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.3.1-7...HEAD
+[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.3.1-8...HEAD
+[2.3.1-8]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.3.1-7...v2.3.1-8
 [2.3.1-7]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.3.1-6...v2.3.1-7
 [2.3.1-6]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.3.1-5...v2.3.1-6
 [2.3.1-5]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.3.1-4...v2.3.1-5
@@ -163,6 +182,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.1.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.0.1-1...v2.1.0-1
 [2.0.1-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.0.0-1...v2.0.1-1
 [2.0.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.1-3...v2.0.0-1
+[1.8.2-9]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.2-8...v1.8.2-9
 [1.8.2-8]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.2-7...v1.8.2-8
 [1.8.2-7]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.2-6...v1.8.2-7
 [1.8.2-6]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v1.8.2-5...v1.8.2-6
