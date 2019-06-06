@@ -13,7 +13,7 @@ RUN set -ex; \
     ; \
     yum clean all
 
-ENV BUILDBOT_VERSION 2.2.0
+ENV BUILDBOT_VERSION 2.3.0
 RUN pip3 install --upgrade pip && \
     pip --no-cache-dir install twisted[tls] && \
     pip --no-cache-dir install buildbot_worker==$BUILDBOT_VERSION
