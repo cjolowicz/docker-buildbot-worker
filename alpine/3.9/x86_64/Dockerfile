@@ -8,7 +8,7 @@ RUN apk add --update --no-cache \
 
 ENV BUILDBOT_VERSION 2.3.1
 RUN pip3 install --upgrade pip && \
-    pip --no-cache-dir install --only-binary cryptography twisted[tls] && \
+    pip --no-cache-dir install twisted[tls] && \
     pip --no-cache-dir install buildbot_worker==$BUILDBOT_VERSION
 
 RUN adduser -Dh /var/lib/buildbot buildbot
