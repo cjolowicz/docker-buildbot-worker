@@ -1,4 +1,5 @@
 Dockerfile: ../../../common/buildbot.m4
+Dockerfile: ../../../common/pip.m4
 Dockerfile: ../../../m4/apt-install.m4
 Dockerfile: ../../buildbot-deps.m4
 Dockerfile: Dockerfile.m4

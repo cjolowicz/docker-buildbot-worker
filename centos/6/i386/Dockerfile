@@ -15,17 +15,33 @@ RUN set -ex; \
     make \
     python36u \
     python36u-devel \
-    python36u-pip \
     ; \
     linux32 yum clean all
 
-RUN ln -s /usr/bin/pip3.6 /usr/bin/pip3
-
 ENTRYPOINT ["/usr/bin/linux32"]
 
+ENV PYTHON_PIP_VERSION 19.1.1
+
+RUN set -ex; \
+    cd /usr/local/src; \
+    curl -LO 'https://bootstrap.pypa.io/get-pip.py'; \
+    python3 get-pip.py \
+        --disable-pip-version-check \
+        --no-cache-dir \
+        "pip==$PYTHON_PIP_VERSION" \
+    ; \
+    pip --version; \
+    find /usr/local -depth \
+        \( \
+            \( -type d -a \( -name test -o -name tests \) \) \
+            -o \
+            \( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) \
+        \) -exec rm -rf '{}' + \
+    ; \
+    rm -f get-pip.py
+
 ENV BUILDBOT_VERSION 2.3.1
-RUN pip3 install --upgrade pip && \
-    pip --no-cache-dir install --only-binary cryptography twisted[tls] && \
+RUN pip --no-cache-dir install --only-binary cryptography twisted[tls] && \
     pip --no-cache-dir install buildbot_worker==$BUILDBOT_VERSION
 
 RUN useradd --create-home --home-dir=/var/lib/buildbot buildbot

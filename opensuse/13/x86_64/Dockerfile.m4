@@ -4,4 +4,5 @@ FROM opensuse/archive:13.2
 RUN M4_ZYPPER_INSTALL(
     m4_include(opensuse/buildbot-deps.m4))
 
+m4_include(common/pip.m4)
 m4_include(common/buildbot.m4)m4_dnl

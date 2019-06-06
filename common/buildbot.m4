@@ -1,6 +1,5 @@
 ENV BUILDBOT_VERSION M4_BUILDBOT_VERSION
-RUN pip3 install --upgrade pip && \
-    pip --no-cache-dir install m4_ifelse(
+RUN pip --no-cache-dir install m4_ifelse(
         PLATFORM RELEASE, centos 5,
         --only-binary cryptography ,
         PLATFORM RELEASE, centos 6,

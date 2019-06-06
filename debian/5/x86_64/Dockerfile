@@ -127,7 +127,7 @@ RUN set -ex; \
     ln -s python3 python; \
     ln -s python3-config python-config
 
-ENV PYTHON_PIP_VERSION 19.0.3
+ENV PYTHON_PIP_VERSION 19.1.1
 
 RUN set -ex; \
     cd /usr/local/src; \
@@ -152,8 +152,7 @@ COPY ca-certificates/mozilla /usr/share/ca-certificates/mozilla
 RUN update-ca-certificates --fresh --verbose
 
 ENV BUILDBOT_VERSION 2.3.1
-RUN pip3 install --upgrade pip && \
-    pip --no-cache-dir install twisted[tls] && \
+RUN pip --no-cache-dir install twisted[tls] && \
     pip --no-cache-dir install buildbot_worker==$BUILDBOT_VERSION
 
 RUN useradd --create-home --home-dir=/var/lib/buildbot buildbot

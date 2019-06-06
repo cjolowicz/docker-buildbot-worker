@@ -5,4 +5,5 @@ RUN M4_YUM_INSTALL(epel-release); \
     M4_YUM_INSTALL(
     m4_include(scientific/buildbot-deps.m4))
 
+m4_include(common/pip.m4)
 m4_include(common/buildbot.m4)m4_dnl

@@ -11,8 +11,7 @@ RUN set -ex; \
     M4_YUM_INSTALL(
         m4_include(centos/buildbot-deps.m4))
 
-RUN ln -s /usr/bin/pip3.6 /usr/bin/pip3
-
 ENTRYPOINT ["/usr/bin/linux32"]
 
+m4_include(common/pip.m4)
 m4_include(common/buildbot.m4)m4_dnl
