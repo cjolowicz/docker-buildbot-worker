@@ -5,11 +5,7 @@ RUN pip3 install --upgrade pip && \
         --only-binary cryptography ,
         PLATFORM RELEASE, centos 6,
         --only-binary cryptography ,
-        PLATFORM RELEASE ARCH, debian 6 i386,
-        --only-binary cryptography ,
-        PLATFORM RELEASE ARCH, debian 7 i386,
-        --only-binary cryptography ,
-        PLATFORM RELEASE ARCH, debian 8 i386,
+        PLATFORM ARCH, debian i386,
         --only-binary cryptography )twisted[tls] && \
     pip --no-cache-dir install buildbot_worker==$BUILDBOT_VERSION
 
