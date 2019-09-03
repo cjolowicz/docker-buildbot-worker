@@ -16,7 +16,7 @@ RUN set -ex; \
 
 RUN ln -s /usr/bin/pip3.6 /usr/bin/pip3
 
-ENV BUILDBOT_VERSION 2.3.1
+ENV BUILDBOT_VERSION 2.4.0
 RUN pip3 install --upgrade pip && \
     pip --no-cache-dir install --only-binary cryptography twisted[tls] && \
     pip --no-cache-dir install buildbot_worker==$BUILDBOT_VERSION
