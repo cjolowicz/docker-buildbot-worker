@@ -2,6 +2,11 @@ m4_include(m4/apt-install.m4)m4_dnl
 FROM i386/debian:jessie
 
 RUN M4_APT_INSTALL(
-    m4_include(debian/buildbot-deps.m4))
+    ca-certificates
+    m4_include(debian/openssl-deps.m4)
+    m4_include(debian/python-deps.m4))
 
+m4_include(common/openssl.m4)
+m4_include(common/python.m4)
+m4_include(common/pip.m4)
 m4_include(common/buildbot.m4)m4_dnl
