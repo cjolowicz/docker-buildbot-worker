@@ -14,11 +14,8 @@ fi
 if [ -n "$TRAVIS_TAG" ]
 then
     make push BRANCH=$BRANCH
-elif [ "$BRANCH" = master ]
-then
-    make push BRANCH=$BRANCH VERSION=master
 else
-    make test BRANCH=$BRANCH
+    make push BRANCH=$BRANCH VERSION=$BRANCH
 fi > make.log
 
 status=$?
