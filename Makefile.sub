@@ -5,6 +5,7 @@ TAGS = $(shell $(TOPDIR)/expandtags.sh $(VERSION) $(PLATFORM) $(RELEASE) $(ARCH)
 IMAGES = $(patsubst %, $(REPO):%, $(TAGS))
 IMAGE = $(firstword $(IMAGES))
 CACHE = $(REPO):$(BRANCH)-$(PLATFORM)-$(RELEASE)-$(ARCH)
+MASTERCACHE = $(REPO):master-$(PLATFORM)-$(RELEASE)-$(ARCH)
 BUILDFLAGS = --file=$(CURDIR)/Dockerfile $(patsubst %, --tag=%, $(IMAGES))
 
 all: build
@@ -21,6 +22,8 @@ build: Dockerfile
 	@set -x ; \
 	if docker pull $(CACHE) ; then \
 	    docker build $(BUILDFLAGS) --cache-from=$(CACHE) $(TOPDIR) ; \
+	elif [ "$(BRANCH)" != master ] && docker pull $(MASTERCACHE) ; then \
+	    docker build $(BUILDFLAGS) --cache-from=$(MASTERCACHE) $(TOPDIR) ; \
 	else \
 	    docker build $(BUILDFLAGS) $(TOPDIR) ; \
 	fi
