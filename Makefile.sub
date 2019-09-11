@@ -1,7 +1,7 @@
 PLATFORM = $(notdir $(abspath $(CURDIR)/../..))
 RELEASE = $(notdir $(abspath $(CURDIR)/..))
 ARCH = $(notdir $(CURDIR))
-TAGS = $(shell $(TOPDIR)/expandtags.sh $(VERSION) $(PLATFORM) $(RELEASE) $(ARCH))
+TAGS = $(shell docker-buildbot-worker expand-tags $(VERSION) $(PLATFORM) $(RELEASE) $(ARCH))
 IMAGES = $(patsubst %, $(REPO):%, $(TAGS))
 IMAGE = $(firstword $(IMAGES))
 CACHE = $(REPO):$(BRANCH)-$(PLATFORM)-$(RELEASE)-$(ARCH)
