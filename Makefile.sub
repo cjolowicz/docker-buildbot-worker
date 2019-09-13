@@ -38,8 +38,8 @@ push: test
 
 dep: Makefile.dep
 
-Makefile.dep: $(TOPDIR)/makedep.sh $(shell find $(TOPDIR) -name '*.m4')
-	cd $(TOPDIR) && ./makedep.sh \
+Makefile.dep: $(shell find $(TOPDIR) -name '*.m4')
+	cd $(TOPDIR) && docker-buildbot-worker generate-m4-dependencies \
 	    $(CURDIR)/Dockerfile \
 	    $(CURDIR)/Dockerfile.m4 \
 	    > $(CURDIR)/Makefile.dep
