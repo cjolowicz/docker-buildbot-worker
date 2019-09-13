@@ -9,9 +9,13 @@ RUN pip3 install --upgrade pip && \
         --only-binary cryptography ,
         PLATFORM ARCH, ubuntu i386,
         --only-binary cryptography )m4_ifelse(
+        PLATFORM RELEASE, opensuse 13,
+        twisted[tls]==19.2,
         PLATFORM RELEASE, opensuse 42,
         twisted[tls]==19.2,
         PLATFORM RELEASE, debian 8,
+        twisted[tls]==19.2,
+        PLATFORM RELEASE, ubuntu 14.04,
         twisted[tls]==19.2,
         twisted[tls]) && \
     pip --no-cache-dir install buildbot_worker==$BUILDBOT_VERSION
