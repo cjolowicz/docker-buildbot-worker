@@ -9,7 +9,7 @@ services:
   - docker
 
 install:
-  - ./travis-install.sh
+  - scripts/travis-install.sh
 
 script:
-  - ./travis.sh
+  - scripts/travis.sh
