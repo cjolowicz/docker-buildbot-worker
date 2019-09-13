@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Changed
-- Downgrade to twisted 19.2 on Python 3.4 distros ([#14](../../pull/14))
+- Downgrade to twisted 19.2 on Python 3.4 distros ([#14](../../pull/14), [#21](../../pull/21))
 - Use cache images for branch builds in CI ([#11](../../pull/11))
 
 ## [2.3.1-8] - 2019-06-06
