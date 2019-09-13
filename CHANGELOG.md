@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Changed
+- Upgrade to buildbot 2.4.0 ([#16](../../pull/16))
 - Downgrade to twisted 19.2 on Python 3.4 distros ([#14](../../pull/14), [#21](../../pull/21))
 - Use cache images for branch builds in CI ([#11](../../pull/11))
 

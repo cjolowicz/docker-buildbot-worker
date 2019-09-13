@@ -5,8 +5,8 @@
 ```shell
 old=1.8.1
 new=2.0.0
-sed -i "s/$old-[0-9]*/$new-1/" Makefile
-sed -i "s/$old/$new/" common/buildbot.m4
+sed -i "/BUILDBOT_VERSION/s/$old/$new/" Makefile
+sed -i "/VERSION = (BUILDBOT_VERSION)/s/-[0-9]*/-1/"
 sed -i "s/buildbot-$old/buildbot-$new/" README.md
 make prepare
 git commit -am "Upgrade to buildbot $new"
