@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Reword README.md ([#12](../../pull/12))
+
 ## [2.4.0-1] - 2019-09-13
 ### Changed
 - Upgrade to buildbot 2.4.0 ([#16](../../pull/16))
