@@ -1,0 +1,125 @@
+[![Build Status](https://travis-ci.com/cjolowicz/docker-buildbot-worker.svg?branch=master)](https://travis-ci.com/cjolowicz/docker-buildbot-worker)
+[![Docker Hub](https://img.shields.io/docker/cloud/build/cjolowicz/buildbot-worker.svg)](https://hub.docker.com/r/cjolowicz/buildbot-worker)
+[![Buildbot](https://img.shields.io/badge/buildbot-{latest_upstream_version}-brightgreen.svg)](https://buildbot.net/)
+
+# docker-buildbot-worker
+
+This repository contains an inofficial [Docker](https://www.docker.com/) image
+for Buildbot Worker. 
+
+Buildbot Worker is the software that runs build jobs for
+[buildbot](https://buildbot.net/), the Continuous Integration framework.
+
+## Supported tags and respective `Dockerfile` links
+
+{default_image_list}
+
+## Quick reference
+
+- **Where to file issues**:<br/>
+  https://github.com/cjolowicz/docker-buildbot-worker/issues
+- **Maintained by**:<br/>
+  [Claudio Jolowicz](https://github.com/cjolowicz)
+- **Supported architectures**:<br/>
+  [`x86_64`](#x86_64-architecture), [`i386`](#i386-architecture)
+- **Supported Docker versions**:<br/>
+  [the latest release](https://github.com/docker/docker-ce/releases/latest)
+- **Changelog**:<br/>
+  https://github.com/cjolowicz/docker-buildbot-worker/blob/master/CHANGELOG.md
+
+## What is buildbot?
+
+Buildbot is an open-source framework for automating software build, test, and
+release processes. Buildbot can automate all aspects of the software development
+cycle: Continuous Integration, Continuous Deployment, Release Management, and
+any other process you can imagine. Buildbot is a framework in which you
+implement a system that matches your workflow and grows with your organization.
+
+[![Buildbot Logo](https://raw.githubusercontent.com/buildbot/buildbot-media/master/images/full_logo.png)](https://buildbot.net/)
+
+## How to use this image
+
+There are two primary ways to run these images in a buildbot installation:
+
+- as long-running containers
+- on demand, using
+  [`DockerLatentWorker`](http://docs.buildbot.net/current/manual/configuration/workers-docker.html)
+  or
+  [`DockerSwarmLatentWorker`](https://github.com/cjolowicz/buildbot-docker-swarm-worker)
+
+Containers can be configured using the following environment variables:
+
+| Variable                       | Description                                                           |
+| ---                            | ---                                                                   |
+| `BUILDMASTER`                  | the domain name or IP address of the master to connect to             |
+| `BUILDMASTER_PORT`             | the port of the worker protocol                                       |
+| `WORKERNAME`                   | the name of the worker as declared in the master configuration        |
+| `WORKERPASS`                   | the password of the worker as declared in the master configuration    |
+| `WORKER_ENVIRONMENT_BLACKLIST` | the worker environment variables to remove before starting the worker |
+
+As the environment variables are accessible from the build, and displayed in the
+log, it is better to remove secret variables like `WORKERPASS`.
+
+It is important to ensure that any zombie processes created by builds will be
+reaped during the lifetime of the container. Unlike the official image, these
+images don't use [dumb-init](https://github.com/Yelp/dumb-init) as PID 1. Modern
+versions of Docker ship with [tini](https://github.com/krallin/tini), which
+provides the same functionality. However, this means that you need to specify
+the `--init` option when invoking `docker run`. This will install `tini` as the
+entrypoint for the container.
+
+## Image Variants
+
+The `cjolowicz/buildbot-worker` images are available for a range of platforms,
+and two architectures:
+
+{platform_table}
+ 
+### `cjolowicz/buildbot-worker:<version>`
+
+This is the default image. This image uses the latest supported Alpine release
+on the default architecture (`x86_64`).
+
+`<version>` consists of the upstream version and a single-component 1-based
+downstream version. Abbreviated tags are provided with `<version>` replaced by
+the upstream version and each of its prefixes.
+
+### `cjolowicz/buildbot-worker:<version>-<platform>`
+
+These tags reference images for the latest supported release of the selected
+platform. Currently, these are the following:
+
+{default_platform_list}
+
+### `cjolowicz/buildbot-worker:<version>-<platform>-<release>`
+
+These tags reference images for the selected platform release.
+
+Here are some examples:
+
+- [`cjolowicz/buildbot-worker:<version>-debian-8`](#debian-8)
+- [`cjolowicz/buildbot-worker:<version>-ubuntu-16.04`](#ubuntu-1604)
+
+### `cjolowicz/buildbot-worker:<version>-<platform>-<release>-<architecture>`
+
+The full tag includes the buildbot version, the platform release, as well as the
+architecture.
+
+## License
+
+View [license information](https://github.com/buildbot/buildbot/blob/master/LICENSE) for Buildbot.
+
+View [license information](https://github.com/cjolowicz/docker-buildbot-worker/blob/master/LICENSE.md) for `docker-buildbot-worker`.
+
+As with all Docker images, these likely also contain other software which may be
+under other licenses (such as Bash, etc from the base distribution, along with
+any direct or indirect dependencies of the primary software being contained).
+
+## List of all available images
+
+{full_image_list}
+
+## Related projects
+
+- https://github.com/cjolowicz/docker-buildbot
+- https://github.com/cjolowicz/buildbot-docker-swarm-worker
