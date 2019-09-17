@@ -269,6 +269,14 @@ Supported platforms:
 - [`1.8.1-debian-5-x86_64`, `1.8.1-debian-5`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v1.8.1-3/debian/5/x86_64/Dockerfile)
 - [`1.8.0-debian-5-x86_64`, `1.8.0-debian-5`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v1.8.0-2/debian/5/x86_64/Dockerfile)
 
+#### OpenSUSE 15
+
+- [`2.4.0-opensuse-15-x86_64`, `2.4.0-opensuse-15`, `2.4.0-opensuse`, `2.4-opensuse-15-x86_64`, `2.4-opensuse-15`, `2.4-opensuse`, `2-opensuse-15-x86_64`, `2-opensuse-15`, `2-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/opensuse/15/x86_64/Dockerfile)
+- [`2.3.1-opensuse-15-x86_64`, `2.3.1-opensuse-15`, `2.3.1-opensuse`, `2.3-opensuse-15-x86_64`, `2.3-opensuse-15`, `2.3-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/opensuse/15/x86_64/Dockerfile)
+- [`2.3.0-opensuse-15-x86_64`, `2.3.0-opensuse-15`, `2.3.0-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/opensuse/15/x86_64/Dockerfile)
+- [`2.2.0-opensuse-15-x86_64`, `2.2.0-opensuse-15`, `2.2.0-opensuse`, `2.2-opensuse-15-x86_64`, `2.2-opensuse-15`, `2.2-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.2.0-3/opensuse/15/x86_64/Dockerfile)
+- [`2.1.0-opensuse-15-x86_64`, `2.1.0-opensuse-15`, `2.1.0-opensuse`, `2.1-opensuse-15-x86_64`, `2.1-opensuse-15`, `2.1-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.1.0-2/opensuse/15/x86_64/Dockerfile)
+
 #### OpenSUSE 42
 
 - [`2.4.0-opensuse-42-x86_64`, `2.4.0-opensuse-42`, `2.4-opensuse-42-x86_64`, `2.4-opensuse-42`, `2-opensuse-42-x86_64`, `2-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/opensuse/42/x86_64/Dockerfile)
@@ -281,14 +289,6 @@ Supported platforms:
 - [`1.8.2-opensuse-42-x86_64`, `1.8.2-opensuse-42`, `1.8-opensuse-42-x86_64`, `1.8-opensuse-42`, `1-opensuse-42-x86_64`, `1-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v1.8.2-9/opensuse/42/x86_64/Dockerfile)
 - [`1.8.1-opensuse-42-x86_64`, `1.8.1-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v1.8.1-3/opensuse/42/x86_64/Dockerfile)
 - [`1.8.0-opensuse-42-x86_64`, `1.8.0-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v1.8.0-2/opensuse/42/x86_64/Dockerfile)
-
-#### OpenSUSE 15
-
-- [`2.4.0-opensuse-15-x86_64`, `2.4.0-opensuse-15`, `2.4.0-opensuse`, `2.4-opensuse-15-x86_64`, `2.4-opensuse-15`, `2.4-opensuse`, `2-opensuse-15-x86_64`, `2-opensuse-15`, `2-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/opensuse/15/x86_64/Dockerfile)
-- [`2.3.1-opensuse-15-x86_64`, `2.3.1-opensuse-15`, `2.3.1-opensuse`, `2.3-opensuse-15-x86_64`, `2.3-opensuse-15`, `2.3-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/opensuse/15/x86_64/Dockerfile)
-- [`2.3.0-opensuse-15-x86_64`, `2.3.0-opensuse-15`, `2.3.0-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/opensuse/15/x86_64/Dockerfile)
-- [`2.2.0-opensuse-15-x86_64`, `2.2.0-opensuse-15`, `2.2.0-opensuse`, `2.2-opensuse-15-x86_64`, `2.2-opensuse-15`, `2.2-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.2.0-3/opensuse/15/x86_64/Dockerfile)
-- [`2.1.0-opensuse-15-x86_64`, `2.1.0-opensuse-15`, `2.1.0-opensuse`, `2.1-opensuse-15-x86_64`, `2.1-opensuse-15`, `2.1-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.1.0-2/opensuse/15/x86_64/Dockerfile)
 
 #### OpenSUSE 13
 
