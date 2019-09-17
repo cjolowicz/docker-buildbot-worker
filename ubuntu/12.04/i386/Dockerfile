@@ -78,7 +78,7 @@ ENV PKG_CONFIG_PATH /usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 
 RUN apt-get purge -y curl libcurl3
 
-ENV PYTHON_VERSION 3.7.2
+ENV PYTHON_VERSION 3.7.4
 
 # https://stackoverflow.com/questions/5937337
 COPY python-use-local-openssl.patch /usr/local/src

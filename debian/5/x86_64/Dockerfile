@@ -85,7 +85,7 @@ RUN set -ex; \
     mkdir -p /var/lib/apt/lists/partial; \
     apt-get purge -y curl libcurl3
 
-ENV PYTHON_VERSION 3.6.8
+ENV PYTHON_VERSION 3.6.9
 
 # https://stackoverflow.com/questions/5937337
 COPY python-use-local-openssl.patch /usr/local/src
