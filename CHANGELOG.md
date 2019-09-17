@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Upgrade to buildbot 2.4.1 ([#29](../../pull/29))
 - Add Python CLI ([#23](../../pull/23))
 - Rework Python CLI ([#31](../../pull/31))
 - Upgrade to Debian 10 ([#25](../../pull/25))
