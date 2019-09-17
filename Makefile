@@ -27,6 +27,8 @@ DIRS = alpine/3.9/x86_64 \
        debian/8/i386 \
        debian/9/x86_64 \
        debian/9/i386 \
+       debian/10/x86_64 \
+       debian/10/i386 \
        opensuse/13/x86_64 \
        opensuse/42/x86_64 \
        opensuse/15/x86_64 \
