@@ -19,7 +19,7 @@ Buildbot Worker is the software that runs build jobs for
 - [`2.1.0`, `2.1`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.1.0-2/alpine/3.9/x86_64/Dockerfile)
 - [`2.0.1`, `2.0`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.0.1-1/alpine/3.9/x86_64/Dockerfile)
 - [`2.0.0`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.0.0-1/alpine/3.9/x86_64/Dockerfile)
-- [`1.8.2`, `1.8`, `1`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v1.8.2-8/alpine/3.9/x86_64/Dockerfile)
+- [`1.8.2`, `1.8`, `1`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v1.8.2-9/alpine/3.9/x86_64/Dockerfile)
 - [`1.8.1`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v1.8.1-3/alpine/3.9/x86_64/Dockerfile)
 - [`1.8.0`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v1.8.0-2/alpine/3.9/x86_64/Dockerfile)
 
