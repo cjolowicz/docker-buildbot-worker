@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Changed
+- Fix Dockerfile link in README.md ([#26](../../pull/26))
 - Reword README.md ([#12](../../pull/12))
 
 ## [2.4.0-1] - 2019-09-13
