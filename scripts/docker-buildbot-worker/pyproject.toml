@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "docker-buildbot-worker"
+version = "0.1.0"
+description = ""
+authors = ["Claudio Jolowicz <claudio.jolowicz@cyren.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+attrs = "^19.1.0"
+click = "^7.0"
+requests = "^2.22.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+docker-buildbot-worker = "docker_buildbot_worker.console:run"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

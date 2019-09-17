@@ -1,10 +1,15 @@
-language: bash
+dist: bionic
 
-install:
-  - sudo apt-get install -y m4
+language: python
+
+python:
+  - "3.7"
 
 services:
   - docker
 
+install:
+  - scripts/travis-install.sh
+
 script:
-  - ./travis.sh
+  - scripts/travis.sh

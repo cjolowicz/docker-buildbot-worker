@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Add Python CLI ([#23](../../pull/23))
+
 ### Changed
 - Fix Dockerfile link in README.md ([#26](../../pull/26))
 - Reword README.md ([#12](../../pull/12))
