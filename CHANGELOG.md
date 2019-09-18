@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgrade to Alpine 3.10 ([#27](../../pull/27))
 
 ### Changed
+- Upgrade to Python 3.7.4 (Python 3.6.9) and pip 19.2.3 ([#28](../../pull/28))
 - Fix Dockerfile link in README.md ([#26](../../pull/26))
 - Reword README.md ([#12](../../pull/12))
 

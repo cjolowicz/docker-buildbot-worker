@@ -60,7 +60,7 @@ RUN set -ex; \
 ENV PATH $OPENSSL_DIR/bin:$PATH
 ENV PKG_CONFIG_PATH $OPENSSL_DIR/lib/pkgconfig
 
-ENV PYTHON_VERSION 3.6.8
+ENV PYTHON_VERSION 3.6.9
 
 # https://stackoverflow.com/questions/5937337
 COPY python-use-local-openssl.patch /usr/local/src
@@ -99,7 +99,7 @@ RUN set -ex; \
     ln -s python3 python; \
     ln -s python3-config python-config
 
-ENV PYTHON_PIP_VERSION 19.0.3
+ENV PYTHON_PIP_VERSION 19.2.3
 
 RUN set -ex; \
     cd /usr/local/src; \

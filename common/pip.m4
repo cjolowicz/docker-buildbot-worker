@@ -1,4 +1,4 @@
-ENV PYTHON_PIP_VERSION 19.0.3
+ENV PYTHON_PIP_VERSION 19.2.3
 
 RUN set -ex; \
     cd /usr/local/src; \
