@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add Python CLI ([#23](../../pull/23))
 - Upgrade to Debian 10 ([#25](../../pull/25))
+- Upgrade to Alpine 3.10 ([#27](../../pull/27))
 
 ### Changed
 - Fix Dockerfile link in README.md ([#26](../../pull/26))

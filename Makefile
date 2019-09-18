@@ -13,6 +13,8 @@ endif
 
 DIRS = alpine/3.9/x86_64 \
        alpine/3.9/i386 \
+       alpine/3.10/x86_64 \
+       alpine/3.10/i386 \
        centos/5/x86_64 \
        centos/5/i386 \
        centos/6/i386 \
