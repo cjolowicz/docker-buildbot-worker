@@ -1,15 +1,21 @@
 import click
 
-from .expand_tags import expand_tags
-from .generate_m4_dependencies import generate_m4_dependencies
-from .generate_readme import generate_readme
+from .bumpversion import bumpversion
+from .images import images
+from .m4_makedep import m4_makedep
+from .tags import tags
+from .write_json import write_json
+from .write_readme import write_readme
 
 
 @click.group()
 def run():
-    """Scripts for docker-buildbot-worker."""
+    """Command-line interface for docker-buildbot-worker."""
 
 
-run.add_command(expand_tags)
-run.add_command(generate_m4_dependencies)
-run.add_command(generate_readme)
+run.add_command(bumpversion)
+run.add_command(images)
+run.add_command(m4_makedep)
+run.add_command(tags)
+run.add_command(write_json)
+run.add_command(write_readme)
