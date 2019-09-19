@@ -284,11 +284,11 @@ Supported platforms:
 - [`2.3.0-opensuse-42-x86_64`, `2.3.0-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/opensuse/42/x86_64/Dockerfile)
 - [`2.2.0-opensuse-42-x86_64`, `2.2.0-opensuse-42`, `2.2-opensuse-42-x86_64`, `2.2-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.2.0-3/opensuse/42/x86_64/Dockerfile)
 - [`2.1.0-opensuse-42-x86_64`, `2.1.0-opensuse-42`, `2.1-opensuse-42-x86_64`, `2.1-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.1.0-2/opensuse/42/x86_64/Dockerfile)
-- [`2.0.1-opensuse-42-x86_64`, `2.0.1-opensuse-42`, `2.0-opensuse-42-x86_64`, `2.0-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.0.1-1/opensuse/42/x86_64/Dockerfile)
-- [`2.0.0-opensuse-42-x86_64`, `2.0.0-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.0.0-1/opensuse/42/x86_64/Dockerfile)
-- [`1.8.2-opensuse-42-x86_64`, `1.8.2-opensuse-42`, `1.8-opensuse-42-x86_64`, `1.8-opensuse-42`, `1-opensuse-42-x86_64`, `1-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v1.8.2-9/opensuse/42/x86_64/Dockerfile)
-- [`1.8.1-opensuse-42-x86_64`, `1.8.1-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v1.8.1-3/opensuse/42/x86_64/Dockerfile)
-- [`1.8.0-opensuse-42-x86_64`, `1.8.0-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v1.8.0-2/opensuse/42/x86_64/Dockerfile)
+- [`2.0.1-opensuse-42-x86_64`, `2.0.1-opensuse-42`, `2.0.1-opensuse`, `2.0-opensuse-42-x86_64`, `2.0-opensuse-42`, `2.0-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.0.1-1/opensuse/42/x86_64/Dockerfile)
+- [`2.0.0-opensuse-42-x86_64`, `2.0.0-opensuse-42`, `2.0.0-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.0.0-1/opensuse/42/x86_64/Dockerfile)
+- [`1.8.2-opensuse-42-x86_64`, `1.8.2-opensuse-42`, `1.8.2-opensuse`, `1.8-opensuse-42-x86_64`, `1.8-opensuse-42`, `1.8-opensuse`, `1-opensuse-42-x86_64`, `1-opensuse-42`, `1-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v1.8.2-9/opensuse/42/x86_64/Dockerfile)
+- [`1.8.1-opensuse-42-x86_64`, `1.8.1-opensuse-42`, `1.8.1-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v1.8.1-3/opensuse/42/x86_64/Dockerfile)
+- [`1.8.0-opensuse-42-x86_64`, `1.8.0-opensuse-42`, `1.8.0-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v1.8.0-2/opensuse/42/x86_64/Dockerfile)
 
 #### OpenSUSE 13
 
