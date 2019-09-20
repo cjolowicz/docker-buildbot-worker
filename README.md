@@ -12,7 +12,7 @@ Buildbot Worker is the software that runs build jobs for
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`2.4.1`, `2.4`, `2`, `latest`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/alpine/3.10/x86_64/Dockerfile)
+- [`2.4.1`, `2.4`, `2`, `latest`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/alpine/3.10/x86_64/Dockerfile)
 - [`2.4.0`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/alpine/3.9/x86_64/Dockerfile)
 - [`2.3.1`, `2.3`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/alpine/3.9/x86_64/Dockerfile)
 - [`2.3.0`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/alpine/3.9/x86_64/Dockerfile)
@@ -155,11 +155,11 @@ Supported platforms:
 
 #### Alpine 3.10
 
-- [`2.4.1-alpine-3.10-x86_64`, `2.4.1-alpine-3.10`, `2.4.1-alpine`, `2.4.1`, `2.4-alpine-3.10-x86_64`, `2.4-alpine-3.10`, `2.4-alpine`, `2.4`, `2-alpine-3.10-x86_64`, `2-alpine-3.10`, `2-alpine`, `2`, `latest`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/alpine/3.10/x86_64/Dockerfile)
+- [`2.4.1-alpine-3.10-x86_64`, `2.4.1-alpine-3.10`, `2.4.1-alpine`, `2.4.1`, `2.4-alpine-3.10-x86_64`, `2.4-alpine-3.10`, `2.4-alpine`, `2.4`, `2-alpine-3.10-x86_64`, `2-alpine-3.10`, `2-alpine`, `2`, `latest`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/alpine/3.10/x86_64/Dockerfile)
 
 #### Alpine 3.9
 
-- [`2.4.1-alpine-3.9-x86_64`, `2.4.1-alpine-3.9`, `2.4-alpine-3.9-x86_64`, `2.4-alpine-3.9`, `2-alpine-3.9-x86_64`, `2-alpine-3.9`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/alpine/3.9/x86_64/Dockerfile)
+- [`2.4.1-alpine-3.9-x86_64`, `2.4.1-alpine-3.9`, `2.4-alpine-3.9-x86_64`, `2.4-alpine-3.9`, `2-alpine-3.9-x86_64`, `2-alpine-3.9`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/alpine/3.9/x86_64/Dockerfile)
 - [`2.4.0-alpine-3.9-x86_64`, `2.4.0-alpine-3.9`, `2.4.0-alpine`, `2.4.0`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/alpine/3.9/x86_64/Dockerfile)
 - [`2.3.1-alpine-3.9-x86_64`, `2.3.1-alpine-3.9`, `2.3.1-alpine`, `2.3.1`, `2.3-alpine-3.9-x86_64`, `2.3-alpine-3.9`, `2.3-alpine`, `2.3`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/alpine/3.9/x86_64/Dockerfile)
 - [`2.3.0-alpine-3.9-x86_64`, `2.3.0-alpine-3.9`, `2.3.0-alpine`, `2.3.0`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/alpine/3.9/x86_64/Dockerfile)
@@ -173,7 +173,7 @@ Supported platforms:
 
 #### CentOS 7
 
-- [`2.4.1-centos-7-x86_64`, `2.4.1-centos-7`, `2.4.1-centos`, `2.4-centos-7-x86_64`, `2.4-centos-7`, `2.4-centos`, `2-centos-7-x86_64`, `2-centos-7`, `2-centos`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/centos/7/x86_64/Dockerfile)
+- [`2.4.1-centos-7-x86_64`, `2.4.1-centos-7`, `2.4.1-centos`, `2.4-centos-7-x86_64`, `2.4-centos-7`, `2.4-centos`, `2-centos-7-x86_64`, `2-centos-7`, `2-centos`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/centos/7/x86_64/Dockerfile)
 - [`2.4.0-centos-7-x86_64`, `2.4.0-centos-7`, `2.4.0-centos`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/centos/7/x86_64/Dockerfile)
 - [`2.3.1-centos-7-x86_64`, `2.3.1-centos-7`, `2.3.1-centos`, `2.3-centos-7-x86_64`, `2.3-centos-7`, `2.3-centos`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/centos/7/x86_64/Dockerfile)
 - [`2.3.0-centos-7-x86_64`, `2.3.0-centos-7`, `2.3.0-centos`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/centos/7/x86_64/Dockerfile)
@@ -187,7 +187,7 @@ Supported platforms:
 
 #### CentOS 6
 
-- [`2.4.1-centos-6-x86_64`, `2.4.1-centos-6`, `2.4-centos-6-x86_64`, `2.4-centos-6`, `2-centos-6-x86_64`, `2-centos-6`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/centos/6/x86_64/Dockerfile)
+- [`2.4.1-centos-6-x86_64`, `2.4.1-centos-6`, `2.4-centos-6-x86_64`, `2.4-centos-6`, `2-centos-6-x86_64`, `2-centos-6`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/centos/6/x86_64/Dockerfile)
 - [`2.4.0-centos-6-x86_64`, `2.4.0-centos-6`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/centos/6/x86_64/Dockerfile)
 - [`2.3.1-centos-6-x86_64`, `2.3.1-centos-6`, `2.3-centos-6-x86_64`, `2.3-centos-6`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/centos/6/x86_64/Dockerfile)
 - [`2.3.0-centos-6-x86_64`, `2.3.0-centos-6`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/centos/6/x86_64/Dockerfile)
@@ -201,7 +201,7 @@ Supported platforms:
 
 #### CentOS 5
 
-- [`2.4.1-centos-5-x86_64`, `2.4.1-centos-5`, `2.4-centos-5-x86_64`, `2.4-centos-5`, `2-centos-5-x86_64`, `2-centos-5`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/centos/5/x86_64/Dockerfile)
+- [`2.4.1-centos-5-x86_64`, `2.4.1-centos-5`, `2.4-centos-5-x86_64`, `2.4-centos-5`, `2-centos-5-x86_64`, `2-centos-5`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/centos/5/x86_64/Dockerfile)
 - [`2.4.0-centos-5-x86_64`, `2.4.0-centos-5`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/centos/5/x86_64/Dockerfile)
 - [`2.3.1-centos-5-x86_64`, `2.3.1-centos-5`, `2.3-centos-5-x86_64`, `2.3-centos-5`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/centos/5/x86_64/Dockerfile)
 - [`2.3.0-centos-5-x86_64`, `2.3.0-centos-5`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/centos/5/x86_64/Dockerfile)
@@ -215,11 +215,11 @@ Supported platforms:
 
 #### Debian 10
 
-- [`2.4.1-debian-10-x86_64`, `2.4.1-debian-10`, `2.4.1-debian`, `2.4-debian-10-x86_64`, `2.4-debian-10`, `2.4-debian`, `2-debian-10-x86_64`, `2-debian-10`, `2-debian`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/debian/10/x86_64/Dockerfile)
+- [`2.4.1-debian-10-x86_64`, `2.4.1-debian-10`, `2.4.1-debian`, `2.4-debian-10-x86_64`, `2.4-debian-10`, `2.4-debian`, `2-debian-10-x86_64`, `2-debian-10`, `2-debian`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/debian/10/x86_64/Dockerfile)
 
 #### Debian 9
 
-- [`2.4.1-debian-9-x86_64`, `2.4.1-debian-9`, `2.4-debian-9-x86_64`, `2.4-debian-9`, `2-debian-9-x86_64`, `2-debian-9`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/debian/9/x86_64/Dockerfile)
+- [`2.4.1-debian-9-x86_64`, `2.4.1-debian-9`, `2.4-debian-9-x86_64`, `2.4-debian-9`, `2-debian-9-x86_64`, `2-debian-9`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/debian/9/x86_64/Dockerfile)
 - [`2.4.0-debian-9-x86_64`, `2.4.0-debian-9`, `2.4.0-debian`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/debian/9/x86_64/Dockerfile)
 - [`2.3.1-debian-9-x86_64`, `2.3.1-debian-9`, `2.3.1-debian`, `2.3-debian-9-x86_64`, `2.3-debian-9`, `2.3-debian`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/debian/9/x86_64/Dockerfile)
 - [`2.3.0-debian-9-x86_64`, `2.3.0-debian-9`, `2.3.0-debian`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/debian/9/x86_64/Dockerfile)
@@ -233,7 +233,7 @@ Supported platforms:
 
 #### Debian 8
 
-- [`2.4.1-debian-8-x86_64`, `2.4.1-debian-8`, `2.4-debian-8-x86_64`, `2.4-debian-8`, `2-debian-8-x86_64`, `2-debian-8`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/debian/8/x86_64/Dockerfile)
+- [`2.4.1-debian-8-x86_64`, `2.4.1-debian-8`, `2.4-debian-8-x86_64`, `2.4-debian-8`, `2-debian-8-x86_64`, `2-debian-8`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/debian/8/x86_64/Dockerfile)
 - [`2.4.0-debian-8-x86_64`, `2.4.0-debian-8`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/debian/8/x86_64/Dockerfile)
 - [`2.3.1-debian-8-x86_64`, `2.3.1-debian-8`, `2.3-debian-8-x86_64`, `2.3-debian-8`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/debian/8/x86_64/Dockerfile)
 - [`2.3.0-debian-8-x86_64`, `2.3.0-debian-8`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/debian/8/x86_64/Dockerfile)
@@ -247,7 +247,7 @@ Supported platforms:
 
 #### Debian 7
 
-- [`2.4.1-debian-7-x86_64`, `2.4.1-debian-7`, `2.4-debian-7-x86_64`, `2.4-debian-7`, `2-debian-7-x86_64`, `2-debian-7`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/debian/7/x86_64/Dockerfile)
+- [`2.4.1-debian-7-x86_64`, `2.4.1-debian-7`, `2.4-debian-7-x86_64`, `2.4-debian-7`, `2-debian-7-x86_64`, `2-debian-7`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/debian/7/x86_64/Dockerfile)
 - [`2.4.0-debian-7-x86_64`, `2.4.0-debian-7`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/debian/7/x86_64/Dockerfile)
 - [`2.3.1-debian-7-x86_64`, `2.3.1-debian-7`, `2.3-debian-7-x86_64`, `2.3-debian-7`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/debian/7/x86_64/Dockerfile)
 - [`2.3.0-debian-7-x86_64`, `2.3.0-debian-7`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/debian/7/x86_64/Dockerfile)
@@ -261,7 +261,7 @@ Supported platforms:
 
 #### Debian 6
 
-- [`2.4.1-debian-6-x86_64`, `2.4.1-debian-6`, `2.4-debian-6-x86_64`, `2.4-debian-6`, `2-debian-6-x86_64`, `2-debian-6`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/debian/6/x86_64/Dockerfile)
+- [`2.4.1-debian-6-x86_64`, `2.4.1-debian-6`, `2.4-debian-6-x86_64`, `2.4-debian-6`, `2-debian-6-x86_64`, `2-debian-6`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/debian/6/x86_64/Dockerfile)
 - [`2.4.0-debian-6-x86_64`, `2.4.0-debian-6`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/debian/6/x86_64/Dockerfile)
 - [`2.3.1-debian-6-x86_64`, `2.3.1-debian-6`, `2.3-debian-6-x86_64`, `2.3-debian-6`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/debian/6/x86_64/Dockerfile)
 - [`2.3.0-debian-6-x86_64`, `2.3.0-debian-6`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/debian/6/x86_64/Dockerfile)
@@ -275,7 +275,7 @@ Supported platforms:
 
 #### Debian 5
 
-- [`2.4.1-debian-5-x86_64`, `2.4.1-debian-5`, `2.4-debian-5-x86_64`, `2.4-debian-5`, `2-debian-5-x86_64`, `2-debian-5`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/debian/5/x86_64/Dockerfile)
+- [`2.4.1-debian-5-x86_64`, `2.4.1-debian-5`, `2.4-debian-5-x86_64`, `2.4-debian-5`, `2-debian-5-x86_64`, `2-debian-5`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/debian/5/x86_64/Dockerfile)
 - [`2.4.0-debian-5-x86_64`, `2.4.0-debian-5`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/debian/5/x86_64/Dockerfile)
 - [`2.3.1-debian-5-x86_64`, `2.3.1-debian-5`, `2.3-debian-5-x86_64`, `2.3-debian-5`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/debian/5/x86_64/Dockerfile)
 - [`2.3.0-debian-5-x86_64`, `2.3.0-debian-5`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/debian/5/x86_64/Dockerfile)
@@ -289,7 +289,7 @@ Supported platforms:
 
 #### OpenSUSE 15
 
-- [`2.4.1-opensuse-15-x86_64`, `2.4.1-opensuse-15`, `2.4.1-opensuse`, `2.4-opensuse-15-x86_64`, `2.4-opensuse-15`, `2.4-opensuse`, `2-opensuse-15-x86_64`, `2-opensuse-15`, `2-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/opensuse/15/x86_64/Dockerfile)
+- [`2.4.1-opensuse-15-x86_64`, `2.4.1-opensuse-15`, `2.4.1-opensuse`, `2.4-opensuse-15-x86_64`, `2.4-opensuse-15`, `2.4-opensuse`, `2-opensuse-15-x86_64`, `2-opensuse-15`, `2-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/opensuse/15/x86_64/Dockerfile)
 - [`2.4.0-opensuse-15-x86_64`, `2.4.0-opensuse-15`, `2.4.0-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/opensuse/15/x86_64/Dockerfile)
 - [`2.3.1-opensuse-15-x86_64`, `2.3.1-opensuse-15`, `2.3.1-opensuse`, `2.3-opensuse-15-x86_64`, `2.3-opensuse-15`, `2.3-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/opensuse/15/x86_64/Dockerfile)
 - [`2.3.0-opensuse-15-x86_64`, `2.3.0-opensuse-15`, `2.3.0-opensuse`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/opensuse/15/x86_64/Dockerfile)
@@ -298,7 +298,7 @@ Supported platforms:
 
 #### OpenSUSE 42
 
-- [`2.4.1-opensuse-42-x86_64`, `2.4.1-opensuse-42`, `2.4-opensuse-42-x86_64`, `2.4-opensuse-42`, `2-opensuse-42-x86_64`, `2-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/opensuse/42/x86_64/Dockerfile)
+- [`2.4.1-opensuse-42-x86_64`, `2.4.1-opensuse-42`, `2.4-opensuse-42-x86_64`, `2.4-opensuse-42`, `2-opensuse-42-x86_64`, `2-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/opensuse/42/x86_64/Dockerfile)
 - [`2.4.0-opensuse-42-x86_64`, `2.4.0-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/opensuse/42/x86_64/Dockerfile)
 - [`2.3.1-opensuse-42-x86_64`, `2.3.1-opensuse-42`, `2.3-opensuse-42-x86_64`, `2.3-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/opensuse/42/x86_64/Dockerfile)
 - [`2.3.0-opensuse-42-x86_64`, `2.3.0-opensuse-42`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/opensuse/42/x86_64/Dockerfile)
@@ -312,7 +312,7 @@ Supported platforms:
 
 #### OpenSUSE 13
 
-- [`2.4.1-opensuse-13-x86_64`, `2.4.1-opensuse-13`, `2.4-opensuse-13-x86_64`, `2.4-opensuse-13`, `2-opensuse-13-x86_64`, `2-opensuse-13`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/opensuse/13/x86_64/Dockerfile)
+- [`2.4.1-opensuse-13-x86_64`, `2.4.1-opensuse-13`, `2.4-opensuse-13-x86_64`, `2.4-opensuse-13`, `2-opensuse-13-x86_64`, `2-opensuse-13`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/opensuse/13/x86_64/Dockerfile)
 - [`2.4.0-opensuse-13-x86_64`, `2.4.0-opensuse-13`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/opensuse/13/x86_64/Dockerfile)
 - [`2.3.1-opensuse-13-x86_64`, `2.3.1-opensuse-13`, `2.3-opensuse-13-x86_64`, `2.3-opensuse-13`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/opensuse/13/x86_64/Dockerfile)
 - [`2.3.0-opensuse-13-x86_64`, `2.3.0-opensuse-13`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/opensuse/13/x86_64/Dockerfile)
@@ -326,7 +326,7 @@ Supported platforms:
 
 #### Scientific Linux 7
 
-- [`2.4.1-scientific-7-x86_64`, `2.4.1-scientific-7`, `2.4.1-scientific`, `2.4-scientific-7-x86_64`, `2.4-scientific-7`, `2.4-scientific`, `2-scientific-7-x86_64`, `2-scientific-7`, `2-scientific`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/scientific/7/x86_64/Dockerfile)
+- [`2.4.1-scientific-7-x86_64`, `2.4.1-scientific-7`, `2.4.1-scientific`, `2.4-scientific-7-x86_64`, `2.4-scientific-7`, `2.4-scientific`, `2-scientific-7-x86_64`, `2-scientific-7`, `2-scientific`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/scientific/7/x86_64/Dockerfile)
 - [`2.4.0-scientific-7-x86_64`, `2.4.0-scientific-7`, `2.4.0-scientific`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/scientific/7/x86_64/Dockerfile)
 - [`2.3.1-scientific-7-x86_64`, `2.3.1-scientific-7`, `2.3.1-scientific`, `2.3-scientific-7-x86_64`, `2.3-scientific-7`, `2.3-scientific`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/scientific/7/x86_64/Dockerfile)
 - [`2.3.0-scientific-7-x86_64`, `2.3.0-scientific-7`, `2.3.0-scientific`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/scientific/7/x86_64/Dockerfile)
@@ -340,7 +340,7 @@ Supported platforms:
 
 #### Scientific Linux 6
 
-- [`2.4.1-scientific-6-x86_64`, `2.4.1-scientific-6`, `2.4-scientific-6-x86_64`, `2.4-scientific-6`, `2-scientific-6-x86_64`, `2-scientific-6`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/scientific/6/x86_64/Dockerfile)
+- [`2.4.1-scientific-6-x86_64`, `2.4.1-scientific-6`, `2.4-scientific-6-x86_64`, `2.4-scientific-6`, `2-scientific-6-x86_64`, `2-scientific-6`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/scientific/6/x86_64/Dockerfile)
 - [`2.4.0-scientific-6-x86_64`, `2.4.0-scientific-6`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/scientific/6/x86_64/Dockerfile)
 - [`2.3.1-scientific-6-x86_64`, `2.3.1-scientific-6`, `2.3-scientific-6-x86_64`, `2.3-scientific-6`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/scientific/6/x86_64/Dockerfile)
 - [`2.3.0-scientific-6-x86_64`, `2.3.0-scientific-6`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/scientific/6/x86_64/Dockerfile)
@@ -354,7 +354,7 @@ Supported platforms:
 
 #### Ubuntu 18.04
 
-- [`2.4.1-ubuntu-18.04-x86_64`, `2.4.1-ubuntu-18.04`, `2.4.1-ubuntu`, `2.4-ubuntu-18.04-x86_64`, `2.4-ubuntu-18.04`, `2.4-ubuntu`, `2-ubuntu-18.04-x86_64`, `2-ubuntu-18.04`, `2-ubuntu`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/ubuntu/18.04/x86_64/Dockerfile)
+- [`2.4.1-ubuntu-18.04-x86_64`, `2.4.1-ubuntu-18.04`, `2.4.1-ubuntu`, `2.4-ubuntu-18.04-x86_64`, `2.4-ubuntu-18.04`, `2.4-ubuntu`, `2-ubuntu-18.04-x86_64`, `2-ubuntu-18.04`, `2-ubuntu`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/ubuntu/18.04/x86_64/Dockerfile)
 - [`2.4.0-ubuntu-18.04-x86_64`, `2.4.0-ubuntu-18.04`, `2.4.0-ubuntu`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/ubuntu/18.04/x86_64/Dockerfile)
 - [`2.3.1-ubuntu-18.04-x86_64`, `2.3.1-ubuntu-18.04`, `2.3.1-ubuntu`, `2.3-ubuntu-18.04-x86_64`, `2.3-ubuntu-18.04`, `2.3-ubuntu`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/ubuntu/18.04/x86_64/Dockerfile)
 - [`2.3.0-ubuntu-18.04-x86_64`, `2.3.0-ubuntu-18.04`, `2.3.0-ubuntu`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/ubuntu/18.04/x86_64/Dockerfile)
@@ -368,7 +368,7 @@ Supported platforms:
 
 #### Ubuntu 16.04
 
-- [`2.4.1-ubuntu-16.04-x86_64`, `2.4.1-ubuntu-16.04`, `2.4-ubuntu-16.04-x86_64`, `2.4-ubuntu-16.04`, `2-ubuntu-16.04-x86_64`, `2-ubuntu-16.04`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/ubuntu/16.04/x86_64/Dockerfile)
+- [`2.4.1-ubuntu-16.04-x86_64`, `2.4.1-ubuntu-16.04`, `2.4-ubuntu-16.04-x86_64`, `2.4-ubuntu-16.04`, `2-ubuntu-16.04-x86_64`, `2-ubuntu-16.04`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/ubuntu/16.04/x86_64/Dockerfile)
 - [`2.4.0-ubuntu-16.04-x86_64`, `2.4.0-ubuntu-16.04`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/ubuntu/16.04/x86_64/Dockerfile)
 - [`2.3.1-ubuntu-16.04-x86_64`, `2.3.1-ubuntu-16.04`, `2.3-ubuntu-16.04-x86_64`, `2.3-ubuntu-16.04`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/ubuntu/16.04/x86_64/Dockerfile)
 - [`2.3.0-ubuntu-16.04-x86_64`, `2.3.0-ubuntu-16.04`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/ubuntu/16.04/x86_64/Dockerfile)
@@ -382,7 +382,7 @@ Supported platforms:
 
 #### Ubuntu 14.04
 
-- [`2.4.1-ubuntu-14.04-x86_64`, `2.4.1-ubuntu-14.04`, `2.4-ubuntu-14.04-x86_64`, `2.4-ubuntu-14.04`, `2-ubuntu-14.04-x86_64`, `2-ubuntu-14.04`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/ubuntu/14.04/x86_64/Dockerfile)
+- [`2.4.1-ubuntu-14.04-x86_64`, `2.4.1-ubuntu-14.04`, `2.4-ubuntu-14.04-x86_64`, `2.4-ubuntu-14.04`, `2-ubuntu-14.04-x86_64`, `2-ubuntu-14.04`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/ubuntu/14.04/x86_64/Dockerfile)
 - [`2.4.0-ubuntu-14.04-x86_64`, `2.4.0-ubuntu-14.04`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/ubuntu/14.04/x86_64/Dockerfile)
 - [`2.3.1-ubuntu-14.04-x86_64`, `2.3.1-ubuntu-14.04`, `2.3-ubuntu-14.04-x86_64`, `2.3-ubuntu-14.04`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/ubuntu/14.04/x86_64/Dockerfile)
 - [`2.3.0-ubuntu-14.04-x86_64`, `2.3.0-ubuntu-14.04`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/ubuntu/14.04/x86_64/Dockerfile)
@@ -396,7 +396,7 @@ Supported platforms:
 
 #### Ubuntu 12.04
 
-- [`2.4.1-ubuntu-12.04-x86_64`, `2.4.1-ubuntu-12.04`, `2.4-ubuntu-12.04-x86_64`, `2.4-ubuntu-12.04`, `2-ubuntu-12.04-x86_64`, `2-ubuntu-12.04`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/ubuntu/12.04/x86_64/Dockerfile)
+- [`2.4.1-ubuntu-12.04-x86_64`, `2.4.1-ubuntu-12.04`, `2.4-ubuntu-12.04-x86_64`, `2.4-ubuntu-12.04`, `2-ubuntu-12.04-x86_64`, `2-ubuntu-12.04`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/ubuntu/12.04/x86_64/Dockerfile)
 - [`2.4.0-ubuntu-12.04-x86_64`, `2.4.0-ubuntu-12.04`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/ubuntu/12.04/x86_64/Dockerfile)
 - [`2.3.1-ubuntu-12.04-x86_64`, `2.3.1-ubuntu-12.04`, `2.3-ubuntu-12.04-x86_64`, `2.3-ubuntu-12.04`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/ubuntu/12.04/x86_64/Dockerfile)
 - [`2.3.0-ubuntu-12.04-x86_64`, `2.3.0-ubuntu-12.04`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/ubuntu/12.04/x86_64/Dockerfile)
@@ -419,11 +419,11 @@ Supported platforms:
 
 #### Alpine 3.10 (i386)
 
-- [`2.4.1-alpine-3.10-i386`, `2.4-alpine-3.10-i386`, `2-alpine-3.10-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/alpine/3.10/i386/Dockerfile)
+- [`2.4.1-alpine-3.10-i386`, `2.4-alpine-3.10-i386`, `2-alpine-3.10-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/alpine/3.10/i386/Dockerfile)
 
 #### Alpine 3.9 (i386)
 
-- [`2.4.1-alpine-3.9-i386`, `2.4-alpine-3.9-i386`, `2-alpine-3.9-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/alpine/3.9/i386/Dockerfile)
+- [`2.4.1-alpine-3.9-i386`, `2.4-alpine-3.9-i386`, `2-alpine-3.9-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/alpine/3.9/i386/Dockerfile)
 - [`2.4.0-alpine-3.9-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/alpine/3.9/i386/Dockerfile)
 - [`2.3.1-alpine-3.9-i386`, `2.3-alpine-3.9-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/alpine/3.9/i386/Dockerfile)
 - [`2.3.0-alpine-3.9-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/alpine/3.9/i386/Dockerfile)
@@ -437,7 +437,7 @@ Supported platforms:
 
 #### CentOS 6 (i386)
 
-- [`2.4.1-centos-6-i386`, `2.4-centos-6-i386`, `2-centos-6-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/centos/6/i386/Dockerfile)
+- [`2.4.1-centos-6-i386`, `2.4-centos-6-i386`, `2-centos-6-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/centos/6/i386/Dockerfile)
 - [`2.4.0-centos-6-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/centos/6/i386/Dockerfile)
 - [`2.3.1-centos-6-i386`, `2.3-centos-6-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/centos/6/i386/Dockerfile)
 - [`2.3.0-centos-6-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/centos/6/i386/Dockerfile)
@@ -451,7 +451,7 @@ Supported platforms:
 
 #### CentOS 5 (i386)
 
-- [`2.4.1-centos-5-i386`, `2.4-centos-5-i386`, `2-centos-5-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/centos/5/i386/Dockerfile)
+- [`2.4.1-centos-5-i386`, `2.4-centos-5-i386`, `2-centos-5-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/centos/5/i386/Dockerfile)
 - [`2.4.0-centos-5-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/centos/5/i386/Dockerfile)
 - [`2.3.1-centos-5-i386`, `2.3-centos-5-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/centos/5/i386/Dockerfile)
 - [`2.3.0-centos-5-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/centos/5/i386/Dockerfile)
@@ -465,11 +465,11 @@ Supported platforms:
 
 #### Debian 10 (i386)
 
-- [`2.4.1-debian-10-i386`, `2.4-debian-10-i386`, `2-debian-10-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/debian/10/i386/Dockerfile)
+- [`2.4.1-debian-10-i386`, `2.4-debian-10-i386`, `2-debian-10-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/debian/10/i386/Dockerfile)
 
 #### Debian 9 (i386)
 
-- [`2.4.1-debian-9-i386`, `2.4-debian-9-i386`, `2-debian-9-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/debian/9/i386/Dockerfile)
+- [`2.4.1-debian-9-i386`, `2.4-debian-9-i386`, `2-debian-9-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/debian/9/i386/Dockerfile)
 - [`2.4.0-debian-9-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/debian/9/i386/Dockerfile)
 - [`2.3.1-debian-9-i386`, `2.3-debian-9-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/debian/9/i386/Dockerfile)
 - [`2.3.0-debian-9-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/debian/9/i386/Dockerfile)
@@ -483,7 +483,7 @@ Supported platforms:
 
 #### Debian 8 (i386)
 
-- [`2.4.1-debian-8-i386`, `2.4-debian-8-i386`, `2-debian-8-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/debian/8/i386/Dockerfile)
+- [`2.4.1-debian-8-i386`, `2.4-debian-8-i386`, `2-debian-8-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/debian/8/i386/Dockerfile)
 - [`2.4.0-debian-8-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/debian/8/i386/Dockerfile)
 - [`2.3.1-debian-8-i386`, `2.3-debian-8-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/debian/8/i386/Dockerfile)
 - [`2.3.0-debian-8-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/debian/8/i386/Dockerfile)
@@ -497,7 +497,7 @@ Supported platforms:
 
 #### Debian 7 (i386)
 
-- [`2.4.1-debian-7-i386`, `2.4-debian-7-i386`, `2-debian-7-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/debian/7/i386/Dockerfile)
+- [`2.4.1-debian-7-i386`, `2.4-debian-7-i386`, `2-debian-7-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/debian/7/i386/Dockerfile)
 - [`2.4.0-debian-7-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/debian/7/i386/Dockerfile)
 - [`2.3.1-debian-7-i386`, `2.3-debian-7-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/debian/7/i386/Dockerfile)
 - [`2.3.0-debian-7-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/debian/7/i386/Dockerfile)
@@ -511,7 +511,7 @@ Supported platforms:
 
 #### Debian 6 (i386)
 
-- [`2.4.1-debian-6-i386`, `2.4-debian-6-i386`, `2-debian-6-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/debian/6/i386/Dockerfile)
+- [`2.4.1-debian-6-i386`, `2.4-debian-6-i386`, `2-debian-6-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/debian/6/i386/Dockerfile)
 - [`2.4.0-debian-6-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/debian/6/i386/Dockerfile)
 - [`2.3.1-debian-6-i386`, `2.3-debian-6-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/debian/6/i386/Dockerfile)
 - [`2.3.0-debian-6-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/debian/6/i386/Dockerfile)
@@ -525,7 +525,7 @@ Supported platforms:
 
 #### Ubuntu 18.04 (i386)
 
-- [`2.4.1-ubuntu-18.04-i386`, `2.4-ubuntu-18.04-i386`, `2-ubuntu-18.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/ubuntu/18.04/i386/Dockerfile)
+- [`2.4.1-ubuntu-18.04-i386`, `2.4-ubuntu-18.04-i386`, `2-ubuntu-18.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/ubuntu/18.04/i386/Dockerfile)
 - [`2.4.0-ubuntu-18.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/ubuntu/18.04/i386/Dockerfile)
 - [`2.3.1-ubuntu-18.04-i386`, `2.3-ubuntu-18.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/ubuntu/18.04/i386/Dockerfile)
 - [`2.3.0-ubuntu-18.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/ubuntu/18.04/i386/Dockerfile)
@@ -539,7 +539,7 @@ Supported platforms:
 
 #### Ubuntu 16.04 (i386)
 
-- [`2.4.1-ubuntu-16.04-i386`, `2.4-ubuntu-16.04-i386`, `2-ubuntu-16.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/ubuntu/16.04/i386/Dockerfile)
+- [`2.4.1-ubuntu-16.04-i386`, `2.4-ubuntu-16.04-i386`, `2-ubuntu-16.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/ubuntu/16.04/i386/Dockerfile)
 - [`2.4.0-ubuntu-16.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/ubuntu/16.04/i386/Dockerfile)
 - [`2.3.1-ubuntu-16.04-i386`, `2.3-ubuntu-16.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/ubuntu/16.04/i386/Dockerfile)
 - [`2.3.0-ubuntu-16.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/ubuntu/16.04/i386/Dockerfile)
@@ -553,7 +553,7 @@ Supported platforms:
 
 #### Ubuntu 14.04 (i386)
 
-- [`2.4.1-ubuntu-14.04-i386`, `2.4-ubuntu-14.04-i386`, `2-ubuntu-14.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/ubuntu/14.04/i386/Dockerfile)
+- [`2.4.1-ubuntu-14.04-i386`, `2.4-ubuntu-14.04-i386`, `2-ubuntu-14.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/ubuntu/14.04/i386/Dockerfile)
 - [`2.4.0-ubuntu-14.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/ubuntu/14.04/i386/Dockerfile)
 - [`2.3.1-ubuntu-14.04-i386`, `2.3-ubuntu-14.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/ubuntu/14.04/i386/Dockerfile)
 - [`2.3.0-ubuntu-14.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/ubuntu/14.04/i386/Dockerfile)
@@ -567,7 +567,7 @@ Supported platforms:
 
 #### Ubuntu 12.04 (i386)
 
-- [`2.4.1-ubuntu-12.04-i386`, `2.4-ubuntu-12.04-i386`, `2-ubuntu-12.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-1/ubuntu/12.04/i386/Dockerfile)
+- [`2.4.1-ubuntu-12.04-i386`, `2.4-ubuntu-12.04-i386`, `2-ubuntu-12.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.1-2/ubuntu/12.04/i386/Dockerfile)
 - [`2.4.0-ubuntu-12.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.4.0-1/ubuntu/12.04/i386/Dockerfile)
 - [`2.3.1-ubuntu-12.04-i386`, `2.3-ubuntu-12.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.1-8/ubuntu/12.04/i386/Dockerfile)
 - [`2.3.0-ubuntu-12.04-i386`](https://github.com/cjolowicz/docker-buildbot-worker/blob/v2.3.0-1/ubuntu/12.04/i386/Dockerfile)
