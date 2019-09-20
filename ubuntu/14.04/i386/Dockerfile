@@ -11,7 +11,7 @@ RUN set -ex; \
     ; \
     rm -rf /var/lib/apt/lists/*
 
-ENV BUILDBOT_VERSION 2.4.0
+ENV BUILDBOT_VERSION 2.4.1
 RUN pip3 install --upgrade pip && \
     pip --no-cache-dir install --only-binary cryptography twisted[tls]==19.2 && \
     pip --no-cache-dir install buildbot_worker==$BUILDBOT_VERSION
