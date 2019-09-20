@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Fix buildbot version in upgraded platforms ([#32](../../pull/32))
 
+### Changed
+- Optimize build cache for PR builds ([#36](../../pull/36))
+
 ## [2.4.1-1] - 2019-09-20
 ### Added
 - Upgrade to buildbot 2.4.1 ([#29](../../pull/29))
