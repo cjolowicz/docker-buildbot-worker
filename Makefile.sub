@@ -1,7 +1,8 @@
 PLATFORM = $(notdir $(abspath $(CURDIR)/../..))
 RELEASE = $(notdir $(abspath $(CURDIR)/..))
 ARCH = $(notdir $(CURDIR))
-TAGS = $(shell docker-buildbot-worker expand-tags $(VERSION) $(PLATFORM) $(RELEASE) $(ARCH))
+CLI = docker-buildbot-worker
+TAGS = $(shell $(CLI) tags -v$(VERSION) -p$(PLATFORM) -r$(RELEASE) -a$(ARCH))
 IMAGES = $(patsubst %, $(REPO):%, $(TAGS))
 IMAGE = $(firstword $(IMAGES))
 CACHE = $(REPO):$(BRANCH)-$(PLATFORM)-$(RELEASE)-$(ARCH)
@@ -39,7 +40,7 @@ push: test
 dep: Makefile.dep
 
 Makefile.dep: $(shell find $(TOPDIR) -name '*.m4')
-	cd $(TOPDIR) && docker-buildbot-worker generate-m4-dependencies \
+	cd $(TOPDIR) && $(CLI) m4-makedep \
 	    $(CURDIR)/Dockerfile \
 	    $(CURDIR)/Dockerfile.m4 \
 	    > $(CURDIR)/Makefile.dep
