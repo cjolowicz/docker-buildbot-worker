@@ -6,7 +6,8 @@ import click
 from ..core.utils import setify
 
 
-def _extract_dependencies(filename):
+def _extract_includes(filename):
+    """Return the files directly included by the given file."""
     pattern = r"m4_include\(([^)]*)\)"
     with open(filename) as file:
         for match in re.finditer(pattern, file.read()):
@@ -14,22 +15,23 @@ def _extract_dependencies(filename):
 
 
 @setify
-def _generate_dependencies(targetdir, filename):
-    yield os.path.relpath(filename, targetdir)
-    for filename in _extract_dependencies(filename):
-        yield from _generate_dependencies(targetdir, filename)
+def _list_dependencies(filename):
+    """Return the file and all directly or indirectly included files."""
+    yield filename
+    for filename in _extract_includes(filename):
+        yield from _list_dependencies(filename)
 
 
 @click.command()
 @click.argument("target")
 @click.argument("files", nargs=-1, type=click.Path(exists=True))
-def generate_m4_dependencies(target, files):
-    """Generate m4 dependencies of target from files for Makefile."""
+def m4_makedep(target, files):
+    """List the m4 dependencies of the given target."""
     targetdir, target = os.path.split(target)
     dependencies = sorted(
-        dependency
+        os.path.relpath(filename, targetdir)
         for filename in files
-        for dependency in _generate_dependencies(targetdir, filename)
+        for dependency in _list_dependencies(filename)
     )
     for dependency in dependencies:
         click.echo(f"{target}: {dependency}")

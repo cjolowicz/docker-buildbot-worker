@@ -1,6 +1,5 @@
 import attr
 
-from . import git
 from .utils import listify
 
 
@@ -42,7 +41,7 @@ class Version:
         return self.major, self.minor, self.patch, self.downstream
 
     def startswith(self, prefix):
-        """Return true if the initial version components are equal to the given prefix."""
+        """Return true if the initial version components are equal to the prefix."""
         return prefix == self.to_tuple()[: len(prefix)]
 
     @listify
@@ -63,22 +62,3 @@ class Version:
         if prefix is None:
             prefix = self.upstream
         return self == Version.canonical(versions, prefix=prefix)
-
-
-def _get_versions():
-    """Return the available versions, as marked by Git tags."""
-    return [Version.parse(tag[1:]) for tag in git.tags() if tag.startswith("v")]
-
-
-def _get_canonical_versions():
-    """Return the versions with the greatest downstream part."""
-    versions = _get_versions()
-    return [version for version in versions if version.is_canonical(versions)]
-
-
-def load(canonical=False):
-    """Load the available versions, as marked by Git tags.
-
-    When canonical is True, only return the versions with the greatest downstream part.
-    """
-    return _get_canonical_versions() if canonical else _get_versions()
