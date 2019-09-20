@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Add Python CLI ([#23](../../pull/23))
+- Rework Python CLI ([#31](../../pull/31))
 - Upgrade to Debian 10 ([#25](../../pull/25))
 - Upgrade to Alpine 3.10 ([#27](../../pull/27))
 
