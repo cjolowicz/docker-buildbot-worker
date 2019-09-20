@@ -3,8 +3,6 @@ import re
 
 import click
 
-from ..core.utils import setify
-
 
 def _extract_includes(filename):
     """Return the files directly included by the given file."""
@@ -14,7 +12,6 @@ def _extract_includes(filename):
             yield match.group(1)
 
 
-@setify
 def _list_dependencies(filename):
     """Return the file and all directly or indirectly included files."""
     yield filename
@@ -28,10 +25,10 @@ def _list_dependencies(filename):
 def m4_makedep(target, files):
     """List the m4 dependencies of the given target."""
     targetdir, target = os.path.split(target)
-    dependencies = sorted(
-        os.path.relpath(filename, targetdir)
+    dependencies = set(
+        os.path.relpath(dependency, targetdir)
         for filename in files
         for dependency in _list_dependencies(filename)
     )
-    for dependency in dependencies:
+    for dependency in sorted(dependencies):
         click.echo(f"{target}: {dependency}")
