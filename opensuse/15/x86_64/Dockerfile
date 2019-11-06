@@ -9,7 +9,7 @@ RUN set -ex; \
     ; \
     zypper clean --all
 
-ENV BUILDBOT_VERSION 2.4.1
+ENV BUILDBOT_VERSION 2.5.0
 RUN pip3 install --upgrade pip && \
     pip --no-cache-dir install twisted[tls] && \
     pip --no-cache-dir install buildbot_worker==$BUILDBOT_VERSION
