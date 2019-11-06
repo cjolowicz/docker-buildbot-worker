@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [2.5.0-1] - 2019-11-06
 ### Added
 - Upgrade to buildbot 2.5.0 ([#37](../../pull/37))
 
@@ -192,7 +193,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Ubuntu 18.04 (bionic)
 - \*) x86_64 only
 
-[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.4.1-2...HEAD
+[Unreleased]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.5.0-1...HEAD
+[2.5.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.4.1-2...v2.5.0-1
 [2.4.1-2]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.4.1-1...v2.4.1-2
 [2.4.1-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.4.0-1...v2.4.1-1
 [2.4.0-1]: https://github.com/cjolowicz/docker-buildbot-worker/compare/v2.3.1-8...v2.4.0-1
