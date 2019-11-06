@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Upgrade to CentOS 8 ([#38](../../pull/38))
+
 ## [2.5.0-1] - 2019-11-06
 ### Added
 - Upgrade to buildbot 2.5.0 ([#37](../../pull/37))
