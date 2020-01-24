@@ -18,6 +18,7 @@ default = Image()
 
 def release_key(platform):
     """Return a key function to sort releases."""
+
     def key(release):
         if (platform, release) == ("opensuse", "42"):
             return (14,)
